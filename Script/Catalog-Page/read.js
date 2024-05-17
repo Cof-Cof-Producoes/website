@@ -104,6 +104,9 @@ revelar.reveal('.overflow',
 
 })
 
+
+
+
 //----- SCROLL REVEAL DA PÁGINA COLEÇÃO
 
 revelar.reveal('.collection-box',
