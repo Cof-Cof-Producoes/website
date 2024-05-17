@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CofCof</title>
+    <link rel="stylesheet" href="/styles/Catalog-Page/read.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  
+
+</head>
+<body>
+    <!--PRÉ CARREGAMENTO------------------------------------------------------------------------------>
+    <span class="pre"></span>
+    
+
+    <!--INTERFACE GERAL------------------------------------------------------------------------------->
+    <section class="interface loading">
+
+
+        <!--BARRA DE NAVEGAÇÃO SUPERIOR--------------------------------------------------------------->
+        <nav class="nav-bar">
+   
+            <div class="logo-box">
+                <a href="/html/readpage.html"><img src="/images/Catalog-Page/Navegador/LOGO-HOME-02.png" alt="logoda empresa" class="nav-logo-img"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    
+                    <li><a href="/html/store.html" target="_blank" rel="noopener noreferrer">LOJA</a></li>
+                    <li><a href="/html/community.html" target="_blank" rel="noopener noreferrer">COMUNIDADE</a></li>
+                    <li><a href="#e">CONTATO</a></li>
+                    
+                </ul>
+
+                <div class="search-box">
+                    <input type="search" name="pesquisa" id="search" class="inp-search" placeholder="Buscar..."> 
+                    <!-- BOTÃO DE PESQUISA DESATIVADO POR ENQUANTO -->
+                    <!-- <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button> -->
+                </div>
+
+                <button class="user-menu-btn">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+
+                </button>
+
+            </div>
+            
+            
+        </nav>
+
+
+        <!--CAIXA DE USUÁRIO-------------------------------------------------------------------------->
+        <nav class="usermenu">
+            <!-- AVATAR -->
+            <div class="avatar-box">
+                <div class="avatar-img">
+
+                    
+
+                </div>
+                <div class="user-info">
+
+                    <div class="user-name">Tarcísio Gaspar</div>
+                    <div class="user-status">Online</div>
+
+                </div>
+                <!-- STATUS DA CONTA -->
+                <div class="acount-status">
+                    <div class="status-title">
+                        Status da conta:
+                    </div>
+                    <div class="status-logo">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- LISTA DE INFORMAÇÕES DO USUÁRIO -->
+            <div class="user-list">
+
+                <!-- ESTATÍSTICAS DO USUÁRIO -->
+                <div class="statistcs">
+
+                    <h2>Estatísticas do usuário:</h2>
+
+                    <div class="login-countage">Nº de logins:</div>
+                    <div class="read-countage">Leituras concluídas:</div>
+                    <div class="time-countage">Tempo total de leitura:</div>
+                    <div class="send-countage">Recomendações enviadas:</div>
+                    <div class="receive-countage">Recomedações recebidas:</div>
+
+                </div>
+
+                <!-- EMPBLEMA DE NÍVEL DO USUÁRIO -->
+                <div class="statistcs-reaction">
+
+                    <h2>Seu nível:</h2>
+                    <div class="statistic-00">
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <!-- AMIGOS DO USUÁRIO -->
+            <div class="user-friends">
+                <div class="friends-header">
+                    <h2>Amigos:</h2>
+                </div>
+                <div class="friends-list">
+
+                </div>
+
+            </div>
+
+            <!-- BOTÕES DO MENU DE USUÁRIO -->
+            <div class="user-buttons">
+
+                <button class="config-btn">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                      </svg>
+
+                </button>
+
+                <button class="logout-btn">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                      </svg>
+
+                </button>
+
+            </div>
+        </nav>
+
+
+        <!--MENU LATERAL------------------------------------------------------------------------------>
+        <nav class="menu">
+            <div class="expand-btn" id="exp-btn">
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                  </svg>
+
+
+                
+            </div>
+            <ul>
+
+                <li class="item-menu">
+                    <a href="#collection">
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
+                            <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"/>
+                          </svg></span>
+                        <span class="txt-link">Coleção</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#bookpage">
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                          </svg></span>
+                        <span class="txt-link">Livros</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#hqpage">
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                            <path d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/>
+                          </svg></span>
+                        <span class="txt-link">HQ's</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#vdpage">
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                            <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                          </svg></span>
+                        <span class="txt-link">Vídeos</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#glpage">
+                        <span class="icon"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                            <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z"/>
+                          </svg></span>
+                        <span class="txt-link">Galeria</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <!--CARROSSEL DE CARDS - LANÇAMENTOS---------------------------------------------------------->   
+        <div class="new-box">
+
+                <!-- BOTÕES DE NAVEGAÇÃO DO CARROSSEL -->
+                <button class="slide left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                    </svg>
+
+                </button>
+                
+                <!-- OVERFLOW DO CARROSSEL -->
+                <div class="overflow">
+                    <!-- CAIXA DO CARROSSEL -->
+                    <div class="carrossel-box">
+                        <!-- CARDS DO CARROSSEL -->
+                        <div class="carrossel-item current-item" id="card01">
+                            <div class="img-box">
+                                <img src="/images/Catalog-Page/Lançamentos/Boitata-02.jpg" class="carrossel-img" alt="desenho de um homem escalando um coqueiro">
+                                    <div class="item-descrpition">
+                                        <p>Pequenas Histórias das Terras Invisíveis</p>
+                                        <div class="item-hate">
+        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                            </svg>
+                                            
+                                            85%
+        
+                                        </div>
+                                        <div class="item-card">
+        
+                                            <div class="tipo">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                            </svg>
+                                            </div>
+                                            <button class="add-to-collection">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                </svg>
+                                            </button>
+                                            <button class="start">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                                </svg>
+                                            </button>
+        
+                                        </div>    
+
+                                    </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-title">
+        
+                                    <h1>TÍTULO</h1>
+        
+                                </div>
+                                <div class="info-description">
+                                    <P>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam voluptatibus, ipsa odit facere facilis nostrum explicabo earum! Deleniti, nihil quam! Quia, architecto nam. Dolore veritatis provident beatae quo aperiam?
+                                    </P>
+        
+                                </div>
+                                <div class="info-data">
+                                    <P>Autor: <a href="">@Felps</a>;</P>
+                                    <p>Tipo: Livro</p>
+                                    <p>Lançamento: 2024;</p>
+                                    <p>Categoria: fantasia / Mistério / Aventura.</p>
+                                    <p>Leitura: 80 min / 40 páginas;</p>
+        
+                                </div>
+                                <div class="info-buttons">
+                                    <button class="recomend">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="avaliar">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="ler">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                          </svg>
+        
+                                    </button>
+        
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                        <div class="carrossel-item" id="card02">
+                            <div class="img-box">
+                                <img src="/images/Catalog-Page/Lançamentos/Boitata-02.jpg" class="carrossel-img" alt="desenho de um homem escalando um coqueiro">
+                                    <div class="item-descrpition">
+                                        <p>Pequenas Histórias das Terras Invisíveis</p>
+                                        <div class="item-hate">
+        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                            </svg>
+                                            
+                                            85%
+        
+                                        </div>
+                                        <div class="item-card">
+        
+                                            <div class="tipo">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                            </svg>
+                                            </div>
+                                            <button class="add-to-collection">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                </svg>
+                                            </button>
+                                            <button class="start">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                                </svg>
+                                            </button>
+        
+                                        </div>    
+
+                                    </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-title">
+        
+                                    <h1>TÍTULO</h1>
+        
+                                </div>
+                                <div class="info-description">
+                                    <P>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam voluptatibus, ipsa odit facere facilis nostrum explicabo earum! Deleniti, nihil quam! Quia, architecto nam. Dolore veritatis provident beatae quo aperiam?
+                                    </P>
+        
+                                </div>
+                                <div class="info-data">
+                                    <P>Autor: <a href="">@Felps</a>;</P>
+                                    <p>Tipo: Livro</p>
+                                    <p>Lançamento: 2024;</p>
+                                    <p>Categoria: fantasia / Mistério / Aventura.</p>
+                                    <p>Leitura: 80 min / 40 páginas;</p>
+        
+                                </div>
+                                <div class="info-buttons">
+                                    <button class="recomend">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="avaliar">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="ler">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                          </svg>
+        
+                                    </button>
+        
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                        <div class="carrossel-item" id="card03">
+                            <div class="img-box">
+                                <img src="/images/Catalog-Page/Lançamentos/Boitata-02.jpg" class="carrossel-img" alt="desenho de um homem escalando um coqueiro">
+                                    <div class="item-descrpition">
+                                        <p>Pequenas Histórias das Terras Invisíveis</p>
+                                        <div class="item-hate">
+        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                            </svg>
+                                            
+                                            85%
+        
+                                        </div>
+                                        <div class="item-card">
+        
+                                            <div class="tipo">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                            </svg>
+                                            </div>
+                                            <button class="add-to-collection">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                </svg>
+                                            </button>
+                                            <button class="start">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                                </svg>
+                                            </button>
+        
+                                        </div>    
+
+                                    </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-title">
+        
+                                    <h1>TÍTULO</h1>
+        
+                                </div>
+                                <div class="info-description">
+                                    <P>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam voluptatibus, ipsa odit facere facilis nostrum explicabo earum! Deleniti, nihil quam! Quia, architecto nam. Dolore veritatis provident beatae quo aperiam?
+                                    </P>
+        
+                                </div>
+                                <div class="info-data">
+                                    <P>Autor: <a href="">@Felps</a>;</P>
+                                    <p>Tipo: Livro</p>
+                                    <p>Lançamento: 2024;</p>
+                                    <p>Categoria: fantasia / Mistério / Aventura.</p>
+                                    <p>Leitura: 80 min / 40 páginas;</p>
+        
+                                </div>
+                                <div class="info-buttons">
+                                    <button class="recomend">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="avaliar">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="ler">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                          </svg>
+        
+                                    </button>
+        
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                        <div class="carrossel-item" id="card04">
+                            <div class="img-box">
+                                <img src="/images/Catalog-Page/Lançamentos/Boitata-02.jpg" class="carrossel-img" alt="desenho de um homem escalando um coqueiro">
+                                    <div class="item-descrpition">
+                                        <p>Pequenas Histórias das Terras Invisíveis</p>
+                                        <div class="item-hate">
+        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                            </svg>
+                                            
+                                            85%
+        
+                                        </div>
+                                        <div class="item-card">
+        
+                                            <div class="tipo">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                            </svg>
+                                            </div>
+                                            <button class="add-to-collection">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                </svg>
+                                            </button>
+                                            <button class="start">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                                </svg>
+                                            </button>
+        
+                                        </div>    
+
+                                    </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-title">
+        
+                                    <h1>TÍTULO</h1>
+        
+                                </div>
+                                <div class="info-description">
+                                    <P>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam voluptatibus, ipsa odit facere facilis nostrum explicabo earum! Deleniti, nihil quam! Quia, architecto nam. Dolore veritatis provident beatae quo aperiam?
+                                    </P>
+        
+                                </div>
+                                <div class="info-data">
+                                    <P>Autor: <a href="">@Felps</a>;</P>
+                                    <p>Tipo: Livro</p>
+                                    <p>Lançamento: 2024;</p>
+                                    <p>Categoria: fantasia / Mistério / Aventura.</p>
+                                    <p>Leitura: 80 min / 40 páginas;</p>
+        
+                                </div>
+                                <div class="info-buttons">
+                                    <button class="recomend">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="avaliar">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="ler">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                          </svg>
+        
+                                    </button>
+        
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                        <div class="carrossel-item" id="card05">
+                            <div class="img-box">
+                                <img src="/images/Catalog-Page/Lançamentos/Boitata-02.jpg" class="carrossel-img" alt="desenho de um homem escalando um coqueiro">
+                                    <div class="item-descrpition">
+                                        <p>Pequenas Histórias das Terras Invisíveis</p>
+                                        <div class="item-hate">
+        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                            </svg>
+                                            
+                                            85%
+        
+                                        </div>
+                                        <div class="item-card">
+        
+                                            <div class="tipo">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                            </svg>
+                                            </div>
+                                            <button class="add-to-collection">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                </svg>
+                                            </button>
+                                            <button class="start">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                                </svg>
+                                            </button>
+        
+                                        </div>    
+
+                                    </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-title">
+        
+                                    <h1>TÍTULO</h1>
+        
+                                </div>
+                                <div class="info-description">
+                                    <P>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam voluptatibus, ipsa odit facere facilis nostrum explicabo earum! Deleniti, nihil quam! Quia, architecto nam. Dolore veritatis provident beatae quo aperiam?
+                                    </P>
+        
+                                </div>
+                                <div class="info-data">
+                                    <P>Autor: <a href="">@Felps</a>;</P>
+                                    <p>Tipo: Livro</p>
+                                    <p>Lançamento: 2024;</p>
+                                    <p>Categoria: fantasia / Mistério / Aventura.</p>
+                                    <p>Leitura: 80 min / 40 páginas;</p>
+        
+                                </div>
+                                <div class="info-buttons">
+                                    <button class="recomend">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="avaliar">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                          </svg>
+        
+                                    </button>
+                                    <button class="ler">
+        
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                          </svg>
+        
+                                    </button>
+        
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="slide right">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+                        <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+
+                </button> 
+        </div>
+
+
+        <!-- PÁGINA DE COLEÇÕES----------------------------------------------------------------------->
+        <div class="collection-box" id="collection">
+
+            <h1>COLEÇÃO</h1>
+            
+            <div class="overflow-collection">
+                <!--NAVEGADOR DE COLEÇÕES------------------>
+                <nav class="collection-nav">
+                    <ul class="collection-ul">
+                        <li class="collection-li"><a href="#books">Livros</a></li>
+                        <li class="collection-li"><a href="#hqs">HQ's</a></li>
+                        <li class="collection-li"><a href="#vds">Vídeos</a></li>
+                    </ul>
+                    
+                </nav>
+
+                <!--COLEÇÃO DE LIVROS-->
+                <div class="book-box" id="books">
+                    <!-- FILTROS -->
+                    <nav class="nav-filter">
+                        <button class="filter-btn book-filter-btn"> Filtrar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            
+                        </button>
+                        <button class="ordenate-btn book-ordenate-btn"> Ordenar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+                                <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+                              </svg>
+                            
+                        </button>
+                    </nav>
+                    <!-- CATÁLOGO -->
+                    <div class="book-list">
+
+
+                        <h1>ESTA COLEÇÃO ESTÁ VAZIA! =/</h1>
+
+                    </div>
+
+                </div>
+
+                <!--COLEÇÃO DE HQS-->
+                <div class="hq-box" id="hqs">
+                    <!-- FILTRO -->
+                    <nav class="nav-filter">
+                        <button class="filter-btn hq-filter-btn"> Filtrar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            
+                        </button>
+                        <button class="ordenate-btn hq-ordenate-btn"> Ordenar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+                                <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+                              </svg>
+                            
+                        </button>
+                    </nav>
+
+                    <!-- CATÁLOGO -->
+                    <div class="hq-list">
+                        
+                        
+                        <h1>ESTA COLEÇÃO ESTÁ VAZIA! =/</h1>
+
+                    </div>
+
+                </div>
+
+                <!--COLEÇÃO DE VÍDEOS-->
+                <div class="vds-box" id="vds">
+                    <!-- FILTRO -->
+                    <nav class="nav-filter">
+                        <button class="filter-btn vds-filter-btn"> Filtrar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            
+                        </button>
+                        <button class="ordenate-btn vds-ordenate-btn"> Ordenar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+                                <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+                              </svg>
+                            
+                        </button>
+                    </nav>
+                    <!-- CATÁLOGO -->
+                    <div class="vds-list">
+                        
+                        <h1>ESTA COLEÇÃO ESTÁ VAZIA! =/</h1>
+
+                    </div>
+
+                </div>
+  
+            </div>
+
+        </div>
+
+
+        <!-- PÁGINA DE LIVROS------------------------------------------------------------------------->
+        <div class="bookpage-box" id="bookpage">
+
+            <h1>LIVROS</h1>
+            <!-- OVERFLOW PÁGINA DE LIVROS -->
+            <div class="overflow-bookpage">
+                <!-- FILTRO DE LIVROS -->
+                <nav class="bookpage-nav-filter">
+
+                    <button class="bookpage-gender-btn" id="all">
+
+                        Todos
+
+                    </button>
+                    <button class="bookpage-gender-btn" id="ficction">
+
+                        Fantasia/Ficção
+
+                    </button>
+                    <button class="bookpage-gender-btn" id="comedy">
+
+                        Comédia
+
+                    </button>
+                    <button class="bookpage-gender-btn" id="drama">
+
+                        Drama/Mistério
+
+                    </button>
+                    <button class="bookpage-gender-btn" id="adventure">
+
+                        Aventura
+
+                    </button>
+                    <button class="bookpage-gender-btn" id="auto-help">
+
+                        Auto Ajuda
+
+                    </button>
+                    <button class="bookpage-gender-btn" id="others">
+
+                        Outros
+
+                    </button>
+
+                    <button class="bookpage-filter-btn"> Filtrar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            
+                    </button>
+
+                    <button class="bookpage-ordenate-btn"> Ordenar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+                                <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+                              </svg>
+                            
+                    </button>
+
+                </nav>
+
+                <!-- CATÁLOGO DE LIVROS -->
+                <div class="bookpage-list">
+
+                    <!--<h1>AINDA NÃO HÁ LIVROS =/</h1>-->
+                    <h3>Seção: Contos inacabados das Terras Invisíveis</h2>
+
+
+
+                    <!-- CARDBOOK 01 -----------------------OS PORTÕES DA AREIA-->
+                    <div class="card" id="cardbook-01">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Os Portões da Areia
+                                    <div class="card-hate" id="bookhate01">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn" onclick="abrirLeitura01()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 02 ------------------------- VAGALUMES -------->
+                    <div class="card" id="cardbook-02">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Vagalumes
+                                    <div class="card-hate" id="bookhate02">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn" onclick="abrirLeitura02()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 03 ---------------------------- BABU ---------->
+                    <div class="card" id="cardbook-03">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Babu
+                                    <div class="card-hate" id="bookhate03">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 04 ----------------------- ANIMAIS ANCESTRAIS-->
+                    <div class="card" id="cardbook-04">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Animais ancestrais
+                                    <div class="card-hate" id="bookhate04">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 05 --------------------------- BAMBOO ---------->
+                    <div class="card" id="cardbook-05">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Bamboo
+                                    <div class="card-hate" id="bookhate05">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn" onclick="abrirLeitura05()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 06 ----------------- COURO E ESCAMAS ----------->
+                    <div class="card" id="cardbook-06">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Couro e Escamas
+                                    <div class="card-hate" id="bookhate06">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn" onclick="abrirLeitura06()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 07 -------------------------- COGAUA -------------->
+                    <div class="card" id="cardbook-07">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Cogaua
+                                    <div class="card-hate" id="bookhate07">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 08 ------------------------------- DAMATO---------->
+                    <div class="card" id="cardbook-08">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Damato
+                                    <div class="card-hate" id="bookhate08">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 09 ------------------------------- XIPAIA---------->
+                    <div class="card" id="cardbook-09">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Xipaia
+                                    <div class="card-hate" id="bookhate09">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 10 -------------------------- ANTES DE TUDO -------->
+                    <div class="card" id="cardbook-10">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Antes de tudo
+                                    <div class="card-hate" id="bookhate10">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 11 ---------------------- JOGOS MILENARES ---------->
+                    <div class="card" id="cardbook-11">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Jogos milenares
+                                    <div class="card-hate" id="bookhate11">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 12 -------------- A ÚLTIMA DE SUA GERAÇÃO ---------->
+                    <div class="card" id="cardbook-12">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>A última da geração
+                                    <div class="card-hate" id="bookhate12">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn" onclick="abrirLeitura12()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 13 ------------------------------- ANAHÍ ----------->
+                    <div class="card" id="cardbook-13">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Anahi
+                                    <div class="card-hate" id="bookhate13">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- CARDBOOK 14 ---------------------- MORRO DO DIABO ----------->
+                    <div class="card" id="cardbook-14">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Morro do Diabo
+                                    <div class="card-hate" id="bookhate14">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem!</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Aventura</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn" onclick="abrirLeitura14()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                        </div>
+
+                        </div>
+
+                        
+                    </div>
+
+
+
+                    
+
+
+
+                    
+
+                </div>
+
+                
+
+            </div>
+
+
+        </div>
+
+
+        <!-- PÁGINA DE HQS---------------------------------------------------------------------------->
+        <div class="hqpage-box" id="hqpage">
+
+            <h1>HQ's</h1>
+            <!-- OVERFLOW PÁGINA HQS -->
+            <div class="overflow-hqpage">
+
+                <!-- FILTRO DAS HQS -->
+                <nav class="hqpage-nav-filter">
+
+                    <button class="hqpage-gender-btn" id="allhq">
+
+                        Todos
+
+                    </button>
+                    <button class="hqpage-gender-btn" id="hqficction">
+
+                        Fantasia/Ficção
+
+                    </button>
+                    <button class="hqpage-gender-btn" id="hqcomedy">
+
+                        Comédia
+
+                    </button>
+                    <button class="hqpage-gender-btn" id="hqdrama">
+
+                        Drama/Mistério
+
+                    </button>
+                    <button class="hqpage-gender-btn" id="hqadventure">
+
+                        Aventura
+
+                    </button>
+                    <button class="hqpage-gender-btn" id="hqothers">
+
+                        Outros
+
+                    </button>
+
+                    <button class="hqpage-filter-btn"> Filtrar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            
+                    </button>
+
+                    <button class="hqpage-ordenate-btn"> Ordenar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+                                <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+                              </svg>
+                            
+                    </button>
+
+                </nav>
+
+                <!-- CATÁLOGO -->
+                <div class="hqpage-list">
+
+                    <!-- <h1>AINDA NÃO HÁ HQ's =/</h1> -->
+                    <!-- BLUE LIGHTS-->
+                    <div class="card" id="cardhq-01">
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>Blue Lights
+                                    <div class="card-hate" id="bookhate01">
+            
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        </svg>
+                                    
+                                        85%
+    
+                                    </div>
+                                </h2>
+                                <p>Em um mundo pós apocalíptico, Dante precisa vencer um jogo para ser salvo por seres de outro mundo.</p>
+                                <p>Autor: @Cj</p>
+                                <p>Gênero: Ficção Científica</p>
+                                <p>Nº pg: 80</p>
+                                <p>Tempo de leitura: 45 min.</p>
+
+                            </div>
+
+
+                            <div class="cardbtns">
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="card-read-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                        <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                                        
+
+
+
+                </div>
+
+                
+
+            </div>
+
+
+        </div>
+
+
+        <!-- PÁGINA DE VÍDEOS------------------------------------------------------------------------->
+        <div class="vdpage-box" id="vdpage">
+
+            <h1>Vídeos</h1>
+            
+            <!-- OVERFLOW PÁGINA DE VÍDEOS -->
+            <div class="overflow-vdpage">
+
+                <!-- FILTRO DE VÍDEOS -->
+                <nav class="vdpage-nav-filter">
+
+                    <button class="vdpage-gender-btn" id="allvd">
+
+                        Todos
+
+                    </button>
+                    <button class="vdpage-gender-btn" id="vdmovies">
+
+                        Curtas
+
+                    </button>
+                    <button class="vdpage-gender-btn" id="vddocumentary">
+
+                        Documentários
+
+                    </button>
+                    <button class="vdpage-gender-btn" id="vdinterview">
+
+                        Entrevistas
+
+                    </button>
+                    <button class="vdpage-gender-btn" id="vdothers">
+
+                        Outros
+
+                    </button>
+
+                    <button class="vdpage-filter-btn"> Filtrar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            
+                    </button>
+
+                    <button class="vdpage-ordenate-btn"> Ordenar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+                                <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+                            </svg>
+                            
+                    </button>
+
+                </nav>
+
+                <!-- CATÁLOGO DE VÍDEOS -->
+                <div class="vdpage-list">
+
+
+                    <!-- <h1>AINDA NÃO HÁ VÍDEOS =/</h1> -->
+                    <!-- FELICIDADE -->
+                    <div class="card-vd" id="cardvd-01">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/e9dZQelULDk?si=8J_evF2MmnZrlIk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="vd-desc">
+                            <h2>"Felicidade"</h2>
+
+                            <p>RESENHA SOBRE O VÍDEO<br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim est molestias odit nihil sint. Ullam sed aut labore ab, accusantium tempora ex neque aliquid earum quas et debitis, similique expedita! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam corrupti quidem velit officiis amet dignissimos, quod voluptatem odit, accusamus veritatis temporibus sit dolorem totam excepturi cumque aperiam reiciendis ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus quibusdam, saepe sapiente doloremque tenetur ipsam accusamus esse magnam obcaecati ullam perspiciatis. Accusantium eos laudantium magni alias quos pariatur perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet vitae consectetur illo adipisci! Earum non autem velit necessitatibus, nisi ullam et vel itaque ex sapiente, illo inventore labore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id aliquid vero. Doloribus similique cum odio omnis quas quo quibusdam, est repudiandae aspernatur. Deleniti, deserunt! Repudiandae autem quas provident reiciendis.
+                            </p>
+
+                            <div class="card-vd-btns">
+
+                                <h3>Gênero: Curta / Animação</h3>
+
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- THE ANIMATRIX  -->
+                    <div class="card-vd" id="cardvd-02">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WSeTNPS_YEc?si=8-hr0jwYCyoq1hTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="vd-desc">
+                            <h2>"The Animatrix"</h2>
+
+                            <p>RESENHA SOBRE O FILME<br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim est molestias odit nihil sint. Ullam sed aut labore ab, accusantium tempora ex neque aliquid earum quas et debitis, similique expedita! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam corrupti quidem velit officiis amet dignissimos, quod voluptatem odit, accusamus veritatis temporibus sit dolorem totam excepturi cumque aperiam reiciendis ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus quibusdam, saepe sapiente doloremque tenetur ipsam accusamus esse magnam obcaecati ullam perspiciatis. Accusantium eos laudantium magni alias quos pariatur perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet vitae consectetur illo adipisci! Earum non autem velit necessitatibus, nisi ullam et vel itaque ex sapiente, illo inventore labore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id aliquid vero. Doloribus similique cum odio omnis quas quo quibusdam, est repudiandae aspernatur. Deleniti, deserunt! Repudiandae autem quas provident reiciendis.
+                            </p>
+
+                            <div class="card-vd-btns">
+
+                                <h3>Gênero: Curta / Animação / Ficção</h3>
+
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- O OUTRO LADO DA CAIXA -->
+                    <div class="card-vd" id="cardvd-03">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/urTWGTqhKoo?si=Q5pLPUSu0f1aBpyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="vd-desc">
+                            <h2>"O outro lado da caixa"</h2>
+
+                            <p>RESENHA SOBRE O Curta<br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim est molestias odit nihil sint. Ullam sed aut labore ab, accusantium tempora ex neque aliquid earum quas et debitis, similique expedita! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam corrupti quidem velit officiis amet dignissimos, quod voluptatem odit, accusamus veritatis temporibus sit dolorem totam excepturi cumque aperiam reiciendis ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus quibusdam, saepe sapiente doloremque tenetur ipsam accusamus esse magnam obcaecati ullam perspiciatis. Accusantium eos laudantium magni alias quos pariatur perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet vitae consectetur illo adipisci! Earum non autem velit necessitatibus, nisi ullam et vel itaque ex sapiente, illo inventore labore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id aliquid vero. Doloribus similique cum odio omnis quas quo quibusdam, est repudiandae aspernatur. Deleniti, deserunt! Repudiandae autem quas provident reiciendis.
+                            </p>
+
+                            <div class="card-vd-btns">
+
+                                <h3>Gênero: Curta / Suspense / Terror</h3>
+
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- O EMPREGO -->
+                    <div class="card-vd" id="cardvd-04">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VKkRzm-S7Mo?si=8KkxnDvsJHHc-oft" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="vd-desc">
+                            <h2>"O emprego"</h2>
+
+                            <p>RESENHA SOBRE O VÍDEO<br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim est molestias odit nihil sint. Ullam sed aut labore ab, accusantium tempora ex neque aliquid earum quas et debitis, similique expedita! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam corrupti quidem velit officiis amet dignissimos, quod voluptatem odit, accusamus veritatis temporibus sit dolorem totam excepturi cumque aperiam reiciendis ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus quibusdam, saepe sapiente doloremque tenetur ipsam accusamus esse magnam obcaecati ullam perspiciatis. Accusantium eos laudantium magni alias quos pariatur perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet vitae consectetur illo adipisci! Earum non autem velit necessitatibus, nisi ullam et vel itaque ex sapiente, illo inventore labore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id aliquid vero. Doloribus similique cum odio omnis quas quo quibusdam, est repudiandae aspernatur. Deleniti, deserunt! Repudiandae autem quas provident reiciendis.
+                            </p>
+
+                            <div class="card-vd-btns">
+
+                                <h3>Gênero: Curta / Animação / Drama</h3>
+
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- PARADOXO -->
+                    <div class="card-vd" id="cardvd-05">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZXFaaQJb0c?si=TsdFgs2X2iKvYyBG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="vd-desc">
+                            <h2>"Paradoxo"</h2>
+
+                            <p>RESENHA SOBRE O VÍDEO<br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim est molestias odit nihil sint. Ullam sed aut labore ab, accusantium tempora ex neque aliquid earum quas et debitis, similique expedita! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam corrupti quidem velit officiis amet dignissimos, quod voluptatem odit, accusamus veritatis temporibus sit dolorem totam excepturi cumque aperiam reiciendis ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus quibusdam, saepe sapiente doloremque tenetur ipsam accusamus esse magnam obcaecati ullam perspiciatis. Accusantium eos laudantium magni alias quos pariatur perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet vitae consectetur illo adipisci! Earum non autem velit necessitatibus, nisi ullam et vel itaque ex sapiente, illo inventore labore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id aliquid vero. Doloribus similique cum odio omnis quas quo quibusdam, est repudiandae aspernatur. Deleniti, deserunt! Repudiandae autem quas provident reiciendis.
+                            </p>
+
+                            <div class="card-vd-btns">
+
+                                <h3>Gênero: Curta / Ficção / Suspense</h3>
+
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- A CRIATURA DO POLAROID -->
+                    <div class="card-vd" id="cardvd-06">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wl_s7uzsQRs?si=zu6ejsO9higuyx2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="vd-desc">
+                            <h2>"A Criatura do Polaroid"</h2>
+
+                            <p>RESENHA SOBRE O VÍDEO<br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim est molestias odit nihil sint. Ullam sed aut labore ab, accusantium tempora ex neque aliquid earum quas et debitis, similique expedita! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam corrupti quidem velit officiis amet dignissimos, quod voluptatem odit, accusamus veritatis temporibus sit dolorem totam excepturi cumque aperiam reiciendis ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus quibusdam, saepe sapiente doloremque tenetur ipsam accusamus esse magnam obcaecati ullam perspiciatis. Accusantium eos laudantium magni alias quos pariatur perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet vitae consectetur illo adipisci! Earum non autem velit necessitatibus, nisi ullam et vel itaque ex sapiente, illo inventore labore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id aliquid vero. Doloribus similique cum odio omnis quas quo quibusdam, est repudiandae aspernatur. Deleniti, deserunt! Repudiandae autem quas provident reiciendis.
+                            </p>
+
+                            <div class="card-vd-btns">
+
+                                <h3>Gênero: Curta / Terror</h3>
+
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- CONTRA FILÉ -->
+                    <div class="card-vd" id="cardvd-07">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vduA_6iA7wQ?si=8zcN3tPDeFS2qu6a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="vd-desc">
+                            <h2>"Contra-Filé"</h2>
+
+                            <p>RESENHA SOBRE O VÍDEO<br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim est molestias odit nihil sint. Ullam sed aut labore ab, accusantium tempora ex neque aliquid earum quas et debitis, similique expedita! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam corrupti quidem velit officiis amet dignissimos, quod voluptatem odit, accusamus veritatis temporibus sit dolorem totam excepturi cumque aperiam reiciendis ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus quibusdam, saepe sapiente doloremque tenetur ipsam accusamus esse magnam obcaecati ullam perspiciatis. Accusantium eos laudantium magni alias quos pariatur perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet vitae consectetur illo adipisci! Earum non autem velit necessitatibus, nisi ullam et vel itaque ex sapiente, illo inventore labore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id aliquid vero. Doloribus similique cum odio omnis quas quo quibusdam, est repudiandae aspernatur. Deleniti, deserunt! Repudiandae autem quas provident reiciendis.
+                            </p>
+
+                            <div class="card-vd-btns">
+
+                                <h3>Gênero: Curta / Animação</h3>
+
+                                <button class="card-add-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                
+
+            </div>
+
+
+        </div>
+
+
+        <!-- PÁGINA DE GALERIA------------------------------------------------------------------------>
+        <div class="glpage-box" id="glpage">
+
+            <h1>Galeria</h1>
+            
+            <!-- OVERFLOW DA GALERIA -->
+            <div class="overflow-glpage">
+
+                <!-- FILTROS DA GALERIA -->
+                <nav class="glpage-nav-filter">
+
+                    <button class="glpage-filter-btn"> Filtrar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                              </svg>
+                            
+                    </button>
+
+                    <button class="glpage-ordenate-btn"> Ordenar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+                                <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+                              </svg>
+                            
+                    </button>
+
+                </nav>
+
+                <!-- CATÁLOGO DA GALERIA -->
+                <div class="glpage-list">
+
+
+                    <h1>AINDA NÃO HÁ IMAGENS =/</h1>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!----------------------------------------- INSERÇÃO DE LIVROS ------------------------------------------------------>
+
+
+        <!-- MODAL 01 DE LEITURA --------------OS PORTÕES DA AREIA ---------------------------------------------------->
+        <div class="modal__Leitura invisible" id="osportoesdaareia">
+
+            <!-- NAVEGADOR SUPERIOR -->
+            <nav class="nav_Leitura">
+                <div class="progress-box">
+                    <div class="progress-bar">
+
+                    </div>
+                </div>
+                <!-- BOTÃO DE FECHAR PÁGINA DE LEITURA -->
+                <button class="close_leitura" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeread01">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="history_box">
+                
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vQbyg_GHBGbfeyV6cth2POlG7KQOnmppXbmP96KGnICTYP202prDuODsu_KHtFjqA/pub?embedded=true" 
+                class="history_text"
+                id = "iframe_01"
+                sandbox="allow-scripts"
+                
+                >
+                </iframe>
+                
+
+            </div>
+
+            <!-- CAIXA DE ITENS DO TEXTO (MENU LATERAL)-->
+            <div class="text_itens">
+
+                <button class="menu_text_itens">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+
+                <div class="enciclopedia_box">
+                    <input type="search" name="eciclopedia_search_box" id="eciclopedia_search" placeholder="Buscar Itens da história">
+                    <div class="enciclopedia_item">
+
+                    </div>
+                    <div class="iciclopedia_item">
+
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="music_box">
+                    <h2>Playlist</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3KflW97ebhkgXpz86aPntV?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                </div>
+
+                
+            </div>
+
+
+        </div>
+
+
+
+        <!-- MODAL 02 DE LEITURA ------------------------VAGALUMES ---------------------------------------------------->
+        <div class="modal__Leitura invisible" id="vagalumes">
+
+            <!-- NAVEGADOR SUPERIOR -->
+            <nav class="nav_Leitura">
+                <!-- BOTÃO DE FECHAR PÁGINA DE LEITURA -->
+                <button class="close_leitura" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeread02">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="history_box">
+                
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vTAtpyMAOs7p42v1PHfnb9F_z0Sbwns1AF0hRrZsb4tZCY8ilOUh9ZL2i0g7FsVsQ/pub?embedded=true"></iframe>
+                
+
+            </div>
+
+            <!-- CAIXA DE ITENS DO TEXTO (MENU LATERAL) -->
+            <div class="text_itens">
+
+                <button class="menu_text_itens">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+
+                <div class="enciclopedia_box">
+                    <input type="search" name="eciclopedia_search_box" id="eciclopedia_search" placeholder="Buscar Itens da história">
+                    <div class="enciclopedia_item">
+
+                    </div>
+                    <div class="iciclopedia_item">
+
+                    </div>
+
+
+                </div>
+
+                <div class="music_box">
+                    <h2>Playlist</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3H7cKwHTuOpCcBMs9u3srB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- MODAL 05 DE LEITURA ---------------------------BAMBOO ---------------------------------------------------->
+        <div class="modal__Leitura invisible" id="bamboo">
+
+            <!-- NAVEGADOR SUPERIOR -->
+            <nav class="nav_Leitura">
+                <!-- BOTÃO DE FECHAR PÁGINA DE LEITURA -->
+                <button class="close_leitura" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeread05">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="history_box">
+                
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vTIml6JChC2Qg128HtpTxvY6DX33Zx1GL9DqIHTDhb0S6mXFw7WI5w8ISeFoJtFJw/pub?embedded=true"></iframe>
+                
+
+            </div>
+
+            <!-- CAIXA DE ITENS DO TEXTO (MENU LATERAL) -->
+            <div class="text_itens">
+
+                <button class="menu_text_itens">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+
+                <div class="enciclopedia_box">
+                    <input type="search" name="eciclopedia_search_box" id="eciclopedia_search" placeholder="Buscar Itens da história">
+                    <div class="enciclopedia_item">
+
+                    </div>
+                    <div class="iciclopedia_item">
+
+                    </div>
+
+
+                </div>
+
+                <div class="music_box">
+                    <h2>Playlist</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3H7cKwHTuOpCcBMs9u3srB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- MODAL 06 DE LEITURA ------------------ COURO E ESCAMAS---------------------------------------------------->
+        <div class="modal__Leitura invisible" id="couroeescamas">
+
+            <!-- NAVEGADOR SUPERIOR -->
+            <nav class="nav_Leitura">
+                <!-- BOTÃO DE FECHAR PÁGINA DE LEITURA -->
+                <button class="close_leitura">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeread06">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="history_box">
+                
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vT4SPu7HudSQOwSdsUcyAEGyz77Y_0ZP18PuwqS-yn4szX9cgKeSXM0iG8kqLKlFKYo4G_wtF-L53RA/pub?embedded=true"></iframe>
+                
+
+            </div>
+
+            <!-- CAIXA DE ITENS DO TEXTO (MENU LATERAL) -->
+            <div class="text_itens">
+
+                <button class="menu_text_itens">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+
+                <div class="enciclopedia_box">
+                    <input type="search" name="eciclopedia_search_box" id="eciclopedia_search" placeholder="Buscar Itens da história">
+                    <div class="enciclopedia_item">
+
+                    </div>
+                    <div class="iciclopedia_item">
+
+                    </div>
+
+
+                </div>
+
+                <div class="music_box">
+                    <h2>Playlist</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3H7cKwHTuOpCcBMs9u3srB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- MODAL 12 DE LEITURA -------------------------- A ÚLTIMA DE SUA GERAÇÃO ----------------------------------->
+        <div class="modal__Leitura invisible" id="aultimadageracao">
+
+            <!-- NAVEGADOR SUPERIOR -->
+            <nav class="nav_Leitura">
+                <!-- BOTÃO DE FECHAR PÁGINA DE LEITURA -->
+                <button class="close_leitura" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeread12">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="history_box">
+                
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vSxkEZg0SIVhXrAHNygIAkbQ6wlVnPj4YHbn9WwvFdeFLh4d4wExlvYq8ZrIKrJkQ/pub?embedded=true"></iframe>
+                
+
+            </div>
+
+            <!-- CAIXA DE ITENS DO TEXTO (MENU LATERAL) -->
+            <div class="text_itens">
+
+                <button class="menu_text_itens">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+
+                <div class="enciclopedia_box">
+                    <input type="search" name="eciclopedia_search_box" id="eciclopedia_search" placeholder="Buscar Itens da história">
+                    <div class="enciclopedia_item">
+
+                    </div>
+                    <div class="iciclopedia_item">
+
+                    </div>
+
+
+                </div>
+
+                <div class="music_box">
+                    <h2>Playlist</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3H7cKwHTuOpCcBMs9u3srB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- MODAL 14 DE LEITURA -------------------------- MORRO DO DIABO ----------------------------------->
+        <div class="modal__Leitura invisible" id="morrododiabo">
+
+            <!-- NAVEGADOR SUPERIOR -->
+            <nav class="nav_Leitura">
+                <!-- BOTÃO DE FECHAR PÁGINA DE LEITURA -->
+                <button class="close_leitura" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeread14">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="history_box">
+                
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vT_XUc39SeJmw8yxl_mHxaeRwu0roPcX3PtPZse0WqC_YZor_0OB3tfg7VLE43ei1m2V6Spl_ZjtHkk/pub?embedded=true"></iframe>
+                
+
+            </div>
+
+            <!-- CAIXA DE ITENS DO TEXTO (MENU LATERAL) -->
+            <div class="text_itens">
+
+                <button class="menu_text_itens">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+
+                <div class="enciclopedia_box">
+                    <input type="search" name="eciclopedia_search_box" id="eciclopedia_search" placeholder="Buscar Itens da história">
+                    <div class="enciclopedia_item">
+
+                    </div>
+                    <div class="iciclopedia_item">
+
+                    </div>
+
+
+                </div>
+
+                <div class="music_box">
+                    <h2>Playlist</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3H7cKwHTuOpCcBMs9u3srB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <!----------------------------------------- INSERÇÃO DE HQ'S ------------------------------------------------------>
+
+
+        
+
+    </section>
+
+
+
+
+
+
+
+
+    <!--SCRIPT DO SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--SCRIPT DA PÁGINA INICIAL DE LANÇAMENTOS-->
+    <script src="/Script/Catalog-Page/read.js" defer></script>
+
+    <!--SCRIPT DE BUSCAS DO MENU DE NAVEGAÇÃO SUPERIOR-->
+    <script src="/Script/Catalog-Page/readsearch.js" defer></script>
+
+    <!-- LODASH - DEBOUNDE E TROTLE PARA DELAY EM ALGUMAS FUNÇÕES DE BUSCA -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    
+</body>
+</html>

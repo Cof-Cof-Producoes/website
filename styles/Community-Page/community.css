@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(37, 37, 37);
+    background-color: black;
+    gap: 4rem;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+img{
+    width: 20%;
+    filter: invert(0.1);
+}
