@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
-    background-image: url('/images/Store-page/assinar-premium/SIGNBACKGROUNDIMG.jpg');
+    background-image: url('images/Store-page/assinar-premium/SIGNBACKGROUNDIMG.jpg');
     background-size: cover;
 
 }

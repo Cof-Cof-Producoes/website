@@ -250,7 +250,7 @@ nav.usermenu.expandir-user-menu{
     height: 5rem;
     border-radius: 50%;
     background-color: rgb(65, 65, 65);
-    background-image: url(/images/Catalog-Page/Menu-do-usuário/Avatar01.png);
+    background-image: url(images/Catalog-Page/Menu-do-usuário/Avatar01.png);
     background-size: 120%;
     cursor: pointer;
     border: 1px solid white;
@@ -302,7 +302,7 @@ nav.usermenu.expandir-user-menu{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-image: url(/images/Catalog-Page/Menu-do-usuário/Limitada-status.png);
+    background-image: url(images/Catalog-Page/Menu-do-usuário/Limitada-status.png);
     background-size: 99%;
     cursor: pointer;
     border: 1px solid rgb(97, 97, 97);
@@ -315,7 +315,7 @@ nav.usermenu.expandir-user-menu{
     width: 4.5rem;
     height: 5rem;
     border-radius: 50%;
-    background-image: url(/images/Catalog-Page/Menu-do-usuário/Premium-status.png);
+    background-image: url(images/Catalog-Page/Menu-do-usuário/Premium-status.png);
     background-size: 100%;
     cursor: pointer;
     border: none;
@@ -386,7 +386,7 @@ margin-top: -0.8rem;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-image: url(/images/Catalog-Page/Menu-do-usuário/statistic\ -\ 00.webp);
+    background-image: url(images/Catalog-Page/Menu-do-usuário/statistic\ -\ 00.webp);
     background-size: 140%;
     cursor: pointer;
 }
@@ -395,7 +395,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/statistic\ -\ 00.webp);
+    background-image: url();
     background-size: 99%;
     cursor: pointer;
 }
@@ -404,7 +404,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/statistic\ -\ 00.webp);
+    background-image: url();
     background-size: 99%;
     cursor: pointer;
 }
@@ -422,7 +422,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/Catalog-Page/Menu-do-usuário/statistic\ -\ 40.jpg);
+    background-image: url(images/Catalog-Page/Menu-do-usuário/statistic\ -\ 40.jpg);
     background-size: 150%;
     cursor: pointer;
 }
@@ -431,7 +431,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/Catalog-Page/Menu-do-usuário/statistic\ -\ 50.jpg);
+    background-image: url(images/Catalog-Page/Menu-do-usuário/statistic\ -\ 50.jpg);
     background-size: 99%;
     cursor: pointer;
     border: 8px solid rgb(0, 255, 0) ;
@@ -441,7 +441,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/statistic\ -\ 00.webp);
+    background-image: url();
     background-size: 99%;
     cursor: pointer;
 }
@@ -450,7 +450,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/statistic\ -\ 00.webp);
+    background-image: url();
     background-size: 99%;
     cursor: pointer;
 }
@@ -459,7 +459,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/statistic\ -\ 00.webp);
+    background-image: url();
     background-size: 99%;
     cursor: pointer;
 }
@@ -468,7 +468,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/statistic\ -\ 00.webp);
+    background-image: url();
     background-size: 99%;
     cursor: pointer;
 }
@@ -477,7 +477,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(/images/statistic\ -\ 00.webp);
+    background-image: url();
     background-size: 99%;
     cursor: pointer;
 }
@@ -2005,66 +2005,66 @@ padding: 1rem;
 /* -------------------------------------------------------------------LIVROS */
 
 #cardbook-01{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Os\ Portões\ da\ Areia.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Os\ Portões\ da\ Areia.jpg);
     background-size: 107%;
 }
 
 #cardbook-02{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Vagalumes.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Vagalumes.jpg);
 }
 
 #cardbook-03{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Babu.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Babu.jpg);
 }
 
 #cardbook-04{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Ancestrais.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Ancestrais.jpg);
 }
 
 #cardbook-05{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Bamboo.jpeg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Bamboo.jpeg);
 }
 
 #cardbook-06{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Couro\ e\ Escamas.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Couro\ e\ Escamas.jpg);
 }
 
 #cardbook-07{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Saci.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Saci.jpg);
 }
 
 #cardbook-08{
-    background-image: url(/images/Catalog-Page/Livros/cardbook.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook.jpg);
     background-size: 120%;
 }
 
 #cardbook-09{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Xipaia.jpeg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Xipaia.jpeg);
     background-size: 140%;
 }
 
 #cardbook-10{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Antes\ de\ Tudo.png);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Antes\ de\ Tudo.png);
     background-size: 107%;
 }
 
 #cardbook-11{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Gods\ games.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Gods\ games.jpg);
     background-size: 135%;
 }
 
 #cardbook-12{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-A-última-da-geração.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-A-última-da-geração.jpg);
     background-size: 130%;
 }
 
 #cardbook-13{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Anahi.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Anahi.jpg);
     background-size: 122%;
 }
 
 #cardbook-14{
-    background-image: url(/images/Catalog-Page/Livros/cardbook-Morro-do-Diabo.jpg);
+    background-image: url(images/Catalog-Page/Livros/cardbook-Morro-do-Diabo.jpg);
     background-size: 105%;
 }
 
@@ -2074,6 +2074,6 @@ padding: 1rem;
 /* ------------------------------------------------------------------- HQS */
 
 #cardhq-01{
-    background-image: url(/images/Catalog-Page/HQs/cardhq-Blue\ lights.jpg);
+    background-image: url(images/Catalog-Page/HQs/cardhq-Blue\ lights.jpg);
     background-size: 122%;
 }
