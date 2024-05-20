@@ -216,12 +216,13 @@ html{
     /*border: 2px solid orange;*/
     min-width: 15%;
     transition: all 0.5s;
+    border: none;
     
 }
 
 .login-btn a{
     text-decoration: none;
-    font-weight: 600;
+    color: white;
     transition: all 0.5s;
 
 }
@@ -235,32 +236,24 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(76, 76, 255);
     cursor: pointer;
-    transition: 0.5s;
+    border: none;
+    transition: 0.2s;
+    
 
     
 }
 
 .login-btn:hover{
-    background-color: rgb(44, 44, 44);
-    scale: 1.02;
-    box-shadow: 0px 0px 5px white;
-    border: 2px solid rgb(138, 67, 0);
-    color: rgb(209, 209, 209);
-    font-weight: 800;
-    text-shadow: 0 2px 2px black;
+  scale: 1.02;
+  font-weight: 600;
+
 
 }
 
 .login-btn:active{
-    scale: 1;
-    background-color: rgb(3, 136, 3);
-    box-shadow: 0px 0px 30px white;
-    border: 2px solid rgb(138, 67, 0);
-    color: rgb(209, 209, 209);
-    font-weight: 800;
-    text-shadow: 0 2px 2px black;
-    transition: 0.1s;
+  scale: 1;
 
 }
 
