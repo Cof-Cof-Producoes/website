@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.container{
+    background-color: black;
+}
+
+.interface{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/images/Store-page/assinar-premium/SIGNBACKGROUNDIMG.jpg');
+    background-size: cover;
+
+}
+
+.nav-bar{
+    position: absolute;
+    margin-top: 2rem;
+    height: 4rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-bar a{
+    height: 4rem;
+
+}
+
+.logo{
+    height: 150%;
+    filter: invert(1);
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    scale: 1.02;
+    opacity: 1;
+
+}
+
+.entrar-btn{
+    height: 2rem;
+    width: 10%;
+    margin-left: 3rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid white;
+    box-shadow: inset 0 2px 2px black;
+  
+  }
+  
+  .entrar-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+  
+  }
+  
+  .entrar-btn:hover{
+    scale: 1.05;
+    background-color: rgb(0, 0, 151);
+    box-shadow: 0 3px 20px rgba(255, 255, 255, 0.377);
+  
+  }
+  
+  .entrar-btn:active{
+    scale: 1;
+    box-shadow: none;
+    transition: 0.1s;
+    font-size: 1.2rem;
+  }
+
+.premium-img{
+    height: 300%;
+    margin-top: 5rem;
+    opacity: 0.7;
+}
+
+.box{
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 3rem;
+    backdrop-filter: blur(3px);
+    margin-top: 13rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.466);
+    padding: 0.5rem;
+}
+
+.footer{
+    height: 14%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur();
+
+}
+
+.box p{
+    display: flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 50%;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 1px solid white;
+
+}
+
+.form-sign{
+    height: 90%;
+    width: 98%;
+    border: 1px solid rgb(94, 94, 94);
+}
