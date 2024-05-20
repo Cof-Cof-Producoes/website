@@ -2005,7 +2005,7 @@ padding: 1rem;
 /* -------------------------------------------------------------------LIVROS */
 
 #cardbook-01{
-    background-image: url(images/Catalog-Page/Livros/cardbook-Os\ Portões\ da\ Areia.jpg);
+    background-image: url(/html/images/Catalog-Page/Livros/cardbook-Os\ Portões\ da\ Areia.jpg);
     background-size: 107%;
 }
 
@@ -2059,7 +2059,7 @@ padding: 1rem;
 }
 
 #cardbook-13{
-    background-image: url(images/Catalog-Page/Livros/cardbook-Anahi.jpg);
+    background-image: url(/images/Catalog-Page/Livros/cardbook-Anahi.jpg);
     background-size: 122%;
 }
 
