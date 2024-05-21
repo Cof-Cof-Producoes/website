@@ -5,7 +5,7 @@
                       
 <p>Nós acreditamos no poder das narrativas para conectar pessoas e despertar emoções. Nossa missão é escrever livros, criar revistas em quadrinhos, desenvolver jogos e muito mais. Queremos que cada pessoa que se junte a nós nessa jornada encontre um espaço para se expressar e sentir-se parte de uma comunidade.</p>
                       
-<p>Na Cof Cof Produções, cada projeto é uma nova aventura. Queremos desafiar os limites da imaginação e convidamos você a embarcar conosco nessa viagem épica. Venha descobrir universos fantásticos e compartilhar suas próprias histórias!</p>
+<p>Cada projeto é uma nova aventura. Queremos desafiar os limites da imaginação e convidamos você a embarcar conosco nessa viagem épica. Venha descobrir universos fantásticos e compartilhar suas próprias histórias!</p>
                       
 <p>Juntos, vamos criar algo incrível. Bem-vindos à Cof Cof Produções!</p>
 
