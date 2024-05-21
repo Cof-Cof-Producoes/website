@@ -649,8 +649,8 @@ html{
 }
 
 #close-modal{
-  background-color: rgba(236, 236, 236, 0);
-  border: 2px solid black;
+  background-color: rgb(236, 236, 236);
+  border: none;
   border-radius: 50%;
   transition: all 0.2s;
   width: 3rem;
@@ -660,22 +660,22 @@ html{
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  right: -25px;
-  top: -25px;
+  right: 10px;
+  top: 10px;
   
 }
 
 #close-modal:hover{
-  scale: 1.5;
+  scale: 1.1;
   font-weight: bold;
-  transform: rotate(360deg);
-  background-color: rgba(3, 202, 3, 0.61);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(99, 99, 99);
   color: white;
-  box-shadow: 0 2px 5px black;
+  transition: 0.2s;
 }
 
 #close-modal:active{
-  scale: 1.1;
+  scale: 1.05;
 }
 
 #fade{
@@ -696,9 +696,10 @@ html{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 430px;
+  width: 80%;
+  height: 80%;
   max-width: 90%;
+  overflow-y: auto;
   background-color: #000000;
   color: rgb(192, 192, 192);
   border: 1px solid rgb(59, 59, 59);
@@ -727,8 +728,8 @@ html{
 
   to{
     opacity: 1;
-    width: 800px;
-    height: 430px;
+    width: 80%;
+    height: 80%;
     max-width: 90%;
     
   }
@@ -756,17 +757,37 @@ html{
 
 }
 
+.chave_pix_box{
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: tomato; */
+  margin: auto;
 
-/*#modal.hide, #fade.hide{ 
-  opacity: 0;
-  pointer-events: none;
 }
 
-#fade, #modal {
-  transition: 0.5s;
-  opacity: 1;
-  pointer-events: all;
-}*/
+.chave_aleatoria{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chave_qrcode{
+  width: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chave_qrcode img{
+  width: 20rem;
+  border-radius: 10px;
+}
 
 
 

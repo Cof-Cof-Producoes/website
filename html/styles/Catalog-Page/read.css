@@ -6,6 +6,9 @@ font-family: "Inter", sans-serif;
 
 }
 
+body{
+    background-color: black;
+}
 
 /*REMOVE BARRA DE ROLAGEM*/
 body::-webkit-scrollbar{
