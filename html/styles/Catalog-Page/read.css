@@ -2074,6 +2074,6 @@ padding: 1rem;
 /* ------------------------------------------------------------------- HQS */
 
 #cardhq-01{
-    background-image: url(/html/images/Catalog-Page/HQs/cardhq-Blue\ lights.jpg);
+    background-image: url('images/Catalog-Page/HQs/cardhq-Blue\ lights.jpg');
     background-size: 122%;
 }
