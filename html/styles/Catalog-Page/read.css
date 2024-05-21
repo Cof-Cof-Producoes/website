@@ -2010,61 +2010,61 @@ padding: 1rem;
 }
 
 #cardbook-02{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Vagalumes.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Vagalumes.jpg);
 }
 
 #cardbook-03{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Babu.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Babu.jpg);
 }
 
 #cardbook-04{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Ancestrais.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Ancestrais.jpg);
 }
 
 #cardbook-05{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Bamboo.jpeg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Bamboo.jpeg);
 }
 
 #cardbook-06{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Couro\ e\ Escamas.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Couro%20e%20Escamas.jpg);
 }
 
 #cardbook-07{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Saci.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Saci.jpg);
 }
 
 #cardbook-08{
-    background-image: url(./images/Catalog-Page/Livros/cardbook.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook.jpg);
     background-size: 120%;
 }
 
 #cardbook-09{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Xipaia.jpeg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Xipaia.jpeg);
     background-size: 140%;
 }
 
 #cardbook-10{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Antes\ de\ Tudo.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Antes%20de%20Tudo.png);
     background-size: 107%;
 }
 
 #cardbook-11{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Gods\ games.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Gods%20games.jpg);
     background-size: 135%;
 }
 
 #cardbook-12{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-A-última-da-geração.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-A-%C3%BAltima-da-gera%C3%A7%C3%A3o.jpg);
     background-size: 130%;
 }
 
 #cardbook-13{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Anahi.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Anahi.jpg);
     background-size: 122%;
 }
 
 #cardbook-14{
-    background-image: url(./images/Catalog-Page/Livros/cardbook-Morro-do-Diabo.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Morro-do-Diabo.jpg);
     background-size: 105%;
 }
 
@@ -2074,6 +2074,6 @@ padding: 1rem;
 /* ------------------------------------------------------------------- HQS */
 
 #cardhq-01{
-    background-image: url(./images/Catalog-Page/HQs/cardhq-Blue\ lights.jpg);
+    background-image: url(/html/images/Catalog-Page/HQs/cardhq-Blue\ lights.jpg);
     background-size: 122%;
 }
