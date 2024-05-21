@@ -253,7 +253,7 @@ nav.usermenu.expandir-user-menu{
     height: 5rem;
     border-radius: 50%;
     background-color: rgb(65, 65, 65);
-    background-image: url(images/Catalog-Page/Menu-do-usuário/Avatar01.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/Avatar01.png);
     background-size: 120%;
     cursor: pointer;
     border: 1px solid white;
@@ -305,7 +305,7 @@ nav.usermenu.expandir-user-menu{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-image: url(images/Catalog-Page/Menu-do-usuário/Limitada-status.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/Limitada-status.png);
     background-size: 99%;
     cursor: pointer;
     border: 1px solid rgb(97, 97, 97);
@@ -318,7 +318,7 @@ nav.usermenu.expandir-user-menu{
     width: 4.5rem;
     height: 5rem;
     border-radius: 50%;
-    background-image: url(images/Catalog-Page/Menu-do-usuário/Premium-status.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/Premium-status.png);
     background-size: 100%;
     cursor: pointer;
     border: none;
@@ -389,7 +389,7 @@ margin-top: -0.8rem;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-image: url(images/Catalog-Page/Menu-do-usuário/statistic\ -\ 00.webp);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/statistic%20-%2000.webp);
     background-size: 140%;
     cursor: pointer;
 }
@@ -425,7 +425,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(images/Catalog-Page/Menu-do-usuário/statistic\ -\ 40.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/statistic%20-%2040.jpg);
     background-size: 150%;
     cursor: pointer;
 }
@@ -434,7 +434,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(images/Catalog-Page/Menu-do-usuário/statistic\ -\ 50.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/statistic%20-%2050.jpg);
     background-size: 99%;
     cursor: pointer;
     border: 8px solid rgb(0, 255, 0) ;
