@@ -757,6 +757,20 @@ html{
 
 }
 
+#modal::-webkit-scrollbar{
+   width: 1.5rem;          
+}
+
+#modal::-webkit-scrollbar-track{
+  background: rgb(29, 29, 29);
+}
+
+#modal::-webkit-scrollbar-thumb {
+  background-color: rgb(12, 12, 12);
+  border-radius: 20px;
+  border: 1px solid rgb(153, 153, 153);  
+}
+
 .chave_pix_box{
   width: 100%;
   height: 30rem;
@@ -766,6 +780,10 @@ html{
   margin: auto;
 
 }
+
+
+
+
 
 .chave_aleatoria{
   width: 40%;
