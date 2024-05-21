@@ -1,9 +1,9 @@
 # Sobre
 
 
-<p>Somos dois amigos apaixonados por fantasia e decidimos transformar nossa paixão em algo concreto. Assim nasceu a Cof Cof Produções, um projeto que reúne nossos talentos e nossa criatividade para criar mundos novos e histórias inesquecíveis.</p>
+<p>Somos dois amigos contadores de histórias e decidimos transformar nosso sonho em algo concreto. Assim nasceu a Cof Cof Produções, um projeto que reúne nossos talentos e nossa criatividade para criar mundos novos e histórias inesquecíveis.</p>
                       
-<p>Nós acreditamos no poder das narrativas para conectar pessoas e despertar emoções. Nossa missão é escrever livros, criar revistas em quadrinhos, desenvolver jogos e muito mais. Queremos que cada pessoa que se junte a nós nessa jornada encontre um espaço para se expressar e se sentir parte de uma comunidade.</p>
+<p>Nós acreditamos no poder das narrativas para conectar pessoas e despertar emoções. Nossa missão é escrever livros, criar revistas em quadrinhos, desenvolver jogos e muito mais. Queremos que cada pessoa que se junte a nós nessa jornada encontre um espaço para se expressar e sentir-se parte de uma comunidade.</p>
                       
 <p>Na Cof Cof Produções, cada projeto é uma nova aventura. Queremos desafiar os limites da imaginação e convidamos você a embarcar conosco nessa viagem épica. Venha descobrir universos fantásticos e compartilhar suas próprias histórias!</p>
                       
