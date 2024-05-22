@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/Home-Page/Logo/Web-Icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/Home-Page/Logo/Web-Icon.png" type="image/x-icon"> <!--ÍCONE DE ABA DO NAVEGADOR-->
     <title>CofCof HOME</title>
     <link href="styles/Home-Page/styles-home.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/Home-Page/media-query.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--FONTES-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!--FONTES-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--API PARA ÍCONES-->
 
 </head>
-<body>
+<body onresize="changeSize()">
 
     <div class="interface">
         <!-- NAVEGADOR PÁGINA INICIAL -->
@@ -21,7 +23,8 @@
                 <a href="#home" >HOME</a>
             </div>
 
-            <div class="nav-list">
+            <div class="nav-list" id="navListBar">
+
                 <ul>
                     <li class="nav-item"><a href="#about">SOBRE</a></li>
                     <li class="nav-item"><a href="#contents">CONTEÚDOS</a></li>
@@ -36,16 +39,23 @@
                 <button class="login-btn" id="login-btn"><a href="html\readpage.html">Entrar</a></button>
             </div>
 
-            <!--<div class="mobile-menu-icon">
-
-                <button><img class="nav-icon" src="" alt=""></button>
-
-
-            </div>-->
+            <!-- MENU MOBILE -->
+            <span class="material-symbols-outlined" onclick="clickMenu()" id="burger-menu">menu</span>
             
         </nav>
+        
+        <!-- NAVEGADOR MOBILE -->
+        <div class="nav-list02" id="navListBar02">
 
-        <!-- BLOCO DE CONTENDO TODAS AS PÁGINAS -->
+          <ul>
+              <li class="nav-item"><a href="#about">SOBRE</a></li>
+              <li class="nav-item"><a href="#contents">CONTEÚDOS</a></li>
+              <li class="nav-item"><a href="#contacts">CONTATOS</a></li>
+              <li class="nav-item"><a href="html/store.html" target="_blank" rel="noopener noreferrer">LOJA</a></li>
+          </ul>
+      </div>
+
+        <!-- BLOCO DE CONTEÚDO TODAS AS PÁGINAS -->
         <div class="container">
 
             <!--FILTRO DEGRADÊ-->

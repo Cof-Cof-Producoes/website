@@ -1,24 +1,28 @@
 
 
-//EFEITO DE ABERTURA DO MODAL------------------------------
 
-// OPÇÃO 01 ---
+// MENU HAMBÚRGER
+// const navListBar = document.querySelector('.nav-list')
+function clickMenu(){
+    if(navListBar02.style.display == 'block'){
+    navListBar02.style.display = 'none'}
+    else{
+        navListBar02.style.display = 'block'
+    }
+}
 
-/*const openModalButton = document.querySelector("#open-modal");
-const closeModalButton = document.querySelector("#close-modal");
-const modal = document.querySelector("#modal");
-const fade = document.querySelector("#fade");
+// ESCONDER MENU LATERAL AO MUDAR TAMANHO DA TELA
 
-const toggleModal = () => {
-    modal.classList.toggle("hide");
-    fade.classList.toggle("hide");
-};
+function changeSize(){
+    if (window.innerWidth >= 600){
+        navListBar02.style.display = 'none'
+    } else{
+        
+    }
 
-[openModalButton, closeModalButton, fade].forEach((el) => {
-    el.addEventListener("click", () => toggleModal());
-});*/
 
-// OPÇÃO 02 ---
+}
+
 
 // MODAL DA PÁGINA SOBRE NÓS--------------------------
 function abrirModal(){
@@ -85,5 +89,6 @@ controls.forEach((control) => {
             console.log("control", isleft, currentItem, maxItems);
     })
 });
+
 //----------------------------------------------------------
-        
+
