@@ -259,13 +259,15 @@ background-color: #505050;
 
 /* NAVEGADOR MOBILE -------------------------*/
 .nav-list02{
-  /* border: 2PX solid rgb(0, 2, 128); */
+  border-left: 1px solid white;
   position: fixed;
   margin-top: 5rem;
   width: 50%;
-  height: 90%;
+  height: 100%;
   z-index: 800;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(17, 17, 17, 0.795);
+  box-shadow: -3px 5px 10px black;
+  border-radius: 3px;
   right: 0;
   padding-left: 2rem;
   display: none;
@@ -280,21 +282,27 @@ background-color: #505050;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
-  border: 1px solid rgb(99, 99, 99);
-  border-radius: 1rem;
+  /* background-color: #000000;
+  border: 1px solid rgb(99, 99, 99); */
+  border-radius: 5px;
   transition: 0.3s;
 
 }
 
 .nav-list02 li:hover{
-  background-color: #202020;
-  border: 1px solid rgb(114, 114, 114);
-
+  /* background-color: #414141; */
+  /* border: 1px solid rgb(114, 114, 114); */
+  /* color: white; */
 }
 
 .nav-list02 li a{
   font-size: 2rem;
+  color: rgb(221, 221, 221);
+  font-weight: 700;
+}
+
+.nav-list02 li a:hover{
+  color: #ffffff;
 }
 
 
