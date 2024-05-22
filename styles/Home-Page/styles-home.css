@@ -640,10 +640,12 @@ html{
   padding: 1rem;
   border-bottom: 1px solid #5a5a5a;
   width: 100%;
+  color: rgb(0, 212, 0);
+  font-weight: 700;
 
 }
 
-#modal h1{
+#modal > h1{
   margin-bottom: 1rem;
 
 }
@@ -659,7 +661,7 @@ html{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   
@@ -696,9 +698,8 @@ html{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   height: 80%;
-  max-width: 90%;
   overflow-y: auto;
   background-color: #000000;
   color: rgb(192, 192, 192);
@@ -716,6 +717,8 @@ html{
 
 #modal p{
   margin-bottom: 1rem;
+  text-indent: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 @keyframes abrirmodal{
@@ -792,7 +795,14 @@ html{
   justify-content: center;
   text-align: center;
   gap: 1rem;
+  color: white;
+  
 }
+
+.chave_aleatoria h2{
+  color: #00ccff;
+}
+
 
 .chave_qrcode{
   width: 40%;
@@ -802,6 +812,7 @@ html{
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  color: #00ccff;
 }
 
 .chave_qrcode img{
