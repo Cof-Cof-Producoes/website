@@ -130,8 +130,29 @@
         opacity: 1;
     }
 
+    /* CONTATOS */
+    /* BASE (BOTÕES INFERIORES) */
 
+    .card-base{
+        /* background-color: #1be600; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 17rem;
+        margin: 0;
+    }
 
+    .social-box{
+        width: 70%;
+        height: 5rem;
+
+    }
+
+    .social-box svg{
+        scale: 0.7;
+
+    }
 
 
 

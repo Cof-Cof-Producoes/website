@@ -1086,6 +1086,7 @@ section.card {
   }
 
   .card-base{
+    /* background-color: #1be600; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1114,11 +1115,6 @@ section.card {
     height: 70%;
   }
 
-  .form:hover{
-    scale: 1.05;
-    box-shadow: 0 3px 5px rgb(24, 143, 0);
-  }
-  
   .form-heading {
     text-align: center;
     margin: 1rem;
@@ -1153,8 +1149,9 @@ section.card {
   }
 
   .input-field:hover {
-    background: rgba(37, 37, 37, 0.582);
+    background: rgba(26, 25, 25, 0.582);
     border-radius: 1rem;
+    height: 100%;
 
   }
   
@@ -1170,7 +1167,7 @@ section.card {
     background-color: #1f1f1f;
     color: #dfdfdf;
     font-weight: bold;
-    transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.3s;
     width: 30%;
     align-items: center;
     justify-content: center;
@@ -1181,7 +1178,7 @@ section.card {
     color: #000;
     cursor: pointer;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    scale: 1.07;
+    scale: 1.02;
   }
 
   .sendMessage-btn:active {
@@ -1203,6 +1200,7 @@ section.card {
 
 /* CAIXA DAS REDES SOCIAIS*/
   .social-box{
+    /* background-color: tomato; */
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -1213,11 +1211,6 @@ section.card {
     margin-top: 1rem;
     
   }
-
-  .social-box:hover{
-    scale: 1.05;
-  }
-
 
   .card-social {
     border-radius: 5rem;
@@ -1298,5 +1291,9 @@ section.card {
     100% {
       transform: scale(1);
     }
+  }
+
+  footer{
+    color: white;
   }
 
