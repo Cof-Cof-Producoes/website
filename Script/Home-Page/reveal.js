@@ -46,7 +46,7 @@ revelar.reveal('.imagem-lateral',
 revelar.reveal('.titulo',
 {
     duration: 3000,
-    distance: '50px',
+    distance: '10px',
 })
 
 // ------------------------------------------------------------ CONTEÚDO PÁGINA 02

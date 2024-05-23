@@ -265,7 +265,7 @@ background-color: #505050;
   width: 50%;
   height: 100%;
   z-index: 800;
-  background-color: rgba(17, 17, 17, 0.795);
+  background-color: rgba(17, 17, 17, 0.678);
   box-shadow: -3px 5px 10px black;
   border-radius: 3px;
   right: 0;
@@ -599,8 +599,8 @@ background-color: #505050;
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
 }
 
