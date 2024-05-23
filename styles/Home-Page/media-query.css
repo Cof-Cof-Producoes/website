@@ -9,6 +9,7 @@
         display: block;
     }
 
+    /* SESSÕES */
     .container{
         display: flex;
         flex-direction: column;
@@ -16,14 +17,17 @@
         justify-content: center;
     }
     
+    /* NAVEGADOR SUPERIOR */
     .nav-list{
         display: none;
     }
 
-    .left-side{
+    /* LATERAIS */
+    .left-side, .right-side{
         display: none;
     }
 
+    /* MEIO */
     .midle{
         width: 100vw;
         height: 100vh;
@@ -33,20 +37,19 @@
         margin: 0;
     }
 
-    .right-side{
-        display: none;
-    }
-
+    /* TÍTULOS */
     .titulo{
         font-size: 1.5rem;
         margin-top: 5rem;
         margin-bottom: 3rem;
     }
 
+    /* BOTÕES DE NAVEGAÇÃO DOS CONTEÚDOS */
     .content-box button{
         display: none;
     }
 
+    /* CAIXA DE CONTEÚDOS */
     .content-box{
         /* background-color: blue; */
         width: 100%;
@@ -55,12 +58,14 @@
 
     }
 
+    /* OVERFLOW DE CONTEÚDOS */
     .content-wrapper{
         height: 100%;
         width: 100%;
         margin: 0;
     }
 
+    /* CARROSSEL DE CONTEÚDOS */
     .content-cards{
         height: 100%;
         width: 100%;
@@ -69,6 +74,7 @@
         padding: 1rem;
     }
 
+    /* CARDS */
     section.card{
         min-width: 20rem;
         height: 21rem;
