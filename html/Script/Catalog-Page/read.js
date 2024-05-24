@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 // FUNCIONALIDADE DO BOTÃO DE EXPANDIR DA CAIXA DE USUÁRIO ------------------------------------------------------------
 
 
@@ -32,11 +27,22 @@ menuItem.forEach((item)=>
 
 
 // FUNCIONALIDADE DO BOTÃO DE EXPANDIR MENU LATERAL ------------------------------------------------------------------
+
+// LATERAL ESQUERDA ----------------------------
 let expbtn = document.querySelector('#exp-btn')
 let menuBar = document.querySelector('.menu')
 
 expbtn.addEventListener('click', function(){
     menuBar.classList.toggle('expandir')
+})
+
+// LATERAL DIREITA ----------------------------
+
+let ocultbtn = document.querySelector('#outlined-02')
+let menunav = document.querySelector('.nav-list-lateral')
+
+ocultbtn.addEventListener('click', function(){
+    menunav.classList.toggle('oculta')
 })
 
 

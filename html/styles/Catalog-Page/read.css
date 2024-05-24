@@ -72,6 +72,7 @@ gap: 5rem;
     transition: 0.5s ease-in-out;
     z-index: 999;
     object-fit: contain;
+    margin:auto;
 
 }
 
@@ -100,22 +101,51 @@ gap: 5rem;
 
 /*CAIXA DA LISTA DE NAVEGAÇÃO*/
 .nav-list{
-    width: 90%;
-    /*background-color: tomato;*/
+    width: 50%;
+    margin-left: 3rem;
+    /* background-color: tomato; */
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
+
+
+#nav-list-02{
+    width: 30%;
+    position: fixed;
+    right: 0;
+    margin-top: 3rem;
+    background-color: black;
+    box-shadow: 0 20px 30px rgb(85, 85, 85);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 850;
+    display: none;
+    opacity: 1;
+    
+}
+
+#nav-list-02.oculta{
+
+    height: 10px;
+    opacity: 0;
+    
+
+}
+
 
 .nav-list ul{
     /*background-color: blue;*/
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -153,13 +183,26 @@ gap: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 
 /*CAIXA DE PESQUISA*/
+.search-icon{
+    color: white;
+    opacity: 0.5;
+    margin-right: -3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none; 
+}
+
+.search-icon:hover{
+    opacity: 1;
+}
+
+
 .inp-search{
-    width: 80%;
+    width: 100%;
     height: 90%;
     border-radius: 1rem;
     padding: 1rem;
@@ -171,6 +214,26 @@ gap: 5rem;
 
 .inp-search:hover{
     background-color: rgb(46, 46, 46);
+}
+
+/* BOTÃO SEARCH MOBILE */
+
+/* BOTÃO MENU HAMBURGUER MOBILE */
+#outlined-02{
+    color: white;
+    opacity: 0.5;
+    margin-right: -4rem;
+    scale: 1.2;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+    
+}
+
+#outlined-02:hover{
+    opacity: 1;
+
+    
 }
 
 
@@ -216,7 +279,7 @@ nav.usermenu{
     box-shadow: -5px 5px 10px rgb(0, 0, 0);
     overflow: hidden;
     transition: 1s;
-    z-index: 700;
+    z-index: 900;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     display: flex;
@@ -585,7 +648,7 @@ margin-top: -0.8rem;
 nav.menu{
     position: fixed;
     height: 100%;
-    width: 3rem;
+    width: 2.5rem;
     background-color: rgba(39, 39, 39, 0);
     margin-top: 3rem;
     padding: 1rem 0 1rem 0.5%;
@@ -598,7 +661,7 @@ nav.menu{
 }
 
 nav.menu.expandir{
-    width: 15rem;
+    width: 11rem;
     background-color: rgba(39, 39, 39, 0.397);  
     backdrop-filter: blur(2px);   
 }
@@ -724,6 +787,7 @@ ul li.item-menu a{
     font-size: 2rem;
     transition: 0.4s;
     cursor: pointer;
+    
 }
 
 .slide svg{
