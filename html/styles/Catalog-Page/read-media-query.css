@@ -6,14 +6,14 @@
 
 @media screen and (max-width: 600px){
 
-    /* INTERFACE */
+    /* INTERFACE --------------------------------------------------*/
     .interface{
         width: 700vw;
         height: 100vh;
     }
 
 
-    /* LISTA SUPERIOR */
+    /* LISTA SUPERIOR --------------------------------------------*/
     .nav-list{
         display: none;
     }
@@ -103,12 +103,14 @@
 
     }
 
-    /* PÁGINA DE LANÇAMENTOS */
+    /* PÁGINA DE LANÇAMENTOS -----------------------------------------*/
 
+    /* BOTÃO DE NAVEGAÇÃO */
     .slide{
         display: none;
     }
 
+    /* OVERFLOW DO CARROSSEL */
     .overflow{
         /* background-color: tomato; */
         display: flex;
@@ -121,6 +123,7 @@
     
     }
 
+    /* TÍTULO DA PÁGINA INICIAL */
     .new-title{
         color: white;
         font-size: 1.2rem;
@@ -128,6 +131,7 @@
         display: block;
     }
 
+    /* CAIXA DO CARROSSEL */
     .carrossel-box{
         /* background-color: blue; */
         height: 90vh;
@@ -139,11 +143,13 @@
 
     }
 
+    /* SCROLLBAR */
     .carrossel-box::-webkit-scrollbar{
         display: none;
 
     }
 
+    /* CARD DO CARROSSEL */
     .carrossel-item{
         /* background-color: green; */
         height: 18rem;
@@ -152,13 +158,14 @@
         opacity: 1;
     }
 
-
+    /* IMAGEM DO CARD */
     .img-box{
         height: 100%;
         width: 100%;
 
     }
 
+    /* DESCRIÇÃO DO CARD */
     .item-descrpition{
         height: 10rem;
         background-color: rgba(0, 0, 0, 0.596);
@@ -171,7 +178,6 @@
         font-size: 0.7rem;
     }
 
-
     .item-descrpition:hover{
         background-color: rgba(0, 0, 0, 0.596);
         height: 10rem;
@@ -179,15 +185,141 @@
         
     }
 
+    /* BOTÕES DO CARD */
     .item-card{
         scale: 0.8;
         /* display: none; */
     }
 
+    /* INFORMAÇÃO DOS CARDS */
     .info-item{
         display: none;
     }
 
+    /* PÁGINA DE COLEÇÕES ---------------------------------------------------------- */
+    .collection-box{
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .collection-box h1{
+        margin-top: 4rem;
+        margin-left: 4rem;
+        font-size: 1.5rem;
+        color: rgb(189, 189, 189);
+        padding: 0;
+    }
+    
+    .overflow-collection{
+        /* background-color: tomato; */
+        height: 80vh;
+        width: 100vw;
+        padding: 0 5rem;
+        gap: 1rem;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+    
+    .overflow-collection::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .collection-nav{
+        position: absolute;
+    }
+    
+    .collection-ul{
+        /* background-color: green; */
+        display: flex;
+        height: 1.5rem;
+        gap: 2rem;
+        list-style: none;
+        margin-left: -1rem;
+    }
+    
+    .collection-li a{
+        /* background-color: purple; */
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        opacity: 0.6;
+        
+    }
+    
+    .collection-li a:hover{
+        opacity: 1;
+    }
+    
+    
+    /* CAIXAS DE COLEÇÕES --------------------*/
+    .book-box, .hq-box, .vds-box{
+        /* background-color: yellow; */
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    /*CAIXA COM OVERFLOW ------------*/
+    .book-list, .hq-list, .vds-list{
+        /* background-color: aqua; */
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        padding: 1rem;
+    
+    }
+    
+    .book-box h1, .hq-box h1, .vds-box h1{
+        font-size: 1.2rem;
+        color: rgb(73, 73, 73);
+        margin: 0;
+        margin-left: 5rem;
+        margin-top: 10rem;
+    }
+    
+    
+    /*BOTÕES DE FILTRO DAS COLEÇÕES*/
+    .nav-filter{
+       /* background-color: rgb(150, 9, 9);*/
+        width: 100%;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 2rem;
+        margin-right: 5rem;
+        
+    
+    }
+    
+    .nav-filter button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        opacity: 0.4;
+        transition: 0.3s;
+        cursor: pointer;
+    
+    }
+    
+    .nav-filter button svg{
+        color: white;
+    }
+    
+    .nav-filter button:hover{
+        opacity: 1;
+    }
+    
+    .nav-filter button:active{
+        opacity: 0.7;
+    }
 
 
 }

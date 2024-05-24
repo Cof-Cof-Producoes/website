@@ -119,18 +119,6 @@ revelar.reveal('.overflow',
 
 
 
-
-//----- SCROLL REVEAL DA PÁGINA COLEÇÃO
-
-revelar.reveal('.collection-box',
-{
-    duration: 1000,
-    distance: '10px',
-    origin: 'right',
-    delay: 300
-
-})
-
 //----- SCROLL REVEAL DA PÁGINA COLEÇÃO
 revelar.reveal('.collection-box',
 {
