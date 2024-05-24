@@ -1,4 +1,10 @@
+// FUNCIONALIDADE DO BOTÃO DE EXPANDIR A CAIXA DE PESQUISA-----------------------------------------------
+let expSearchBtn = document.querySelector('.search-icon')
+let searchBar = document.querySelector('.inp-search')
 
+expSearchBtn.addEventListener('click', function(){
+    searchBar.classList.toggle('buscando')
+})
 
 // FUNCIONALIDADE DO BOTÃO DE EXPANDIR DA CAIXA DE USUÁRIO ------------------------------------------------------------
 
@@ -44,6 +50,7 @@ let menunav = document.querySelector('.nav-list-lateral')
 ocultbtn.addEventListener('click', function(){
     menunav.classList.toggle('oculta')
 })
+
 
 
 // BOTÕES DE NAVEGAÇÃO DO CARROSSEL DOS CARDS ------------------------------------------------------------------------
