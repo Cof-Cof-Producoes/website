@@ -102,7 +102,6 @@ gap: 5rem;
 /*CAIXA DA LISTA DE NAVEGAÇÃO*/
 .nav-list{
     width: 50%;
-    margin-left: 3rem;
     /* background-color: tomato; */
     height: 100%;
     display: flex;
@@ -818,6 +817,13 @@ ul li.item-menu a{
     height: 100vh;
     /*background-color: purple;*/
     padding: 2rem;
+}
+
+.new-title{
+    color: white;
+    font-size: 1rem;
+    top: 0;
+    display: none;
 }
 
 .overflow{

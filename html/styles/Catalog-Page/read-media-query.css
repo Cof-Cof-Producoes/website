@@ -6,10 +6,18 @@
 
 @media screen and (max-width: 600px){
 
+    /* INTERFACE */
+    .interface{
+        width: 700vw;
+        height: 100vh;
+    }
+
+
     /* LISTA SUPERIOR */
     .nav-list{
         display: none;
     }
+
 
     /* LISTA LATERAL */
     #nav-list-02{
@@ -56,11 +64,13 @@
         font-size: 0.6rem;
     }
 
+
     /* MENU HAMBURGUER DO NAVEGADOR LATERAL */
     #outlined-02{
         display: block;
         padding: 0;
     }
+
 
     /* CAIXA DE PESQUISA */
 
@@ -79,16 +89,102 @@
         opacity: 1;
     }
 
+
     /* ÍCONE DE PESQUISA */
     .search-icon{
         display: block;
     }
+
 
     /* MENU DO USUÁRIO */
     nav.usermenu{
         width: 100%;
         margin: 0;
 
+    }
+
+    /* PÁGINA DE LANÇAMENTOS */
+
+    .slide{
+        display: none;
+    }
+
+    .overflow{
+        /* background-color: tomato; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        height: 100%;
+        
+    
+    }
+
+    .new-title{
+        color: white;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .carrossel-box{
+        /* background-color: blue; */
+        height: 90vh;
+        overflow-y: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .carrossel-box::-webkit-scrollbar{
+        display: none;
+
+    }
+
+    .carrossel-item{
+        /* background-color: green; */
+        height: 18rem;
+        width: 18rem;
+        padding: 0;
+        opacity: 1;
+    }
+
+
+    .img-box{
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .item-descrpition{
+        height: 10rem;
+        background-color: rgba(0, 0, 0, 0.596);
+        transition: 0.3s ease-in-out;
+        margin-top: -4.5rem;
+
+    }
+
+    .item-descrpition p{
+        font-size: 0.7rem;
+    }
+
+
+    .item-descrpition:hover{
+        background-color: rgba(0, 0, 0, 0.596);
+        height: 10rem;
+        margin-top: -7rem;
+        
+    }
+
+    .item-card{
+        scale: 0.8;
+        /* display: none; */
+    }
+
+    .info-item{
+        display: none;
     }
 
 
