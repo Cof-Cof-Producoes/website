@@ -660,6 +660,11 @@ nav.menu{
         
 }
 
+nav.menu-inferior{
+    display: none;
+        
+}
+
 nav.menu.expandir{
     width: 11rem;
     background-color: rgba(39, 39, 39, 0.397);  
