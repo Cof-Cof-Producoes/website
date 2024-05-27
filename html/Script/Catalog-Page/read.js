@@ -123,7 +123,6 @@ revelar.reveal('.overflow',
 revelar.reveal('.collection-box',
 {
     duration: 1000,
-    distance: '10px',
     origin: 'right',
     delay: 300
 
@@ -133,7 +132,6 @@ revelar.reveal('.collection-box',
 revelar.reveal('.bookpage-box',
 {
     duration: 1000,
-    distance: '10px',
     origin: 'right',
     delay: 300
 
@@ -143,7 +141,6 @@ revelar.reveal('.bookpage-box',
 revelar.reveal('.hqpage-box',
 {
     duration: 1000,
-    distance: '10px',
     origin: 'right',
     delay: 300
 
@@ -153,7 +150,6 @@ revelar.reveal('.hqpage-box',
 revelar.reveal('.vdpage-box',
 {
     duration: 1000,
-    distance: '10px',
     origin: 'right',
     delay: 300
 
@@ -163,7 +159,6 @@ revelar.reveal('.vdpage-box',
 revelar.reveal('.glpage-box',
 {
     duration: 1000,
-    distance: '10px',
     origin: 'right',
     delay: 300
 

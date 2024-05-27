@@ -111,7 +111,7 @@ gap: 5rem;
 
 
 #nav-list-02{
-    width: 30%;
+    width: 40%;
     position: fixed;
     right: 0;
     margin-top: 3rem;
@@ -125,6 +125,7 @@ gap: 5rem;
     z-index: 850;
     display: none;
     opacity: 1;
+    transition: 0.3s;
     
 }
 

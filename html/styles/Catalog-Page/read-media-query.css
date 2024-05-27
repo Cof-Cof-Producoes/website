@@ -12,7 +12,7 @@
         height: 100vh;
     }
 
-    /* MENU INFERIOR */
+    /* MENU INFERIOR ----------------------------------------------*/
     nav.menu{
         display: none;
     }
@@ -64,12 +64,12 @@
     }
 
 
-    /* LISTA LATERAL */
+    /* LISTA LATERAL ---------------------------------------------*/
     #nav-list-02{
         display: flex;
         flex-direction: column;
-
     }
+
 
     .nav-list ul{
         /* background-color: blue; */
@@ -120,10 +120,12 @@
     /* CAIXA DE PESQUISA */
 
     .inp-search{
-        margin-right: -18rem;
-        width: 0;
+        /* background-color: aqua; */
+        margin-right: -50rem;
+        width: 1px;
+        height: 1px;
         opacity: 0;
-        transition: 0.3s;
+        transition: 0.5s;
         
     }
 
@@ -365,6 +367,291 @@
     .nav-filter button:active{
         opacity: 0.7;
     }
+
+
+    
+    /*---------------------- PÁGINA LIVROS ---------------------------------------------------------------------*/
+    .bookpage-box{
+        /* background-color: rgb(197, 2, 132); */
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .bookpage-box h1{
+        margin-top: 4rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: rgb(189, 189, 189);
+    }
+
+    .overflow-bookpage{
+        /* background-color: tomato; */
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        gap: 0.8rem;
+        overflow-y: auto;
+    }
+
+    /*BOTÕES DE FILTRO DOS LIVROS*/
+    .bookpage-nav-filter{
+        /* background-color: rgb(150, 9, 9); */
+        width: 100vw;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 0.5rem;
+        margin: 0;
+
+        
+    
+    }
+    
+    .bookpage-nav-filter button{
+        font-size: 0.6rem;
+
+    }
+    
+
+    /*LISTA DE LIVROS ---------------------*/
+    .bookpage-list{
+        /* background-color: aqua; */
+        width: 100%;
+        height: 87%;
+        overflow-y: auto;
+        overflow-X: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bookpage-list::-webkit-scrollbar{
+        display: none;
+        
+    }
+
+    .bookpage-list h1{
+        font-size: 1.5rem;
+        color: rgb(73, 73, 73);
+        margin: 0;
+    }
+
+    .bookpage-list h3{
+        font-size: 0.8rem;
+        color: rgb(255, 255, 255);
+        background-color: rgb(32, 32, 32);
+        width: 100%;
+        height: 1rem;
+        margin-top: 0.2rem;
+        font-weight: 300;
+    }
+
+
+    /*---------------------- PÁGINA HQS -----------------------------------------------------------------------*/
+
+    .hqpage-box{
+        /*background-color: rgb(28, 219, 3);*/
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .hqpage-box h1{
+        margin-top: 4rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: rgb(189, 189, 189);
+    }
+
+    .overflow-hqpage{
+        /*background-color: tomato;*/
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        gap: 0.8rem;
+        overflow-y: auto;
+    }
+
+    /*BOTÕES DE FILTRO DAS HQS*/
+    .hqpage-nav-filter{
+        /*background-color: rgb(150, 9, 9);*/
+        width: 100vw;
+        /* height: 1.5rem; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: end;
+        gap: 0.5rem;
+        margin: auto;
+        margin-left: -1rem;
+        
+    }
+    
+    .hqpage-nav-filter button{
+        font-size: 0.6rem;
+    }
+    
+    /*-------------- LISTA DE HQS ---------------*/
+    .hqpage-list{
+        /*background-color: aqua;*/
+        width: 100%;
+        height: 87%;
+        overflow-y: auto;
+        overflow-X: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hqpage-list::-webkit-scrollbar{
+        display: none;
+        
+    }
+
+    .hqpage-list h1{
+        font-size: 1.5rem;
+        color: rgb(73, 73, 73);
+        margin: 0;
+    }
+
+
+
+    /* -----------------------------------------CARDS (LIVROS E HQS)------------------------------------------------------- */
+
+    /*CORPO DO CARDBOOK*/
+    .card{
+        width: 7rem;
+        height: 8rem;
+        background-color: rgb(37, 37, 37);
+        background-size: 140%;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+
+    /*DESCRIÇÃO DO CARDBOOK*/
+    .card-desc{
+        /*background-color: blue;*/
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    /*EXPANDIR DESCRIÇÃO DO CARDBOOK*/
+    .ext-card-desc{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.342);
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        gap: 0.5rem;
+        padding: 0.2rem;
+        transition: 0.5s;
+
+    }
+
+    .ext-card-desc:hover{
+        height: 2rem;
+        margin-top: 0rem;
+
+    }
+
+    .ext-card-desc h2{
+        width: 100%;
+        color: white;
+        font-size: 0.5rem;
+        display: flex;
+    }
+
+    /* INDICADOR DE AVALIAÇÃO*/
+    .card-hate{
+        color: rgb(1, 255, 1);
+        height: 1rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        font-size: 0.5rem;
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    .card-hate svg{
+        color: rgb(1, 255, 1);
+        scale: 0.5;
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    .card-desc p{
+        display: none;
+    }
+
+    /* BOTÕES DOS CARDBOOKS*/
+    .cardbtns{
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /*background-color: brown;*/
+
+    }
+
+    .card-desc .card-add-btn{
+        display: none;
+    }
+
+    .card-desc .card-read-btn{
+        background-color: rgba(3, 80, 247, 0);
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .card-read-btn:active{
+        background-color: rgba(0, 0, 0, 0);
+        scale: 1;
+        transition: 0.1s;
+    }
+
+    .card-desc button svg{
+        display: none;
+    }
+
+
+
+
+
+
 
 
 
