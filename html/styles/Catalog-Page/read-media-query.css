@@ -650,6 +650,438 @@
 
 
 
+    
+    /* ------------------------------------------- MODAL DE LEITURA (LIVROS E HQS) -------------------------------------------- */
+
+    /* PÁGINA DE LEITURA  */
+
+    .modal__Leitura{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        gap: 0.1rem;
+        
+    }
+
+    .invisible{
+        display: none;
+    }
+
+
+
+
+    /* NAVEGADOR DA PÁGINA DE LEITURA */
+    .nav_Leitura{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin: auto;
+        width: 100%;
+        height: 2rem;
+        border-bottom: 1px solid rgb(197, 197, 197);
+        background-color: rgba(255, 255, 255, 0);
+        z-index: 1;
+    }
+
+    /*BARRA DE PROGRESSO DE LEITURA*/
+
+    .progress-box{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+
+    .progress-bar{
+        --progress: 30%;
+        width: var(--progress);
+        height: 30%;
+        background-color: rgb(114, 114, 245);
+        border-radius: 0 5px 5px 0;
+    }
+
+
+
+    /* BOTÃO DE FECHAR PÁGINA DE LEITURA */
+    .close_leitura{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        width: 2rem;
+        background-color: transparent;
+        border: none;
+        transition: 0.3s;
+    }
+
+    .close_leitura:hover{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .close_leitura:active{
+        background-color: transparent;
+        transition: 0.1s;
+    }
+
+    .close_leitura svg{
+        scale: 2;
+    }
+
+    /* CAIXA DE TEXTO */
+    .history_box{
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin-top: 2rem;
+        background-color: rgb(29, 29, 29);
+        margin: auto;
+    }
+
+    /* TEXTO */
+    .history_box iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+    /* CAIXA DE ITENS DO TEXTO*/
+    .text_itens{
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 2.5rem;
+        overflow: hidden;
+        transition: 0.5s;
+        gap: 5px;
+
+    }
+
+    /* CAIXA DE ITENS DO TEXTO QUANDO FECHADA*/
+    .text_itens.hidden{
+        /* background-color: blue; */
+        width: 100%;
+        height: 4rem;
+        /* box-shadow: -3px -5px 10px black; */
+
+    }
+
+
+    /* BOTÃO ABRIR DA CAIXA DE ITENS DO TEXTO*/
+    .menu_text_itens{
+        width: 2rem;
+        height: 2rem;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        cursor: pointer;
+
+        
+        
+    }
+
+
+
+
+    /*---------------------- PÁGINA DE GALERIA -------------------------------------------------------------------------*/
+    .glpage-box{
+        /*background-color: teal;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .glpage-box h1{
+        margin-top: 4rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: rgb(189, 189, 189);
+    }
+
+    .overflow-glpage{
+        /*background-color: tomato;*/
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        gap: 0.8rem;
+        overflow-y: auto;
+    }
+
+
+    /*BOTÕES DE FILTRO DAS IMAGENS*/
+    .glpage-nav-filter{
+        /*background-color: rgb(150, 9, 9);*/
+        width: 100vw;
+        /* height: 1.5rem; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: end;
+        gap: 0.5rem;
+        margin: auto;
+        margin-left: -1rem;
+        
+    
+    }
+    
+    .glpage-nav-filter button{
+        font-size: 0.6rem;
+
+    }
+
+
+    /*-------------- LISTA DA GALERIA ----------------*/
+    .glpage-list{
+        /*background-color: aqua;*/
+        width: 100%;
+        height: 87%;
+        overflow-y: auto;
+        overflow-X: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .glpage-list::-webkit-scrollbar{
+        display: none;
+        
+    }
+
+    .glpage-list h1{
+        font-size: 1.2rem;
+        color: rgb(73, 73, 73);
+        margin-top: 5rem;
+    }
+
+    /*---------------------- PÁGINA VÍDEOS -------------------------------------------------------------------------*/
+    .vdpage-box{
+        /*background-color: rgb(219, 118, 3);*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .vdpage-box h1{
+        margin-top: 4rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: rgb(189, 189, 189);
+    }
+
+    .overflow-vdpage{
+        /*background-color: tomato;*/
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        gap: 0.8rem;
+        overflow-y: auto;
+    }
+
+
+    /*BOTÕES DE FILTRO DOS VÍDEOS*/
+    .vdpage-nav-filter{
+    /*background-color: rgb(150, 9, 9);*/
+    width: 100vw;
+    /* height: 1.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    gap: 0.5rem;
+    margin: auto;
+    margin-left: -5rem;
+        
+    
+    }
+    
+    .vdpage-nav-filter button{
+        font-size: 0.6rem;
+
+    }
+    
+
+
+    /*-------------- LISTA DE VÍDEOS ----------------*/
+    .vdpage-list{
+    /*background-color: aqua;*/
+    width: 100%;
+    height: 87%;
+    overflow-y: auto;
+    overflow-X: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    padding: 0;
+    margin: 0;
+    }
+
+    .vdpage-list::-webkit-scrollbar{
+        display: none;
+    }
+
+    .vdpage-list h1{
+        font-size: 1rem;
+        color: rgb(73, 73, 73);
+        margin: 0;
+        margin-left: 35%;
+        margin-top: 17%;
+    }
+
+
+
+    /* ------------------------------------------- CARDS DE VÍDEOS---------------------------------------------------- */
+
+    .card-vd{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 2rem;
+        border-bottom: 1px solid rgb(48, 48, 48);
+        padding: 1rem;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    .card-vd:hover{
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 10px 10px rgba(43, 43, 43, 0);
+    }
+
+    .vdpage-list:has(.card-vd:hover) .card-vd:not(:hover){
+        opacity: 0.6;
+        transition: 0.5s;
+    }
+
+    .card-vd iframe{
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .vd-desc{
+        /* background-color: green; */
+        width: 100%;
+        height: 99%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        z-index: 78;
+
+    }
+
+    .vd-desc h2{
+        /* background-color: tomato; */
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+        color: rgb(196, 196, 196);
+    }
+
+    .vd-desc p{
+        /* background-color: rgb(71, 255, 230); */
+        font-size: 0.7rem;
+    }
+
+    .vd-desc p::-webkit-scrollbar{
+        width: 0.5rem;              
+    }
+    
+    .vd-desc p::-webkit-scrollbar-track {
+        background-color: rgb(26, 26, 26);
+        border-radius: 0.5rem;      
+    }
+    
+    .vd-desc p::-webkit-scrollbar-thumb {
+        background: rgb(39, 39, 39);  
+        border-radius: 20px;         
+    }
+        
+    .card-vd-btns{
+        /* background-color: purple; */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+    }
+
+    .card-vd-btns h3{
+        /* background-color: blue; */
+        color: rgb(177, 177, 177);
+        font-size: 0.8rem;
+        width: 22rem;
+    
+
+    }
+
+    .card-vd-btns .card-add-btn{
+
+        width: 3rem;
+        height: 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(255, 174, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(119, 119, 119);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .card-vd-btns .card-add-btn:active{
+        background-color: rgb(26, 26, 26);
+        scale: 0.95;
+    }
+
+    .card-vd-btns .card-add-btn svg{
+        color: white;
+        scale: 1.2;
+    }
+
+
+
+
 
 
 

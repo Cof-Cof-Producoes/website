@@ -1772,7 +1772,7 @@ padding: 1rem;
 }
 
 .close_leitura:hover{
-    background-color: rgb(255, 129, 129);
+    background-color: rgb(255, 0, 0);
 }
 
 .close_leitura:active{
@@ -1927,7 +1927,6 @@ padding: 1rem;
     color: white;
 
 }
-
 
 
 
