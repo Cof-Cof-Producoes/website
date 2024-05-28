@@ -166,16 +166,7 @@ revelar.reveal('.glpage-box',
 
 
 
-
-
-
-
-
-
-
-
 // MODAL DAS PÁGINAS DE LEITURA------------------------------------------------------------------------------------------
-
 
 // 01 OS PORTÕES DA AREIA ------------------------------------------------------------------------------
 function abrirLeitura01(){
@@ -190,31 +181,13 @@ function abrirLeitura01(){
 }
 
 // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
-let expreadbtn = document.querySelector('.menu_text_itens')
-let menureadBar = document.querySelector('.text_itens')
-expreadbtn.addEventListener('click', function(){
-    menureadBar.classList.toggle('hidden')
+
+let expreadbtn01 = document.querySelector('.menu_text_itens_01')
+let menureadBar01 = document.querySelector('.text_itens_01')
+
+expreadbtn01.addEventListener('click', function(){
+    menureadBar01.classList.toggle('hidden')
 })
-
-
-// BARRA DE PROGRESSO DE LEITURA
-
-const historyItem = document.getElementById('iframe_01');
-const iframeWindow = historyItem.contentWindow;
-
-function updateProgressBar(){
-    
-    const iframeDocument = historyItem.contentDocument;
-
-    console.log(iframeDocument.document);
-    
-}
-
-iframeWindow.addEventListener('scroll', updateProgressBar);
-
-
-
-
 
 
 
@@ -230,14 +203,67 @@ function abrirLeitura02(){
     })
 }
 
-// 03 BABU --------------------------------
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn02 = document.querySelector('.menu_text_itens_02')
+let menureadBar02 = document.querySelector('.text_itens_02')
+
+expreadbtn02.addEventListener('click', function(){
+    menureadBar02.classList.toggle('hidden')
+})
 
 
-// 04 ANIMAIS ANCESTRAIS --------------------
 
 
 
-// 05 BAMBOO --------------------------------
+// 03 BABU ----------------------------------------------------------------------------------
+
+// function abrirLeitura03(){
+//     const modalread03 = document.querySelector("#babu");
+//     modalread03.classList.remove('invisible');
+
+//     modalread03.addEventListener('click',(e) => {
+//         if(e.target.id == 'closeread03') {
+//             modalread03.classList.add('invisible')
+//         }
+//     })
+// }
+
+// // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+// let expreadbtn03 = document.querySelector('.menu_text_itens_03')
+// let menureadBar03 = document.querySelector('.text_itens_03')
+
+// expreadbtn03.addEventListener('click', function(){
+//     menureadBar03.classList.toggle('hidden')
+// })
+
+
+// 04 ANIMAIS ANCESTRAIS ----------------------------------------------------------------------------------
+
+// function abrirLeitura04(){
+//     const modalread04 = document.querySelector("#animaisancestrais");
+//     modalread04.classList.remove('invisible');
+
+//     modalread04.addEventListener('click',(e) => {
+//         if(e.target.id == 'closeread04') {
+//             modalread04.classList.add('invisible')
+//         }
+//     })
+// }
+
+// // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+// let expreadbtn04 = document.querySelector('.menu_text_itens_04')
+// let menureadBar04 = document.querySelector('.text_itens_04')
+
+// expreadbtn04.addEventListener('click', function(){
+//     menureadBar04.classList.toggle('hidden')
+// })
+
+
+
+// 05 BAMBOO ----------------------------------------------------------------------------------
 function abrirLeitura05(){
     const modalread05 = document.querySelector("#bamboo");
     modalread05.classList.remove('invisible');
@@ -249,7 +275,19 @@ function abrirLeitura05(){
     })
 }
 
-// 06 COURO E ESCAMAS -----------------------
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn05 = document.querySelector('.menu_text_itens_05')
+let menureadBar05 = document.querySelector('.text_itens_05')
+
+expreadbtn05.addEventListener('click', function(){
+    menureadBar05.classList.toggle('hidden')
+})
+
+
+
+
+// 06 COURO E ESCAMAS -----------------------------------------------------------------------------------
 function abrirLeitura06(){
     const modalread06 = document.querySelector("#couroeescamas");
     modalread06.classList.remove('invisible');
@@ -261,9 +299,18 @@ function abrirLeitura06(){
     })
 }
 
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn06 = document.querySelector('.menu_text_itens_06')
+let menureadBar06 = document.querySelector('.text_itens_06')
+
+expreadbtn06.addEventListener('click', function(){
+    menureadBar06.classList.toggle('hidden')
+})
 
 
-// 12 A ÚLTIMA DE SUA GERAÇÃO ---------------
+
+// 12 A ÚLTIMA DE SUA GERAÇÃO -----------------------------------------------------------------------------------
 function abrirLeitura12(){
     const modalread12 = document.querySelector("#aultimadageracao");
     modalread12.classList.remove('invisible');
@@ -274,9 +321,19 @@ function abrirLeitura12(){
         }
     })
 }
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn12 = document.querySelector('.menu_text_itens_12')
+let menureadBar12 = document.querySelector('.text_itens_12')
+
+expreadbtn12.addEventListener('click', function(){
+    menureadBar12.classList.toggle('hidden')
+})
 
 
-// 14 MORRO DO DIABO ------------------------
+
+
+// 14 MORRO DO DIABO -----------------------------------------------------------------------------------
 function abrirLeitura14(){
     const modalread14 = document.querySelector("#morrododiabo");
     modalread14.classList.remove('invisible');
@@ -287,3 +344,11 @@ function abrirLeitura14(){
         }
     })
 }
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn14 = document.querySelector('.menu_text_itens_14')
+let menureadBar14 = document.querySelector('.text_itens_14')
+
+expreadbtn14.addEventListener('click', function(){
+    menureadBar14.classList.toggle('hidden')
+})

@@ -1769,6 +1769,7 @@ padding: 1rem;
     background-color: transparent;
     border: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .close_leitura:hover{
@@ -1841,6 +1842,8 @@ padding: 1rem;
     opacity: 0;
 
 }
+
+
 
 /* BOTÃO ABRIR DA CAIXA DE ITENS DO TEXTO*/
 .menu_text_itens{

@@ -424,10 +424,9 @@
         overflow-y: auto;
         overflow-X: auto;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         gap: 0.2rem;
-        padding: 0;
+        padding: 0.5rem;
         margin: 0;
     }
 
@@ -445,10 +444,10 @@
     .bookpage-list h3{
         font-size: 0.8rem;
         color: rgb(255, 255, 255);
-        background-color: rgb(32, 32, 32);
         width: 100%;
         height: 1rem;
         margin-top: 0.2rem;
+        margin-bottom: 1rem;
         font-weight: 300;
     }
 
@@ -530,8 +529,8 @@
 
     /*CORPO DO CARDBOOK*/
     .card{
-        width: 7rem;
-        height: 8rem;
+        width: 7.5rem;
+        height: 9rem;
         background-color: rgb(37, 37, 37);
         background-size: 140%;
         border-radius: 0.5rem;
@@ -540,6 +539,15 @@
         justify-content: end;
         overflow: hidden;
         transition: 0.3s;
+        margin: auto;
+    }
+
+    .card:hover{
+        scale: 1;
+    }
+    
+    .bookpage-list:has(.card:hover) .card:not(:hover){
+        opacity: 1;
     }
 
 
@@ -673,8 +681,6 @@
     .invisible{
         display: none;
     }
-
-
 
 
     /* NAVEGADOR DA PÁGINA DE LEITURA */
@@ -966,7 +972,7 @@
     /* ------------------------------------------- CARDS DE VÍDEOS---------------------------------------------------- */
 
     .card-vd{
-        background-color: transparent;
+        background-color: rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         height: 80vh;
@@ -983,18 +989,18 @@
     }
 
     .card-vd:hover{
-        background-color: rgb(19, 19, 19);
+        background-color: rgb(0, 0, 0);
         box-shadow: 5px 10px 10px rgba(43, 43, 43, 0);
     }
 
     .vdpage-list:has(.card-vd:hover) .card-vd:not(:hover){
-        opacity: 0.6;
+        opacity: 1;
         transition: 0.5s;
     }
 
     .card-vd iframe{
-        width: 15rem;
-        height: 10rem;
+        width: 20rem;
+        height: 16rem;
     }
 
     .vd-desc{
@@ -1078,13 +1084,6 @@
         color: white;
         scale: 1.2;
     }
-
-
-
-
-
-
-
 
 
 
