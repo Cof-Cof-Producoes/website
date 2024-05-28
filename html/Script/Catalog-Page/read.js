@@ -166,9 +166,16 @@ revelar.reveal('.glpage-box',
 
 
 
+
+
+
+
+
+
+
 // MODAL DAS PÁGINAS DE LEITURA------------------------------------------------------------------------------------------
 
-// 01 OS PORTÕES DA AREIA ------------------------------------------------------------------------------
+// 01 OS PORTÕES DA AREIA -----------------------------------------------------------------------
 function abrirLeitura01(){
     const modalread01 = document.querySelector("#osportoesdaareia");
     modalread01.classList.remove('invisible');
@@ -191,7 +198,8 @@ expreadbtn01.addEventListener('click', function(){
 
 
 
-// 02 VAGALUMES ----------------------------------------------------------------------------------------
+
+// 02 VAGALUMES --------------------------------------------------------------------------------
 function abrirLeitura02(){
     const modalread02 = document.querySelector("#vagalumes");
     modalread02.classList.remove('invisible');
@@ -215,55 +223,58 @@ expreadbtn02.addEventListener('click', function(){
 
 
 
+// 03 BABU -------------------------------------------------------------------------------------
 
-// 03 BABU ----------------------------------------------------------------------------------
+function abrirLeitura03(){
+    const modalread03 = document.querySelector("#babu");
+    modalread03.classList.remove('invisible');
 
-// function abrirLeitura03(){
-//     const modalread03 = document.querySelector("#babu");
-//     modalread03.classList.remove('invisible');
-
-//     modalread03.addEventListener('click',(e) => {
-//         if(e.target.id == 'closeread03') {
-//             modalread03.classList.add('invisible')
-//         }
-//     })
-// }
-
-// // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
-
-// let expreadbtn03 = document.querySelector('.menu_text_itens_03')
-// let menureadBar03 = document.querySelector('.text_itens_03')
-
-// expreadbtn03.addEventListener('click', function(){
-//     menureadBar03.classList.toggle('hidden')
-// })
-
-
-// 04 ANIMAIS ANCESTRAIS ----------------------------------------------------------------------------------
-
-// function abrirLeitura04(){
-//     const modalread04 = document.querySelector("#animaisancestrais");
-//     modalread04.classList.remove('invisible');
-
-//     modalread04.addEventListener('click',(e) => {
-//         if(e.target.id == 'closeread04') {
-//             modalread04.classList.add('invisible')
-//         }
-//     })
-// }
+    modalread03.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread03') {
+            modalread03.classList.add('invisible')
+        }
+    })
+}
 
 // // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
 
-// let expreadbtn04 = document.querySelector('.menu_text_itens_04')
-// let menureadBar04 = document.querySelector('.text_itens_04')
+let expreadbtn03 = document.querySelector('.menu_text_itens_03')
+let menureadBar03 = document.querySelector('.text_itens_03')
 
-// expreadbtn04.addEventListener('click', function(){
-//     menureadBar04.classList.toggle('hidden')
-// })
+expreadbtn03.addEventListener('click', function(){
+    menureadBar03.classList.toggle('hidden')
+})
 
 
 
-// 05 BAMBOO ----------------------------------------------------------------------------------
+
+
+// 04 ANIMAIS ANCESTRAIS ------------------------------------------------------------------------
+
+function abrirLeitura04(){
+    const modalread04 = document.querySelector("#animaisancestrais");
+    modalread04.classList.remove('invisible');
+
+    modalread04.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread04') {
+            modalread04.classList.add('invisible')
+        }
+    })
+}
+
+// // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn04 = document.querySelector('.menu_text_itens_04')
+let menureadBar04 = document.querySelector('.text_itens_04')
+
+expreadbtn04.addEventListener('click', function(){
+    menureadBar04.classList.toggle('hidden')
+})
+
+
+
+
+// 05 BAMBOO -----------------------------------------------------------------------------------
 function abrirLeitura05(){
     const modalread05 = document.querySelector("#bamboo");
     modalread05.classList.remove('invisible');
@@ -287,7 +298,8 @@ expreadbtn05.addEventListener('click', function(){
 
 
 
-// 06 COURO E ESCAMAS -----------------------------------------------------------------------------------
+
+// 06 COURO E ESCAMAS ---------------------------------------------------------------------------
 function abrirLeitura06(){
     const modalread06 = document.querySelector("#couroeescamas");
     modalread06.classList.remove('invisible');
@@ -310,7 +322,134 @@ expreadbtn06.addEventListener('click', function(){
 
 
 
-// 12 A ÚLTIMA DE SUA GERAÇÃO -----------------------------------------------------------------------------------
+
+
+// 07 COGAUA -----------------------------------------------------------------------------------
+function abrirLeitura07(){
+    const modalread07 = document.querySelector("#cogaua");
+    modalread07.classList.remove('invisible');
+
+    modalread07.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread07') {
+            modalread07.classList.add('invisible')
+        }
+    })
+}
+
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn07 = document.querySelector('.menu_text_itens_07')
+let menureadBar07 = document.querySelector('.text_itens_07')
+
+expreadbtn07.addEventListener('click', function(){
+    menureadBar07.classList.toggle('hidden')
+})
+
+
+
+
+
+// 08 DAMATO --------------------------------------------------------------------------------------
+function abrirLeitura08(){
+    const modalread08 = document.querySelector("#damato");
+    modalread08.classList.remove('invisible');
+
+    modalread08.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread08') {
+            modalread08.classList.add('invisible')
+        }
+    })
+}
+
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn08 = document.querySelector('.menu_text_itens_08')
+let menureadBar08 = document.querySelector('.text_itens_08')
+
+expreadbtn08.addEventListener('click', function(){
+    menureadBar08.classList.toggle('hidden')
+})
+
+
+
+
+
+// 09 XIPAIA ---------------------------------------------------------------------------------------
+function abrirLeitura09(){
+    const modalread09 = document.querySelector("#xipaia");
+    modalread09.classList.remove('invisible');
+
+    modalread09.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread09') {
+            modalread09.classList.add('invisible')
+        }
+    })
+}
+
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn09 = document.querySelector('.menu_text_itens_09')
+let menureadBar09 = document.querySelector('.text_itens_09')
+
+expreadbtn09.addEventListener('click', function(){
+    menureadBar09.classList.toggle('hidden')
+})
+
+
+
+
+
+// 10 ANTES DE TUDO ---------------------------------------------------------------------------------
+function abrirLeitura10(){
+    const modalread10 = document.querySelector("#antesdetudo");
+    modalread10.classList.remove('invisible');
+
+    modalread10.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread10') {
+            modalread10.classList.add('invisible')
+        }
+    })
+}
+
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn10 = document.querySelector('.menu_text_itens_10')
+let menureadBar10 = document.querySelector('.text_itens_10')
+
+expreadbtn10.addEventListener('click', function(){
+    menureadBar10.classList.toggle('hidden')
+})
+
+
+
+
+
+// 11 BATALHA DOS ESPÓLIOS --------------------------------------------------------------------------
+function abrirLeitura11(){
+    const modalread11 = document.querySelector("#batalhadosespolios");
+    modalread11.classList.remove('invisible');
+
+    modalread11.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread11') {
+            modalread11.classList.add('invisible')
+        }
+    })
+}
+
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn11 = document.querySelector('.menu_text_itens_11')
+let menureadBar11 = document.querySelector('.text_itens_11')
+
+expreadbtn11.addEventListener('click', function(){
+    menureadBar11.classList.toggle('hidden')
+})
+
+
+
+
+
+// 12 A ÚLTIMA DE SUA GERAÇÃO -----------------------------------------------------------------------
 function abrirLeitura12(){
     const modalread12 = document.querySelector("#aultimadageracao");
     modalread12.classList.remove('invisible');
@@ -321,6 +460,7 @@ function abrirLeitura12(){
         }
     })
 }
+
 // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
 
 let expreadbtn12 = document.querySelector('.menu_text_itens_12')
@@ -333,7 +473,32 @@ expreadbtn12.addEventListener('click', function(){
 
 
 
-// 14 MORRO DO DIABO -----------------------------------------------------------------------------------
+
+// 13 ANAHÍ -----------------------------------------------------------------------------------------
+function abrirLeitura13(){
+    const modalread13 = document.querySelector("#anahi");
+    modalread13.classList.remove('invisible');
+
+    modalread13.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread13') {
+            modalread13.classList.add('invisible')
+        }
+    })
+}
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn13 = document.querySelector('.menu_text_itens_13')
+let menureadBar13 = document.querySelector('.text_itens_13')
+
+expreadbtn13.addEventListener('click', function(){
+    menureadBar13.classList.toggle('hidden')
+})
+
+
+
+
+
+// 14 MORRO DO DIABO --------------------------------------------------------------------------------
 function abrirLeitura14(){
     const modalread14 = document.querySelector("#morrododiabo");
     modalread14.classList.remove('invisible');
