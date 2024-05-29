@@ -4,11 +4,11 @@
 
 /* NAVEGADOR SUPERIOR */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
 
     /* INTERFACE --------------------------------------------------*/
     .interface{
-        width: 700vw;
+        width: 100vw;
         height: 100vh;
     }
 
@@ -371,13 +371,17 @@
 
     
     /*---------------------- PÁGINA LIVROS ---------------------------------------------------------------------*/
+
     .bookpage-box{
         /* background-color: rgb(197, 2, 132); */
+        display: block;
         display: flex;
         flex-direction: column;
         height: 100vh;
         width: 100vw;
     }
+
+
 
     .bookpage-box h1{
         margin-top: 4rem;
@@ -427,7 +431,6 @@
         flex-wrap: wrap;
         gap: 0.2rem;
         padding: 0.5rem;
-        margin: 0;
     }
 
     .bookpage-list::-webkit-scrollbar{
@@ -535,8 +538,7 @@
         background-size: 140%;
         border-radius: 0.5rem;
         display: flex;
-        flex-direction: column;
-        justify-content: end;
+        justify-content: start;
         overflow: hidden;
         transition: 0.3s;
         margin: auto;
@@ -1087,4 +1089,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+    /* BLOQUEIO DE NAVEGAÇÃO POR SCROLL MOBILE */
+    .inative{
+        display: none;
+    }
+  
 }

@@ -1,3 +1,145 @@
+// BOTÕES DE NAVEGAÇÃO DAS PÁGINAS ------------------------------------------------------------------------
+// botões
+let homeMenu = document.querySelectorAll('.newmenu')
+let bookMenu = document.querySelectorAll('.bookmenu')
+let hqMenu = document.querySelectorAll('.hqmenu')
+let vdMenu = document.querySelectorAll('.vdmenu')
+let glMenu = document.querySelectorAll('.glmenu')
+let colectMenu = document.querySelectorAll('.collectionmenu')
+// páginas
+const newPage = document.querySelector('.new-box-box')
+const bookPage = document.querySelector('#bookpage')
+const hqPage = document.querySelector('#hqpage')
+const vdPage = document.querySelector('#vdpage')
+const glPage = document.querySelector('#glpage')
+const collectionPage = document.querySelector('#collection')
+
+
+// Acessar lançamentos
+homeMenu.forEach((item) => {
+    item.addEventListener('click', function(){
+        newPage.classList.remove('inative')
+        newPage.classList.add('new-box')
+        bookPage.classList.add('inative')
+        hqPage.classList.add('inative')
+        vdPage.classList.add('inative')
+        glPage.classList.add('inative')
+        collectionPage.classList.add('inative')
+        newPage.scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            block: "nearest",
+        });
+
+    })
+
+})
+
+// Acessar livros
+bookMenu.forEach((item) => {
+    item.addEventListener('click', function(){
+        bookPage.classList.remove('inative')
+        bookPage.classList.add('bookpage-box')
+        newPage.classList.add('inative')
+        hqPage.classList.add('inative')
+        vdPage.classList.add('inative')
+        glPage.classList.add('inative')
+        collectionPage.classList.add('inative')
+        bookPage.scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            block: "nearest",
+        });
+
+    })
+
+})
+
+// Acessar hqs
+hqMenu.forEach((item) => {
+    item.addEventListener('click', function(){
+        hqPage.classList.remove('inative')
+        hqPage.classList.add('hqpage-box')
+        newPage.classList.add('inative')
+        bookPage.classList.add('inative')
+        vdPage.classList.add('inative')
+        glPage.classList.add('inative')
+        collectionPage.classList.add('inative')
+        hqPage.scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            block: "nearest",
+        });
+
+    })
+
+})
+
+// Acessar galeria
+glMenu.forEach((item) => {
+    item.addEventListener('click', function(){
+        glPage.classList.remove('inative')
+        glPage.classList.add('glpage-box')
+        newPage.classList.add('inative')
+        bookPage.classList.add('inative')
+        hqPage.classList.add('inative')
+        vdPage.classList.add('inative')
+        collectionPage.classList.add('inative')
+        glPage.scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            block: "nearest",
+        });
+
+    })
+
+})
+
+// Acessar videos
+vdMenu.forEach((item) => {
+    item.addEventListener('click', function(){
+        vdPage.classList.remove('inative')
+        vdPage.classList.add('vdpage-box')
+        newPage.classList.add('inative')
+        bookPage.classList.add('inative')
+        hqPage.classList.add('inative')
+        glPage.classList.add('inative')
+        collectionPage.classList.add('inative')
+        vdPage.scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            block: "nearest",
+        });
+
+    })
+
+})
+
+// Acessar coleções
+colectMenu.forEach((item) => {
+    item.addEventListener('click', function(){
+        collectionPage.classList.remove('inative')
+        collectionPage.classList.add('collection-box')
+        newPage.classList.add('inative')
+        bookPage.classList.add('inative')
+        hqPage.classList.add('inative')
+        glPage.classList.add('inative')
+        vd.classList.add('inative')
+        collectionPage.scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            block: "nearest",
+        });
+
+    })
+
+})
+
+
+
+
+
+
 // FUNCIONALIDADE DO BOTÃO DE EXPANDIR A CAIXA DE PESQUISA-----------------------------------------------
 let expSearchBtn = document.querySelector('.search-icon')
 let searchBar = document.querySelector('.inp-search')
