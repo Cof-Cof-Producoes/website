@@ -404,7 +404,7 @@ function abrirLeitura04(){
     })
 }
 
-// // BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
 
 let expreadbtn04 = document.querySelector('.menu_text_itens_04')
 let menureadBar04 = document.querySelector('.text_itens_04')
@@ -658,4 +658,26 @@ let menureadBar14 = document.querySelector('.text_itens_14')
 
 expreadbtn14.addEventListener('click', function(){
     menureadBar14.classList.toggle('hidden')
+})
+
+
+
+// 15 A LENDA DE LÁZARO --------------------------------------------------------------------------------
+function abrirLeitura15(){
+    const modalread15 = document.querySelector("#alendadelazaro");
+    modalread15.classList.remove('invisible');
+
+    modalread15.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread15') {
+            modalread15.classList.add('invisible')
+        }
+    })
+}
+// BOTÃO DE EXPANDIR CAIXA DE ITENS DA PÁGINA DE LEITURA 
+
+let expreadbtn15 = document.querySelector('.menu_text_itens_15')
+let menureadBar15 = document.querySelector('.text_itens_15')
+
+expreadbtn15.addEventListener('click', function(){
+    menureadBar15.classList.toggle('hidden')
 })
