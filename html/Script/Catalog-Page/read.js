@@ -1,3 +1,17 @@
+//AVISO INICIAL --------------------------------------
+const avisoInicial = document.querySelector('.avisoinicial')
+window.addEventListener("load", function(){
+    avisoInicial.classList.remove('inative')
+})
+
+const closeAviso = document.querySelector('.closeaviso')
+
+function closeaviso01() {
+    avisoInicial.classList.add('inative')
+}
+
+
+
 // BOTÕES DE NAVEGAÇÃO DAS PÁGINAS ------------------------------------------------------------------------
 // botões
 let homeMenu = document.querySelectorAll('.newmenu')
