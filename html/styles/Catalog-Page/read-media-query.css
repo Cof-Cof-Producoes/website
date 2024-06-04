@@ -68,6 +68,8 @@
     #nav-list-02{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.918);
     }
 
 
