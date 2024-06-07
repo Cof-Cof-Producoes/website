@@ -660,6 +660,53 @@
     }
 
 
+    /* -----------------------------------CAIXA DE DIÁLOGO (PRÉ LEITURA) ----------------------------- */
+
+    .dialog-overflow{
+        padding: 0;
+        gap: 1rem;
+
+    }
+
+    .slide-preread{
+        display: none;
+    
+    }
+
+    .preread{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .preread img{
+        width: 90%;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .prev-info{
+        width: 100%;
+    }
+
+    .preread h1{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .prev-info-btns{
+        display: none;
+    }
+
+    .prev-info-mobile-btns{
+        /* background-color: blue; */
+        height: 5rem;
+        padding-bottom: 2rem;
+        display: flex;
+        margin: 1rem;
+    }
 
 
     

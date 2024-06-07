@@ -1649,6 +1649,7 @@ padding: 1rem;
 /* -----------------------------------------CARDS (LIVROS E HQS)------------------------------------------------------- */
 
 /*CORPO DO CARDBOOK*/
+
 .card{
     width: 13rem;
     height: 17rem;
@@ -1660,6 +1661,7 @@ padding: 1rem;
     justify-content: end;
     overflow: hidden;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 
@@ -1699,11 +1701,11 @@ padding: 1rem;
 
 }
 
-.ext-card-desc:hover{
+/* .ext-card-desc:hover{
     height: 12rem;
     margin-top: -5rem;
 
-}
+} */
 
 .ext-card-desc h2{
     width: 100%;
@@ -1782,6 +1784,204 @@ padding: 1rem;
     color: white;
     scale: 1.2;
 }
+
+/* -----------------------------------CAIXA DE DIÁLOGO (PRÉ LEITURA) ----------------------------- */
+
+
+.dialog{
+    background-color: rgba(0, 0, 0, 0.705);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid   rgb(94, 94, 94);
+    position: fixed;
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 700; 
+}
+
+.closedialogbtn{
+    top: 5px;
+    right: 5px;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+
+}
+
+.closedialog{
+    color: white;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.closedialog:hover{
+    scale: 1.1;
+    opacity: 1;
+
+}
+
+.dialog-overflow{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    overflow: auto;
+}
+
+.dialog-overflow::-webkit-scrollbar{
+    display: none;
+}
+
+.slide-preread{
+    background-color: transparent;
+    height: 50%;
+    width: 3rem;
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.previuspreread{
+    position: fixed;
+    left: 0;
+}
+
+.nextpreread{
+    position: fixed;
+    right: 0;
+
+}
+
+.slide-preread span{
+    scale: 5;
+    color: white;
+
+}
+
+.slide-preread:hover{
+    opacity: 1;
+    scale: 1.05;
+
+}
+
+.slide-preread:active{
+    scale: 1;
+
+}
+
+
+.preread{
+    width: 100%;
+    height: 100%;
+    /* background-color: orange; */
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.prelarg{
+    width: 1300px;
+}
+
+.preread h1{
+    width: 100%;
+    top: 0;
+    text-align: center;
+    color: rgb(221, 221, 221);
+    font-size: 2rem;
+}
+
+.preread img{
+    width: 35%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 0;
+}
+
+.prev-info{
+    background-color: rgba(0, 0, 0, 0.842);
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 1rem;
+    border-radius: 5px;
+    top: 0;
+}
+
+.prev-info p{
+    color: white;
+    font-size: 0.8rem;
+    
+}
+
+.prev-info-btns{
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+.prev-info-btns button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(1, 1, 83);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+.prev-info-mobile-btns{
+    /* background-color: blue; */
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    display: none;
+}
+
+.prev-info-mobile-btns button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(1, 1, 83);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
 
 /* ------------------------------------------- MODAL DE LEITURA (LIVROS E HQS) -------------------------------------------- */
 
@@ -2183,84 +2383,121 @@ padding: 1rem;
 
 /* -------------------------------------------------------------------LIVROS */
 
-#cardbook-01{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Os%20Port%C3%B5es%20da%20Areia.jpg);
-    background-size: 107%;
-}
-
-#cardbook-02{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Vagalumes.jpg);
-}
-
-#cardbook-03{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Babu.jpg);
-}
-
-#cardbook-04{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Ancestrais.jpg);
-}
-
-#cardbook-05{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Bamboo.jpeg);
-}
-
-#cardbook-06{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Couro%20e%20Escamas.jpg);
-}
-
-#cardbook-07{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Saci.jpg);
-}
-
-#cardbook-08{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook.jpg);
-    background-size: 120%;
-}
-
-#cardbook-09{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Xipaia.jpeg);
-    background-size: 140%;
-}
-
-#cardbook-10{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Antes%20de%20Tudo.png);
-    background-size: 107%;
-}
-
-#cardbook-11{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Gods%20games.jpg);
-    background-size: 135%;
-}
-
-#cardbook-12{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-A-%C3%BAltima-da-gera%C3%A7%C3%A3o.jpg);
-    background-size: 130%;
-}
-
-#cardbook-13{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Anahi.jpg);
-    background-size: 122%;
-}
-
-#cardbook-14{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Morro-do-Diabo.jpg);
-    background-size: 105%;
-}
-
+/* A LENDA DE LÁZARO */
 #cardbook-15{
     background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Lazaro.jpg);
     background-size: 120%;
 }
+
+/* ANAHI */
+#cardbook-14{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Anahi.jpg);
+    background-size: 122%;
+}
+
+/* COURO E ESCAMAS */
+#cardbook-13{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Couro%20e%20Escamas.jpg);
+}
+
+/* VAGALUMES */
+#cardbook-12{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Vagalumes.jpg);
+}
+
+/* BAMBOO */
+#cardbook-11{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Bamboo.jpeg);
+}
+
+/* OS PORTÕES DA AREIA */
+#cardbook-10{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Os%20Port%C3%B5es%20da%20Areia.jpg);
+    background-size: 107%;
+}
+
+/* A ÚLTIMA DA GERAÇÃO */
+#cardbook-09{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-A-%C3%BAltima-da-gera%C3%A7%C3%A3o.jpg);
+    background-size: 130%;
+}
+
+/* XIPAIA */
+#cardbook-08{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Xipaia.jpeg);
+    background-size: 140%;
+    filter: grayscale(1);
+}
+
+/* MORRO DO DIABO */
+#cardbook-07{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Morro-do-Diabo.jpg);
+    background-size: 105%;
+    filter: grayscale(1);
+}
+
+/* BABU */
+#cardbook-06{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Babu.jpg);
+    filter: grayscale(1);
+}
+
+/* COGAUA */
+#cardbook-05{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Saci.jpg);
+    filter: grayscale(1);
+}
+
+/* DAMATO */
+#cardbook-04{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook.jpg);
+    background-size: 120%;
+    filter: grayscale(1);
+}
+
+/* BATALHA DOS ESPÓLIOS */
+#cardbook-03{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Gods%20games.jpg);
+    background-size: 135%;
+    filter: grayscale(1);
+}
+
+/* ANIMAIS ANCESTRAIS */
+#cardbook-02{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Ancestrais.jpg);
+    filter: grayscale(1);
+}
+
+/* ANTES DE TUDO */
+#cardbook-01{
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Antes%20de%20Tudo.png);
+    background-size: 107%;
+    filter: grayscale(1);
+}
+
+
 
 
 
 
 /* ------------------------------------------------------------------- HQS */
 
+
+
+/* BLUE LIGHTS */
 #cardhq-01{
     background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/HQs/cardhq-Blue%20lights.jpg);
     background-size: 122%;
 }
+
+
+
+
+
+
+
+
+
 
 
 
