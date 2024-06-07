@@ -1377,6 +1377,7 @@ ul li.item-menu a{
     width: 100%;
     margin-top: 2rem;
     font-weight: 300;
+    border-bottom: 1px solid rgb(85, 85, 85);
 }
 
 
@@ -2051,10 +2052,10 @@ padding: 1rem;
     overflow: hidden;
 }
 
-.card-vd:hover{
+/* .card-vd:hover{
     background-color: rgb(19, 19, 19);
     box-shadow: 5px 10px 10px rgb(43, 43, 43);
-}
+} */
 
 .vdpage-list:has(.card-vd:hover) .card-vd:not(:hover){
     opacity: 0.6;

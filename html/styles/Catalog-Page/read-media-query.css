@@ -101,7 +101,7 @@
 
     .nav-list li:hover{
         background-color: rgb(29, 29, 29);
-        border-bottom: 1px solid rgb(194, 194, 194);
+        border: none;
     }
 
     .nav-list a{
@@ -568,7 +568,7 @@
     /*EXPANDIR DESCRIÇÃO DO CARDBOOK*/
     .ext-card-desc{
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.342);
+        background-color: rgba(0, 0, 0, 0.719);
         height: 2rem;
         display: flex;
         align-items: center;
