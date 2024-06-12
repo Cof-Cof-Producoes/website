@@ -7,7 +7,8 @@ font-family: "Inter", sans-serif;
 }
 
 body{
-    background-color: black;
+    background-color: #121212;
+    /* background-color: #CADBC0; */
 }
 
 /*REMOVE BARRA DE ROLAGEM*/
@@ -129,7 +130,7 @@ body::-webkit-scrollbar{
 
 /*--------------- INTERFACE ------------------------------------------------------------------------------------------------*/
 .interface{
-background-color: rgb(0, 0, 0);
+background-color: #121212;
 display: flex;
 flex-wrap: wrap;
 height: 100vh;
@@ -141,7 +142,7 @@ gap: 5rem;
 
 /*--------------- BARRA DE NAVEGAÇÃO ---------------------------------------------------*/
 .nav-bar {
-    background-color: rgb(0, 0, 0);
+    background-color: #121212;
     position: fixed;
     height: 3rem;
     width: 100%;
@@ -163,11 +164,16 @@ gap: 5rem;
     height: 2.8rem;
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.473);
+    box-shadow: 0 5px 5px black;
+    transition: 0.3s;
+    
 
 }
 
 .logo-box:hover{
+    scale: 1.02;
     background-color: rgb(158, 158, 158);
+    box-shadow: 0 10px 15px black;
 
 }
 
@@ -241,9 +247,11 @@ gap: 5rem;
 }
 
 .nav-list li:hover{
-    background-color: rgb(29, 29, 29);
-    border-bottom: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid  #49A078;
+    
+    
 }
+
 
 .nav-list a{
     text-decoration: none;
@@ -351,7 +359,7 @@ nav.usermenu{
     position: fixed;
     height: 0;
     width: 30rem;
-    background-color: rgb(31, 31, 31);
+    background-color: #121212;
     margin-top: -90vh;
     right: 0;
     padding: 3px;
@@ -372,7 +380,7 @@ nav.usermenu.expandir-user-menu{
     opacity: 1;
     height: 90vh;
     margin-top: 3rem;
-    background-color: rgba(15, 15, 15, 0.877);  
+    background-color: #121212d5;  
     backdrop-filter: blur(2px);   
 }
 
@@ -729,7 +737,7 @@ nav.menu{
     position: fixed;
     height: 100%;
     width: 2.5rem;
-    background-color: rgba(39, 39, 39, 0);
+    background-color: #0D0A0B;
     margin-top: 3rem;
     padding: 1rem 0 1rem 0.5%;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
@@ -740,6 +748,11 @@ nav.menu{
         
 }
 
+nav.menu:hover{
+    box-shadow: 5px 10px 20px rgb(0, 0, 0);
+        
+}
+
 nav.menu-inferior{
     display: none;
         
@@ -747,7 +760,7 @@ nav.menu-inferior{
 
 nav.menu.expandir{
     width: 11rem;
-    background-color: rgba(39, 39, 39, 0.397);  
+    background-color: #0d0a0be1;  
     backdrop-filter: blur(2px);   
 }
 
@@ -864,11 +877,11 @@ ul li.item-menu a{
     justify-content: center;
     width: 3rem;
     height: 3rem;
-    background-color: rgba(156, 156, 156, 0.322);
+    background-color: rgba(156, 156, 156, 0);
     margin: 1rem;
     border-radius: 50%;
     border: none;
-    color: rgb(24, 24, 24);
+    color: rgb(158, 158, 158);
     font-size: 2rem;
     transition: 0.4s;
     cursor: pointer;
@@ -1290,7 +1303,7 @@ ul li.item-menu a{
     margin-top: 4rem;
     margin-left: 4rem;
     font-size: 2rem;
-    color: rgb(189, 189, 189);
+    color: #CADBC0;
     padding: 0;
 }
 
@@ -1365,7 +1378,7 @@ ul li.item-menu a{
 
 .bookpage-list h1{
     font-size: 1.5rem;
-    color: rgb(73, 73, 73);
+    color: #CADBC0;
     margin: 0;
     margin-left: 35%;
     margin-top: 17%;
@@ -1373,7 +1386,7 @@ ul li.item-menu a{
 
 .bookpage-list h3{
     font-size: 1rem;
-    color: rgb(255, 255, 255);
+    color: #CADBC0;
     width: 100%;
     margin-top: 2rem;
     font-weight: 300;
@@ -1751,7 +1764,24 @@ padding: 1rem;
     left: 50%;
     transform: translate(-50%);
     z-index: 700; 
+    animation: abrirpreleitura 0.5s;
 }
+
+@keyframes abrirpreleitura{
+    from{
+      opacity: 0;
+      width: 8rem;
+      height: 4.3rem;
+      
+    }
+  
+    to{
+      opacity: 1;
+      width: 90%;
+      height: 80%;
+      
+    }
+  }
 
 .closedialogbtn{
     top: 5px;
@@ -2015,15 +2045,6 @@ padding: 1rem;
     cursor: pointer;
 }
 
-.close_leitura:hover{
-    background-color: rgb(255, 0, 0);
-}
-
-.close_leitura:active{
-    background-color: transparent;
-    transition: 0.1s;
-}
-
 .close_leitura svg{
     scale: 2;
 }
@@ -2183,7 +2204,7 @@ padding: 1rem;
 /* ------------------------------------------- CARDS DE VÍDEOS---------------------------------------------------- */
 
 .card-vd{
-    background-color: transparent;
+    background-color: #121212;
     display: flex;
     flex-direction: row;
     height: 315px;
@@ -2239,6 +2260,7 @@ padding: 1rem;
     overflow-y: auto;
     padding: 0.5rem;
     color: rgb(182, 182, 182);
+    text-align: justify;
 }
 
 .vd-desc p::-webkit-scrollbar{
