@@ -1699,7 +1699,7 @@ padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     padding: 0.5rem;
     overflow: hidden;
     gap: 0.7rem;
@@ -1714,11 +1714,11 @@ padding: 1rem;
 } */
 
 .ext-card-desc h2{
-    width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     display: flex;
     gap: 1rem;
+    text-align: center;
 }
 
 /* INDICADOR DE AVALIAÇÃO*/
@@ -1740,6 +1740,7 @@ padding: 1rem;
     width: 100%;
     color: white;
     font-size: 0.7rem;
+    text-align: justify;
 }
 
 /* BOTÕES DOS CARDBOOKS*/

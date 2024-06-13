@@ -577,7 +577,7 @@
         height: 2rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         overflow: hidden;
         gap: 0.5rem;
         padding: 0.2rem;
@@ -592,10 +592,10 @@
     }
 
     .ext-card-desc h2{
-        width: 100%;
         color: white;
         font-size: 0.5rem;
         display: flex;
+        text-align: center;
     }
 
     /* INDICADOR DE AVALIAÇÃO*/
