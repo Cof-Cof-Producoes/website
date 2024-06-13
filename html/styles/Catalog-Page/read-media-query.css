@@ -167,11 +167,12 @@
     /* OVERFLOW DO CARROSSEL */
     .overflow{
         /* background-color: tomato; */
+        overflow: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         
     
@@ -188,12 +189,14 @@
     /* CAIXA DO CARROSSEL */
     .carrossel-box{
         /* background-color: blue; */
-        height: 90vh;
-        overflow-y: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 3rem;
+        width: 100%;
         gap: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 2rem;
+        display: block;
+        overflow-y: auto;  
+
 
     }
 
@@ -206,49 +209,15 @@
     /* CARD DO CARROSSEL */
     .carrossel-item{
         /* background-color: green; */
-        height: 18rem;
         width: 18rem;
-        padding: 0;
+        height: 18rem;
+        margin-bottom: 3rem;
+        margin-left: 50%;
+        transform: translate(-50%);
         opacity: 1;
     }
 
-    /* IMAGEM DO CARD */
-    .img-box{
-        height: 100%;
-        width: 100%;
 
-    }
-
-    /* DESCRIÇÃO DO CARD */
-    .item-descrpition{
-        height: 10rem;
-        background-color: rgba(0, 0, 0, 0.596);
-        transition: 0.3s ease-in-out;
-        margin-top: -4.5rem;
-
-    }
-
-    .item-descrpition p{
-        font-size: 0.7rem;
-    }
-
-    .item-descrpition:hover{
-        background-color: rgba(0, 0, 0, 0.596);
-        height: 10rem;
-        margin-top: -7rem;
-        
-    }
-
-    /* BOTÕES DO CARD */
-    .item-card{
-        scale: 0.8;
-        /* display: none; */
-    }
-
-    /* INFORMAÇÃO DOS CARDS */
-    .info-item{
-        display: none;
-    }
 
     /* PÁGINA DE COLEÇÕES ---------------------------------------------------------- */
     .collection-box{
