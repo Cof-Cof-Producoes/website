@@ -577,6 +577,20 @@
                     <!--<h1>AINDA NÃO HÁ LIVROS =/</h1>-->
                     <h3>Seção: Contos inacabados das Terras Invisíveis</h3>
 
+                    <!-- CARDBOOK TIMELINE ---------------------- TIME-LINE TERRAS INVISÍVEIS ----------->
+                    <div class="card" id="cardbook-00" onclick="abrirdialog00()">
+                        
+                        <div class="card-desc">
+                            <div class="ext-card-desc">
+                                <h2>LINHA DO TEMPO</h2>
+                                <p>A ordem cronológica das terras invisíveis</p>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
                     <!-- CARDBOOK 15 ---------------------- A LENDA DE LÁZARO ----------->
                     <div class="card" id="cardbook-15" onclick="abrirdialog15()">
                         
@@ -1185,6 +1199,28 @@
         
         <!-------------------------------------- INSERÇÃO DE LIVROS ------------------------------------------------>
 
+        <!-- MODAL 00 DE LEITURA ----------------------- TIMELINE ----------------------------------------->
+        <div class="modal__Leitura invisible" id="time-line" style="background-color: rgb(0, 0, 0);">
+
+            <!-- NAVEGADOR SUPERIOR -->
+            <nav class="nav_Leitura" style="background-color: rgba(0, 0, 0, 0.897); border: none;">
+                <!-- BOTÃO DE FECHAR PÁGINA DE LEITURA -->
+                <button class="close_leitura" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-x" viewBox="0 0 16 16" id="closeread00">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="history_box">
+                
+                <iframe src="/html/time-line.html" allow="script"  style="margin-top: 2rem;"></iframe>
+                
+
+            </div>
+
+        </div>
 
 
         <!-- MODAL 15 DE LEITURA ----------------------- A LENDA DE LÁZARO ----------------------------------------->
@@ -2029,6 +2065,105 @@
 
 
         <!-------------------------------------- CAIXAS DE DIÁLOGO ----------------------------------------------->
+        <!-- DIALOG 00 - A TIMELINE -->
+        <dialog class="dialog inative" id="dialog00">
+            <button class="closedialogbtn">
+                <span class="material-symbols-outlined closedialog" id="closedialog00">
+                    close
+                    </span>
+            </button>
+
+            <div class="dialog-overflow">
+
+                <div class="preread" id="preread00">
+                    <div class="prelarg"></div>
+
+                    <h1>A Linha do Tempo das Terras invisíveis</h1>
+
+                    <img src="images/Catalog-Page/Livros/cardbook-timeline.jpg" alt="Um guerreiro no pico de uma montanha">
+
+                    <div class="prev-info">
+                        
+                        <p>Ententa a linha do tempo das histórias das terras invisíveis neste documento organizado em ordem cronológica.</p>
+
+                        <p>
+                            AUTOR: @Felps/@CJ;
+                        </p>
+
+                        <p>
+                            LANÇAMENTO: Junho/2024;
+                        </p>
+
+
+                        <div class="prev-info-btns">
+                            <button>
+                                compartilhar
+                                <span class="material-symbols-outlined">
+                                    share
+                                </span>
+                            </button>
+
+                            <button>
+                                recomendar 
+                                <span class="material-symbols-outlined">
+                                    send
+                                </span>
+                            </button>
+
+                            <button>
+                                Coleção 
+                                <span class="material-symbols-outlined">
+                                    bookmark_add
+                                </span>
+                            </button>
+
+                            <button onclick="abrirLeitura00()">
+                                Ler
+                            </button>
+                            
+    
+                        </div>
+
+                    </div>
+
+                    <div class="prev-info-mobile-btns">
+
+                        <button>
+                            <span class="material-symbols-outlined">
+                                share
+                            </span>
+                        </button>
+
+                        <button>
+                            <span class="material-symbols-outlined">
+                                send
+                            </span>
+                        </button>
+
+                        <button>
+                            <span class="material-symbols-outlined">
+                                bookmark_add
+                            </span>
+                        </button>
+
+                        <button onclick="abrirLeitura00()">
+                            Ler
+                        </button>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </dialog>
+
+
         <!-- DIALOG 15 - A LENDA DE LÁZARO -->
         <dialog class="dialog inative" id="dialog15">
             <button class="closedialogbtn">

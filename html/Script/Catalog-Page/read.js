@@ -327,6 +327,18 @@ revelar.reveal('.glpage-box',
 // ABRIR CAIXAS DE DIÁLOGO (PRÉ LEITURA) ------------------------------------------------------------------------
 
 // A LENDA DE LÁZARO
+function abrirdialog00(){
+    const dialog00 = document.querySelector("#dialog00");
+    dialog00.classList.remove('inative');
+
+    dialog00.addEventListener('click',(e) => {
+        if(e.target.id == 'closedialog00') {
+            dialog00.classList.add('inative')
+        }
+    })
+}
+
+// A LENDA DE LÁZARO
 function abrirdialog15(){
     const dialog15 = document.querySelector("#dialog15");
     dialog15.classList.remove('inative');
@@ -417,6 +429,20 @@ function abrirdialog09(){
 
 
 // MODAL DAS PÁGINAS DE LEITURA------------------------------------------------------------------------------------------
+
+
+// 00 TIME-LINE --------------------------------------------------------------------------------
+function abrirLeitura00(){
+    const modalread00 = document.querySelector("#time-line");
+    modalread00.classList.remove('invisible');
+
+    modalread00.addEventListener('click',(e) => {
+        if(e.target.id == 'closeread00') {
+            modalread00.classList.add('invisible')
+        }
+    })
+}
+
 
 
 

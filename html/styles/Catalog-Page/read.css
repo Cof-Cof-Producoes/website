@@ -2198,6 +2198,14 @@ padding: 1rem;
 
 /* -------------------------------------------------------------------LIVROS */
 
+/* LINHA DO TEMPO */
+#cardbook-00{
+    background-image: url(/html/images/Catalog-Page/Livros/cardbook-timeline.jpg);
+    background-size: 130%;
+
+}
+
+
 /* A LENDA DE LÁZARO */
 #cardbook-15{
     background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Lazaro.jpg);
