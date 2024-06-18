@@ -2,30 +2,18 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
     font-family: "Inter", sans-serif;
 
 }
 
-body{
-    background-color: #e7e7e7;
-    height: 100vh;
+
+/* INTERFACE GERAL */
+.interface-tl{
     background-image: url(/html/images/Catalog-Page/Livros/timeline-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-    
-    
-/*REMOVE BARRA DE ROLAGEM*/
-body::-webkit-scrollbar{
-    display: none;
-    
-}
-
-/* INTERFACE GERAL */
-.interface{
-    max-width: 1400px;
+    /* max-width: 1400px; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,12 +24,12 @@ body::-webkit-scrollbar{
 
 }
 
-.interface::-webkit-scrollbar{
+.interface-tl::-webkit-scrollbar{
     display: none;
 }
 
 /* CABEÇALHO */
-nav{
+.cabecalho-tl{
     background-color: rgba(0, 0, 0, 0.897);
     box-shadow: 0 3px 20px black;
     padding: 1rem;
@@ -53,8 +41,7 @@ nav{
     z-index: 1;
 }
 
-nav h1{
-    font-family: "MedievalSharp", cursive;
+.cabecalho-tl h1{
     font-size: 1.5rem;
     text-align: center;
     color: #ebebeb;
@@ -65,14 +52,14 @@ nav h1{
 
 
 /* CONTAINER */
-.container{
+.container-tl{
     background-color: rgba(0, 0, 0, 0.897);
     height: 80vh;
     overflow: auto;
     padding-top: 2rem;
 }
 
-.container::-webkit-scrollbar{
+.container-tl::-webkit-scrollbar{
     display: none;
 }
 
@@ -88,12 +75,12 @@ nav h1{
 
 }
 
-.line{
+.line-tl{
     height: 100%;
     border-right: 2px solid #72B01D;
 }
 
-.left, .right{
+.left-tl, .right-tl{
     width: 50%;
     height: 100%;
     padding-top: 0.5rem;
@@ -103,7 +90,7 @@ nav h1{
 
 }
 
-.left h3, .right h3{
+.left-tl h3, .right-tl h3{
     width: 100%;
     color: #f1f1f1;
     font-size: 1rem;
@@ -111,7 +98,7 @@ nav h1{
 
 }
 
-.left p, .right p{
+.left-tl p, .right-tl p{
     font-size: 0.8rem;
     color: rgb(194, 194, 194);
     text-align: justify;
@@ -121,7 +108,7 @@ nav h1{
 
 
 
-.card-left{
+.card-left-tl{
     /* background-color: #72B01D; */
     width: 100%;
     height: 8rem;
@@ -130,7 +117,7 @@ nav h1{
     justify-content: end;
 }
 
-.card-right{
+.card-right-tl{
     /* background-color: #72B01D; */
     width: 100%;
     height: 8rem;
@@ -139,7 +126,7 @@ nav h1{
     justify-content: start;
 }
 
-.card-img{
+.card-img-tl{
     /* background-color: orange; */
     border: 1px solid #72B01D;
     border-radius: 1rem;
@@ -151,21 +138,21 @@ nav h1{
     transition: 0.5s;
 }
 
-.card-img:hover{
+.card-img-tl:hover{
     scale: 1.1;
 }
 
-.card-img img{
+.card-img-tl img{
     width: 100%;
 }
 
-.card-line{
+.card-line-tl{
     width: 30%;
     border-bottom: 4px dotted #72B01D;
 
 }
 
-.card-line p{
+.card-line-tl p{
     color: #72B01D;
     text-align: center;
     font-weight: 600;
@@ -175,7 +162,7 @@ nav h1{
 
 
 /* CONTROLADOR RANGE */
-footer{
+.footer-tl{
     background-color: rgba(0, 0, 0, 0.897);
     height: 15vh;
     display: flex;
@@ -216,25 +203,23 @@ input[type=range]::-webkit-slider-thumb{
 
 /* MEDIA QUERY */
 @media screen and (max-width: 1000px){
-    nav{
+    .cabecalho-tl{
         height: 10vh;
     }
     
-    nav h1{
+    .cabecalho-tl h1{
         font-size: 1rem;
 
     }
 
-    .container{
+    .container-tl{
         height: 85vh;
         overflow: auto;
     }
 
 
-
-
     /* CONTROLADOR RANGE */
-    footer{
+    .footer-tl{
         background-color: rgba(0, 0, 0, 0.897);
         height: 15vh;
         display: flex;
@@ -258,7 +243,7 @@ input[type=range]::-webkit-slider-thumb{
 
     /* CARDS DO TEMPO */
 
-    .left h3, .right h3{
+    .left-tl h3, .right-tl h3{
         width: 100%;
         color: #f1f1f1;
         font-size: 0.7rem;
@@ -266,14 +251,14 @@ input[type=range]::-webkit-slider-thumb{
     
     }
 
-    .left p, .right p{
+    .left-tl p, .right-tl p{
         font-size: 0.6rem;
         color: rgb(194, 194, 194);
         text-align: justify;
         padding: 1rem;
     }
 
-    .card-line p{
+    .card-line-tl p{
         color: #72B01D;
         text-align: center;
         font-size: 0.8rem;
