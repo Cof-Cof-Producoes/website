@@ -2232,36 +2232,72 @@ padding: 1rem;
     padding-top: 1rem;
 }
 
+.footer-tl p{
+    color: white;
+    font-weight: 600;
+    margin-top: -2.5rem;
+    font-size: 2rem;
+    text-shadow: 0 3px 3px black;
+    
+}
 
-input[type=range]{
+
+.range-time{
     -webkit-appearance: none;
     appearance: none;
     width: 80%;
     height: 0.5rem;
     left: 4em;
     border-radius: 5px;
-    background-color: #b1b1b1;
+    background: linear-gradient(90deg, rgb(247, 255, 229) 60%, rgb(247, 255, 229) 60%);
     outline: none;
     opacity: 0.7;
     transition: 0.3s;
+    box-shadow: 0 3px 5px 3px black;
 
 }
 
-input[type=range]:hover{
+.range-time:hover{
     opacity: 1;
 }
 
+.range-time::after{
+    content: '2650';
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
+}
 
-input[type=range]::-webkit-slider-thumb{
+.range-time::before{
+    content: '0';
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    left: 3rem;
+    bottom: 1rem;
+}
+
+
+.range-time::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
+    background-color: #72b01d;
+    box-shadow: 0 2px 5px 2px black;
+    cursor: pointer;
 
 }
 
-#ano::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 1.2rem;
-    height: 1.2rem;
+.range-time::-moz-range-thumb{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
     background-color: #72b01d;
+    box-shadow: 0 2px 5px 2px black;
     cursor: pointer;
 
 }
@@ -2300,20 +2336,50 @@ input[type=range]::-webkit-slider-thumb{
         justify-content: start;
     }
 
-    input[type=range]{
-        height: 0.4rem;
+    .range-time{
+        height: 0.7rem;
+        margin-top: 1rem;
     
     }
+
+    .range-time::after{
+        font-size: 1rem;
+        color: white;
+        position: absolute;
+        right: 3rem;
+        bottom: 2.5rem;
+    }
     
-    #ano::-webkit-slider-thumb{
+    .range-time::before{
+        font-size: 1rem;
+        color: white;
+        position: absolute;
+        left: 3rem;
+        bottom: 2.5rem;
+    }
+    
+    .range-time::-webkit-slider-thumb{
         -webkit-appearance: none;
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 1.5rem;
+        height: 1.5rem;
         background-color: #72B01D;
     
     }
 
-    
+    .range-time::-moz-range-thumb{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #72B01D;
+
+    }
+
+    .footer-tl p{
+        color: white; 
+        font-size: 1.2rem;
+        
+    }
+
+
 
     /* CARDS DO TEMPO */
 
