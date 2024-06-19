@@ -330,10 +330,12 @@ revelar.reveal('.glpage-box',
 function abrirdialog00(){
     const dialog00 = document.querySelector("#dialog00");
     dialog00.classList.remove('inative');
+    dialog00.classList.add('front');
 
     dialog00.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog00') {
-            dialog00.classList.add('inative')
+            dialog00.classList.add('inative');
+            
         }
     })
 }
@@ -402,10 +404,12 @@ function abrirdialog11(){
 function abrirdialog10(){
     const dialog10 = document.querySelector("#dialog10");
     dialog10.classList.remove('inative');
+    dialog10.classList.add('front')
 
     dialog10.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog10') {
             dialog10.classList.add('inative')
+            dialog10.classList.remove('front');
         }
     })
 }
@@ -414,10 +418,12 @@ function abrirdialog10(){
 function abrirdialog09(){
     const dialog09 = document.querySelector("#dialog09");
     dialog09.classList.remove('inative');
+    dialog09.classList.add('front')
 
     dialog09.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog09') {
-            dialog09.classList.add('inative')
+            dialog09.classList.add('inative');
+            dialog09.classList.remove('front');
         }
     })
 }
@@ -435,10 +441,14 @@ function abrirdialog09(){
 function abrirLeitura00(){
     const modalread00 = document.querySelector("#time-line");
     modalread00.classList.remove('invisible');
+    modalread00.classList.add('front');
+    dialog00.classList.remove('front');
+    dialog00.classList.add('inative');
 
     modalread00.addEventListener('click',(e) => {
         if(e.target.id == 'closeread00') {
             modalread00.classList.add('invisible')
+            
         }
     })
 }
@@ -563,10 +573,13 @@ expreadbtn11.addEventListener('click', function(){
 function abrirLeitura10(){
     const modalread10 = document.querySelector("#osportoesdaareia");
     modalread10.classList.remove('invisible');
+    modalread10.classList.add('front');
+    dialog10.classList.remove('front')
 
     modalread10.addEventListener('click',(e) => {
         if(e.target.id == 'closeread10') {
             modalread10.classList.add('invisible')
+            modalread10.classList.remove('front');
         }
     })
 }
@@ -585,11 +598,17 @@ expreadbtn10.addEventListener('click', function(){
 // 09 A ÚLTIMA DA GERAÇÃO --------------------------------------------------------------------------
 function abrirLeitura09(){
     const modalread09 = document.querySelector("#aultimadageracao");
+    const dialog09 = document.querySelector("#dialog09")
     modalread09.classList.remove('invisible');
+    modalread09.classList.add('front')
+    dialog09.classList.remove('front');
+    
 
     modalread09.addEventListener('click',(e) => {
         if(e.target.id == 'closeread09') {
             modalread09.classList.add('invisible')
+            modalread09.classList.remove('front');
+            
         }
     })
 }
