@@ -20,7 +20,7 @@ slider.oninput = function(){
 
 }
 
-slider.addEventListener("mousemove", function(){
+slider.addEventListener("input", function(){
     let a = slider.value;
     let b = 2650
     let c = 100
