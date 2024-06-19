@@ -326,7 +326,7 @@ revelar.reveal('.glpage-box',
 
 // ABRIR CAIXAS DE DIÁLOGO (PRÉ LEITURA) ------------------------------------------------------------------------
 
-// A LENDA DE LÁZARO
+// TIME LINE TERRAS INVISÍVEIS
 function abrirdialog00(){
     const dialog00 = document.querySelector("#dialog00");
     dialog00.classList.remove('inative');
