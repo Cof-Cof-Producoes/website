@@ -344,10 +344,14 @@ function abrirdialog00(){
 function abrirdialog15(){
     const dialog15 = document.querySelector("#dialog15");
     dialog15.classList.remove('inative');
+    dialog15.classList.add('front');
+
 
     dialog15.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog15') {
             dialog15.classList.add('inative')
+            dialog15.classList.remove('front');
+
         }
     })
 }
@@ -356,10 +360,14 @@ function abrirdialog15(){
 function abrirdialog14(){
     const dialog14 = document.querySelector("#dialog14");
     dialog14.classList.remove('inative');
+    dialog14.classList.add('front');
+
 
     dialog14.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog14') {
             dialog14.classList.add('inative')
+            dialog14.classList.remove('front');
+
         }
     })
 }
@@ -368,10 +376,15 @@ function abrirdialog14(){
 function abrirdialog13(){
     const dialog13 = document.querySelector("#dialog13");
     dialog13.classList.remove('inative');
+    dialog13.classList.add('front');
+
 
     dialog13.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog13') {
             dialog13.classList.add('inative')
+            dialog13.classList.remove('front');
+
+            
         }
     })
 }
@@ -380,10 +393,14 @@ function abrirdialog13(){
 function abrirdialog12(){
     const dialog12 = document.querySelector("#dialog12");
     dialog12.classList.remove('inative');
+    dialog12.classList.add('front');
+
 
     dialog12.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog12') {
             dialog12.classList.add('inative')
+            dialog12.classList.remove('front');
+
         }
     })
 }
@@ -392,10 +409,14 @@ function abrirdialog12(){
 function abrirdialog11(){
     const dialog11 = document.querySelector("#dialog11");
     dialog11.classList.remove('inative');
+    dialog11.classList.add('front');
+
 
     dialog11.addEventListener('click',(e) => {
         if(e.target.id == 'closedialog11') {
             dialog11.classList.add('inative')
+            dialog11.classList.remove('front');
+            
         }
     })
 }
@@ -460,10 +481,15 @@ function abrirLeitura00(){
 function abrirLeitura15(){
     const modalread15 = document.querySelector("#alendadelazaro");
     modalread15.classList.remove('invisible');
+    modalread15.classList.add('front');
+    dialog15.classList.remove('front');
+
 
     modalread15.addEventListener('click',(e) => {
         if(e.target.id == 'closeread15') {
             modalread15.classList.add('invisible')
+            modalread15.classList.remove('front')
+
         }
     })
 }
@@ -482,10 +508,17 @@ expreadbtn15.addEventListener('click', function(){
 function abrirLeitura14(){
     const modalread14 = document.querySelector("#anahi");
     modalread14.classList.remove('invisible');
+    modalread14.classList.add('front');
+    dialog14.classList.remove('front');
+
 
     modalread14.addEventListener('click',(e) => {
         if(e.target.id == 'closeread14') {
             modalread14.classList.add('invisible')
+            modalread14.classList.remove('front');
+
+
+
         }
     })
 }
@@ -504,10 +537,16 @@ expreadbtn14.addEventListener('click', function(){
 function abrirLeitura13(){
     const modalread13 = document.querySelector("#couroeescamas");
     modalread13.classList.remove('invisible');
+    modalread13.classList.add('front');
+    dialog13.classList.remove('front');
+    
+    
 
     modalread13.addEventListener('click',(e) => {
         if(e.target.id == 'closeread13') {
-            modalread13.classList.add('invisible')
+            modalread13.classList.add('invisible');
+            modalread13.classList.remove('front');
+            
         }
     })
 }
@@ -527,10 +566,13 @@ expreadbtn13.addEventListener('click', function(){
 function abrirLeitura12(){
     const modalread12 = document.querySelector("#vagalumes");
     modalread12.classList.remove('invisible');
+    modalread12.classList.add('front');
+    dialog12.classList.remove('front');
 
     modalread12.addEventListener('click',(e) => {
         if(e.target.id == 'closeread12') {
             modalread12.classList.add('invisible')
+            modalread12.classList.remove('front');
         }
     })
 }
@@ -550,10 +592,13 @@ expreadbtn12.addEventListener('click', function(){
 function abrirLeitura11(){
     const modalread11 = document.querySelector("#bamboo");
     modalread11.classList.remove('invisible');
+    modalread11.classList.add('front');
+    dialog11.classList.remove('front');
 
     modalread11.addEventListener('click',(e) => {
         if(e.target.id == 'closeread11') {
-            modalread11.classList.add('invisible')
+            modalread11.classList.add('invisible');
+            modalread10.classList.remove('front');
         }
     })
 }
@@ -574,7 +619,7 @@ function abrirLeitura10(){
     const modalread10 = document.querySelector("#osportoesdaareia");
     modalread10.classList.remove('invisible');
     modalread10.classList.add('front');
-    dialog10.classList.remove('front')
+    dialog10.classList.remove('front');
 
     modalread10.addEventListener('click',(e) => {
         if(e.target.id == 'closeread10') {
