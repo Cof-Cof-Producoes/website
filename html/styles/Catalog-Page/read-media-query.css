@@ -163,7 +163,16 @@
     nav.usermenu{
         width: 100%;
         margin: 0;
+    }
 
+    nav.usermenu.expandir-user-menu{
+        height: 80vh;
+    }
+
+    .user-friends{
+        height: 40%;
+
+    
     }
 
     /* PÁGINA DE LANÇAMENTOS -----------------------------------------*/
