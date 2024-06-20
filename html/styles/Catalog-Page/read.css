@@ -2178,7 +2178,7 @@ padding: 1rem;
 
 .left-tl p, .right-tl p{
     background-color: rgb(0,0,0,0.5);
-    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.815);
+    
     font-size: 0.8rem;
     color: rgb(194, 194, 194);
     text-align: justify;
@@ -2210,6 +2210,7 @@ padding: 1rem;
 }
 
 .right-tl p.time-text, .right-tl h3{
+    
     animation: appear-text-right 1s ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
@@ -2230,7 +2231,9 @@ padding: 1rem;
     
 }
 
-
+.time-text{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.815);
+}
 
 
 
@@ -2311,7 +2314,6 @@ padding: 1rem;
 .card-line-tl{
     width: 30%;
     border-bottom: 4px dotted #72B01D;
-    margin: 5px;
 
 }
 
