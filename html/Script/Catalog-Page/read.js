@@ -1,3 +1,4 @@
+
 //AVISO INICIAL --------------------------------------
 const avisoInicial = document.querySelector('.avisoinicial')
 window.addEventListener("load", function(){
@@ -852,5 +853,68 @@ let menureadBar01 = document.querySelector('.text_itens_01')
 expreadbtn01.addEventListener('click', function(){
     menureadBar01.classList.toggle('hidden')
 })
+
+
+
+
+
+
+
+
+
+
+
+
+//***************************************** CONFIGURAÇÕES ******************************
+
+const openConfigBtn = document.querySelector(".config-btn")
+const configBox = document.querySelector(".config")
+const closeConfigBtn = document.querySelector(".close-config-btn");
+
+openConfigBtn.addEventListener('click', ()=>{
+    configBox.classList.remove('inative')
+})
+
+closeConfigBtn.addEventListener('click',() => {
+    configBox.classList.add('inative')
+        
+})
+
+// MUDAR TEMA
+// VARIÁVEIS DAS CONFIGURAÇÕES
+const chktheme = document.querySelector('#chk-box-theme')
+
+const configTheme = document.querySelector('.config')
+const closeConfigThemeBtn = document.querySelector('.close-config-btn')
+const configTitle = document.querySelector('.config-title')
+const configThemeTitle = document.querySelector('.theme-title')
+const inputTheme = document.querySelector('.input-theme')
+const inputThemeBall = document.querySelector('.theme-ball')
+
+// VARIÁVEIS DOS NAVEGADORES
+const navSup = document.querySelector('.nav-bar')
+const navLat = document.querySelector('#nav-list-02')
+const navText = document.querySelectorAll('nav-link-a')
+
+// VARIÁVEIS DAS JANELAS
+// const generalInterfaceTheme = document.querySelector('.interface')
+
+chktheme.addEventListener('change', function() {
+    document.body.classList.toggle('lighttheme')
+    // TEMAS DAS CONFIGURAÇÕES
+    
+    // generalInterfaceTheme.classList.toggle('lighttheme')
+    // configTheme.classList.toggle('lighttheme')
+    // configTitle.classList.toggle('lighttheme')
+    // configThemeTitle.classList.toggle('lighttheme')
+    // inputTheme.classList.toggle('lighttheme')
+    // inputThemeBall.classList.toggle('lighttheme')
+    // closeConfigBtn.classList.toggle('lighttheme')
+    // navSup.classList.toggle('lighttheme')
+    // navLat.classList.toggle('lighttheme')
+    // navText.classList.toggle('lighttheme')
+})
+
+
 
 
