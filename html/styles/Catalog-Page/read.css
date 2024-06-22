@@ -275,6 +275,10 @@ transition: background 0.2s linear;
     gap: 0.5rem;
 }
 
+.discord-icon svg{
+    fill: #cccccc;
+}
+
 
 /*ÁREA DE PESQUISA*/
 .search-box{
@@ -3014,19 +3018,11 @@ padding: 1rem;
  
 }
 
-.theme-ball.lighttheme{
-    background-color: #cccccc;
-}
-
-
 .theme-ball:hover{
     background-color: #222222;
  
 }
 
-.theme-ball.lighttheme:hover{
-    color: #cccccc;
-}
 
 .checkbox-theme:checked + .input-theme .theme-ball{
     transform: translateX(30px);
@@ -3064,12 +3060,12 @@ padding: 1rem;
 
 /* ------------------------------------------------ TEMAS LIGTH */
 /* COR DE FUNDO MATRIZ */
-.lighttheme .interface, .lighttheme .config, .lighttheme #nav-list-02, .lighttheme .menu {
+.lighttheme .interface, .lighttheme #nav-list-02, .lighttheme .menu, .lighttheme .theme-ball, .lighttheme .card-vd {
     background-color: #cccccc;
 }
 
 /* COR DE FONTES MATRIZ */
-.lighttheme .bookpage-box h1,.lighttheme .bookpage-list h3, .lighttheme .hqpage-box h1, .lighttheme .vdpage-box h1, .lighttheme .glpage-box h1, .lighttheme .collection-box h1, .lighttheme .nav-bar ul li a, .lighttheme .nav-bar ul li a svg, .lighttheme #nav-list-02 ul li a, .lighttheme svg, .lighttheme #outlined-02, .lighttheme .item-menu a {
+.lighttheme .bookpage-box h1,.lighttheme .bookpage-list h3, .lighttheme .hqpage-box h1, .lighttheme .vdpage-box h1, .lighttheme .glpage-box h1, .lighttheme .collection-box h1, .lighttheme .nav-bar ul li a, .lighttheme #nav-list-02 ul li a, .lighttheme svg, .lighttheme #outlined-02, .lighttheme .item-menu a, .lighttheme .close-config-btn, .lighttheme .vd-desc h2, .lighttheme .vd-desc p, .lighttheme .card-vd-btns h3 {
     color: #121212;
     font-weight: 700;
 
@@ -3089,6 +3085,10 @@ padding: 1rem;
     box-shadow: 0 3px 3px #757575;
 }
 
+.lighttheme .discord-icon svg{
+    fill: #121212;
+}
+
 /* MENU LATERAL */
 
 .lighttheme .menu.expandir{
@@ -3102,7 +3102,7 @@ padding: 1rem;
 
 }
 
-.lighttheme .user-name, .lighttheme .status-title, .lighttheme .statistcs h2, .lighttheme .statistcs div, .lighttheme .statistcs-reaction h2, .lighttheme .new-title {
+.lighttheme .user-name, .lighttheme .status-title, .lighttheme .statistcs h2, .lighttheme .statistcs div, .lighttheme .statistcs-reaction h2, .lighttheme .new-title, .lighttheme .theme-title {
     color: #121212;
     font-weight: 600;
 }
@@ -3145,11 +3145,10 @@ padding: 1rem;
 }
 
 
-
 /* CAIXAS DE DIALOGO */
 
 .lighttheme .dialog{
-    background-color: #ccccccbb;
+    background-color: #ccccccd5;
     backdrop-filter: blur(3px);
 }
 
@@ -3159,13 +3158,52 @@ padding: 1rem;
 }
 
 .lighttheme .prev-info{
-    background-color: #858585;
+    background-color: #c2c2c2;
+    box-shadow: 0 3px 3px #686868;
 }
 
 .lighttheme .prev-info p{
     color: #050505;
     font-weight: 600;
 }
+
+.lighttheme .prev-info button,  .lighttheme .prev-info-mobile-btns button{
+    background-color: #121212;
+    color: rgb(91, 181, 255);
+    box-shadow: 0 3px 3px #686868;
+}
+
+.lighttheme .config-title {
+    color: #121212;
+    border-bottom:  3px solid #121212;
+}
+
+.lighttheme .input-theme{
+    background-color: #121212;
+}
+
+.lighttheme .input-theme span{
+    color: #cccccc;
+}
+
+/* SCROLLBAR DOS CARDS DE VÍDEOS */
+
+.lighttheme .vd-desc p::-webkit-scrollbar-track {
+    background-color: #a5a5a5;  
+}
+
+.lighttheme .card-vd{
+    box-shadow: 0 3px 3px 3px #afafaf;
+}
+
+
+/* PÁGINA DE CONFIGURAÇÕES */
+.lighttheme .config{
+    background-color: #ccccccD7;
+}
+
+
+
 
 
 

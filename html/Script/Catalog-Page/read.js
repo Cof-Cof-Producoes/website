@@ -867,6 +867,7 @@ expreadbtn01.addEventListener('click', function(){
 
 //***************************************** CONFIGURAÇÕES ******************************
 
+// ABRIR CONFIGURAÇÕES
 const openConfigBtn = document.querySelector(".config-btn")
 const configBox = document.querySelector(".config")
 const closeConfigBtn = document.querySelector(".close-config-btn");
@@ -880,40 +881,46 @@ closeConfigBtn.addEventListener('click',() => {
         
 })
 
+
+
+
 // MUDAR TEMA
-// VARIÁVEIS DAS CONFIGURAÇÕES
-const chktheme = document.querySelector('#chk-box-theme')
 
-const configTheme = document.querySelector('.config')
-const closeConfigThemeBtn = document.querySelector('.close-config-btn')
-const configTitle = document.querySelector('.config-title')
-const configThemeTitle = document.querySelector('.theme-title')
-const inputTheme = document.querySelector('.input-theme')
-const inputThemeBall = document.querySelector('.theme-ball')
+const chktheme = document.querySelector('.checkbox-theme')
 
-// VARIÁVEIS DOS NAVEGADORES
-const navSup = document.querySelector('.nav-bar')
-const navLat = document.querySelector('#nav-list-02')
-const navText = document.querySelectorAll('nav-link-a')
+// TOGGLE LIGHT MODE
+function toggleLightMode(){
+    document.body.classList.toggle('lighttheme');
 
-// VARIÁVEIS DAS JANELAS
-// const generalInterfaceTheme = document.querySelector('.interface')
+}
+
+// LODAD LIGHT MODE
+
+function loadTheme() {
+    const lightMode = localStorage.getItem('lighttheme')
+
+    if(lightMode) {
+        toggleLightMode();
+    }
+}
+
+loadTheme();
 
 chktheme.addEventListener('change', function() {
-    document.body.classList.toggle('lighttheme')
-    // TEMAS DAS CONFIGURAÇÕES
-    
-    // generalInterfaceTheme.classList.toggle('lighttheme')
-    // configTheme.classList.toggle('lighttheme')
-    // configTitle.classList.toggle('lighttheme')
-    // configThemeTitle.classList.toggle('lighttheme')
-    // inputTheme.classList.toggle('lighttheme')
-    // inputThemeBall.classList.toggle('lighttheme')
-    // closeConfigBtn.classList.toggle('lighttheme')
-    // navSup.classList.toggle('lighttheme')
-    // navLat.classList.toggle('lighttheme')
-    // navText.classList.toggle('lighttheme')
-})
+    toggleLightMode();
+
+    // SAVE OR REMOVE LIGHT MODE
+    localStorage.removeItem('lighttheme');
+
+    if (document.body.classlist.contains("lighttheme")) {
+        localStorage.setItem("lighttheme", 1);
+
+    }
+});
+
+
+
+
 
 
 
