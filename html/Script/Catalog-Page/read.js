@@ -858,13 +858,6 @@ expreadbtn01.addEventListener('click', function(){
 
 
 
-
-
-
-
-
-
-
 //***************************************** CONFIGURAÇÕES ******************************
 
 // ABRIR CONFIGURAÇÕES

@@ -18,13 +18,13 @@ function filterCards() {
                 card.style.display = "none"
             }
             else {
-                card.style.display = "block"
+                card.style.display = "flex"
             }
         }
 
     } else {
         for(let card of cards) {
-            card.style.display = "block"
+            card.style.display = "flex"
         }
     }
 }
