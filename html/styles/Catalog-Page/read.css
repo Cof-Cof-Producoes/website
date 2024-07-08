@@ -239,7 +239,7 @@ transition: background 0.2s linear;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     list-style: none;
 }
 
@@ -1167,7 +1167,7 @@ ul li.item-menu a{
     margin-top: 4rem;
     margin-left: 4rem;
     font-size: 2rem;
-    color: #CADBC0;
+    color: #cccccc;
     padding: 0;
 }
 
@@ -1242,7 +1242,7 @@ ul li.item-menu a{
 
 .bookpage-list h1{
     font-size: 1.5rem;
-    color: #CADBC0;
+    color: #cccccc;
     margin: 0;
     margin-left: 35%;
     margin-top: 17%;
@@ -1250,7 +1250,7 @@ ul li.item-menu a{
 
 .bookpage-list h3{
     font-size: 1rem;
-    color: #CADBC0;
+    color: #cccccc;
     width: 100%;
     margin-top: 2rem;
     font-weight: 300;
