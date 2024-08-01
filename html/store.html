@@ -1,72 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/Store-page/favicon.ico" type="image/x-icon"> <!--ÍCONE DE ABA DO NAVEGADOR-->
-    <title>Lojas</title>
-    <link rel="stylesheet" href="styles/Store-Page/stlye-store.css"> <!--ESTILO GERAL-->
-    <link rel="stylesheet" href="styles/Store-Page/style-store-MQ.css"> <!--ESTILO MOBILE-->
+    <link rel="shortcut icon" href="./images/Store-page/favicon.ico" type="image/x-icon">
+    <title>Loja CofCof</title>
+    <!--Folha de estilo-->
+    <link rel="stylesheet" href="./styles/Store-Page/store.css"> 
+    <!-- mediaquery -->
+     <link rel="stylesheet" href="./styles/Store-Page/store_media_query.css">
+    <!-- fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
-    <!-- INTERFACE GERAL -->
-    <section class="page">
-        <!-- LOGOTIPO -->
-        <div class="logo-box">
-            <button class="logo-btn"><a href="https://cof-cof-producoes.github.io/website/"><img src="images/Store-page/LOGO-HOME-03.png" alt="logo da empresa" class="logo"></a></button>
+    <header class="cabecalho">
+        <nav class="navegador">
+            <a href="#"><img src="./images/Store-page/mini-logo.png" alt="logo"></a>
+        </nav>
+        <h1>Loja Cofcof</h1>
+
+        <ion-icon name="menu-outline" id="mobile_menu_btn"></ion-icon>
+
+    </header>
+
+    <nav class="mobile_menu">
+        <ul class="mobile_lista_menu">
+
+            <li class="item_lista">
+                <a href="#vestuario">
+                    <ion-icon name="shirt-outline"></ion-icon>
+                    VESTUÁRIO
+                </a>
+
+            </li>
+
+            <li class="item_lista">
+                <a href="#acessorios">
+                    <ion-icon name="gift-outline"></ion-icon>
+                    ACESSÓRIOS
+                </a>
+            </li>
+
+            <li class="item_lista">
+                <a href="#premium">
+                    <ion-icon name="ribbon-outline"></ion-icon>
+                    PREMIUM
+                </a>
+            </li>
+
+            <li class="item_lista">
+                <a href="#apoiar">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    APOIAR
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="container">
+        <nav class="menu hidden">
+            <ul class="lista_menu">
+                <ion-icon name="menu-outline" id="menu_btn"></ion-icon>
+
+                <li class="item_lista">
+                    <a href="#vestuario">
+                        <ion-icon name="shirt-outline"></ion-icon>
+                        VESTUÁRIO
+                    </a>
+
+                </li>
+
+                <li class="item_lista">
+                    <a href="#acessorios">
+                        <ion-icon name="gift-outline"></ion-icon>
+                        ACESSÓRIOS
+                    </a>
+                </li>
+
+                <li class="item_lista">
+                    <a href="#premium">
+                        <ion-icon name="ribbon-outline"></ion-icon>
+                        PREMIUM
+                    </a>
+                </li>
+
+                <li class="item_lista">
+                    <a href="#apoiar">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        APOIAR
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="page" id="vestuario">
+
+            <iframe src="https://montink.com/" frameborder="0" class="iframe"></iframe>
 
         </div>
-        <!-- LINKS -->
-        <div class="links">
-            <button class="clothes">
-                <a href="https://sou.montink.com/home-assinatura/?utm_source=google_ads&utm_medium=pmax&utm_campaign=lp_AssDireta&utm_content=Mix_Design_WebSerGPT&gad_source=1&gclid=CjwKCAjwoa2xBhACEiwA1sb1BCR9-vDi5mKvpqylnsZoISvMka4GCcmhMekao8_A07cxYiIvz4Zq7hoC10kQAvD_BwE">
-                    <div class="title">
-                    <h1> VESTUÁRIO</h1>
-                    <h1> POSTERS E CANECAS</h1>
-                    </div>
 
-                <img src="images/Store-page/LOJA-MONTINK.png" alt="Imagem de uma camiseta" class="loja-montink">
-                </a>
-            
-            </button>
+        <div class="page" id="acessorios">
 
-            <button class="premium">
-                <a href="signpremium.html">
-                    <div class="title">
-                        <h1> ASSINAR PREMIUM </h1>
-                    </div>
+            <iframe src="https://www.nuvemshop.com.br/" frameborder="0" class="iframe"></iframe>
+
+        </div>
+
+        <div class="page" id="premium">
+
+        </div>
+
+        <div class="page" id="apoiar">
+
+            <a href="#apoiar">
+                <h1 class="apoio_title">
+                    <ion-icon name="chevron-up-outline"></ion-icon> <br>
+                    Apoiar a <br>
+                    <span>Cofcof Produções</span>
+                </h1>
+            </a>
+
+            <div class="text_box">
+                <h2>
+                    COMO VOCÊ PODE AJUDAR?
+                </h2>
                     
-                        
-                    <img src="images/Store-page/PREMIUM.png" alt="Imagem do selo premium" class="premium-img">
-                </a>
+                <P>Como disse anteriormente, este é um projeto que já levou quase 10 anos para ser idealizado, e agora estamos botando a mão na massa de forma independente.<br>
+                Nossa realidade atual não permite a disponibilidade para nos dedicarmos ao projeto em tempo integral (temos nosso trabalho em outras empresas, das 7h as 17h  como a maioria dos brasileiros), por isso precisamos de ajuda em alguns pontos:<br>
+                </p>
+                    
+                <p>DESENVOLVIMENTO:<br>
+                Se você é um Dev, pode entrar em contato via 
+                e-mail (cofcof.prod@gmail.com), 
+                <a href="https://www.linkedin.com/in/cof-cof-produ%C3%A7%C3%B5es/">Linked-In</a>,  
+                <a href="https://www.instagram.com/cofcof.prod/">Instagam</a>,
+                ou 
+                <a href="https://api.whatsapp.com/send?phone=5516991523778&text=Salve!%20%F0%9F%96%96%0A">Whatsapp</a>,
+                para colaborar com alguns ajustes da interface (front-end) e/ou tratamento de dados (Back-end).<br> 
+                </p>
+                    
+                <p>TEXTOS:<br>
+                Se você é uma pessoa que gosta de revisar textos, pode nos ajudar com a revisão e diagramação das histórias que publicaremos aqui.<br> 
+                </p>
+                    
+                <p>IMAGENS:<br>
+                Usamos algumas IAs para criar imagens próximas ao que imaginamos, e experimentar a atmosfera do nosso universo, entretando adoraríamos ter ILUSTRADORES feitos em carne e osso para nos agraciar com sua arte!
+                </P>
+                    
+                <h2>
+                DOAÇÕES:
+                </h2>
+                
+                <p>Caso você tenha gostado da ideia, não tem experiência para ajudar nos tópicos citados acima, mas gostaria de colaborar de alguma forma, você pode nos fazer uma doação de qualquer valor!<br> 
+                Nós destinaremos todos os recursos para o desenvolvimento do App e da História!</p>
+                    
+                <p>Sua colaboração será vista como um incentivo para continuarmos, e o combustível que precisamos para acelerar a realização desse sonho!<br>
+                </p>
 
-            </button>
-            
-            <button class="acessories">
-                <a href="https://www.nuvemshop.com.br/loja-virtual?utm_source=google&utm_medium=cpc&utm_campaign=br-web-search-brand-region-1-device_c-id_586770851759&gad_source=1&gclid=CjwKCAjwoa2xBhACEiwA1sb1BLZl86Zp7n673qSHi6fptOVDVuEZZ8l5WUIuO0lIqTzI7Ql_6kjhRhoC8sMQAvD_BwE">
+                <h2> DECIDIU FAZER UMA DOAÇÃO?</h2>
+                    
+                <div class="chave_pix_box">
 
-                <div class="title">
-                    <h1> ACESSÓRIOS </h1>
+
+                    <div class="chave_aleatoria">
+
+                    <h2>Chave Pix:</h2>
+                    <p>b512370d-71b9-4de8-987f-0eac41f99d93</p> 
+
+                    </div>
+
+                    <div class="chave_qrcode">
+                    <h2>QR CODE:</h2>
+                    <img src="https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/images/Home-Page/Sobre/Chave-pix.jpeg" alt="QR code">
+                    </div>
+
                 </div>
-
-                <img src="images/Store-page/SACOLA.png" alt="Imagem de uma sacola" class="bag-img">
-                </a>
-          
-            </button>
+                      
+                
+            </div>
 
         </div>
+
 
     </section>
 
 
-    <!-- SCRIPT GERAL -->
-    <script src="Script/Store-Page/store.js" defer></script>
 
-    <!-- API SCROLLREVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+
+    <!-- Script principal -->
+    <script src="./Script/Store-Page/store.js"></script>
+    <!-- ícones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </body>
 </html>
