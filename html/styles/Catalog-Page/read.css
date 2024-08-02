@@ -27,7 +27,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #06080C; */
+    background-color: #06080C;
     /* background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/loading/plano-de-fundo-01.jpg); */
     background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/loading/plano-de-fundo-02.jpg);
     background-size: cover;
