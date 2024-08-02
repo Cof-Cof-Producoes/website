@@ -246,12 +246,6 @@ html{
 
 .login-btn:hover{
   scale: 1.05;
-  background-color: #0B6E4F;
-
-}
-
-.login-btn:active{
-background-color: #505050;
 
 }
 

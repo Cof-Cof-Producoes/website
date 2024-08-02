@@ -1,3 +1,12 @@
+// FRCHAR PRÉ LOADING
+function closeLoading(){
+    const preLoading = document.querySelector(".pre");
+    preLoading.classList.add("inative");
+
+    const navLogoImg = document.querySelector(".nav-logo-img");
+    navLogoImg.classList.add("fixed-logo");
+}
+
 
 //AVISO INICIAL --------------------------------------
 const avisoInicial = document.querySelector('.avisoinicial')
