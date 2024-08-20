@@ -155,6 +155,7 @@ body{
     display: flex;
     gap: 2rem;
     align-items: end;
+    margin-top: 0;
 }
 
 /* descrição */
