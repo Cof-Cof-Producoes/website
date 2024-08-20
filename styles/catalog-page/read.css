@@ -29,7 +29,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     background-color: #06080C;
     /* background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/loading/plano-de-fundo-01.jpg); */
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/loading/plano-de-fundo-02.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/loading/plano-de-fundo-02.jpg);
     background-size: cover;
     background-attachment:fixed;
     transition: opacity 0.5s ease-out;
@@ -468,7 +468,7 @@ nav.usermenu.expandir-user-menu{
     height: 5rem;
     border-radius: 50%;
     background-color: rgb(65, 65, 65);
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/Avatar01.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/menu-do-usu%C3%A1rio/Avatar01.png);
     background-size: 120%;
     cursor: pointer;
     border: 1px solid white;
@@ -520,7 +520,7 @@ nav.usermenu.expandir-user-menu{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/Limitada-status.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/menu-do-usu%C3%A1rio/Limitada-status.png);
     background-size: 99%;
     cursor: pointer;
     border: 1px solid rgb(97, 97, 97);
@@ -533,7 +533,7 @@ nav.usermenu.expandir-user-menu{
     width: 4.5rem;
     height: 5rem;
     border-radius: 50%;
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/Premium-status.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/menu-do-usu%C3%A1rio/Premium-status.png);
     background-size: 100%;
     cursor: pointer;
     border: none;
@@ -604,7 +604,7 @@ margin-top: -0.8rem;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/statistic%20-%2000.webp);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/menu-do-usu%C3%A1rio/statistic%20-%2000.webp);
     background-size: 140%;
     cursor: pointer;
 }
@@ -640,7 +640,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/statistic%20-%2040.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/menu-do-usu%C3%A1rio/statistic%20-%2040.jpg);
     background-size: 150%;
     cursor: pointer;
 }
@@ -649,7 +649,7 @@ margin-top: -0.8rem;
     width: 7.5rem;
     height: 8rem;
     border-radius: 50%;
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Menu-do-usu%C3%A1rio/statistic%20-%2050.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/menu-do-usu%C3%A1rio/statistic%20-%2050.jpg);
     background-size: 99%;
     cursor: pointer;
     border: 8px solid rgb(0, 255, 0) ;
@@ -2667,7 +2667,7 @@ padding: 1rem;
 
 /* LINHA DO TEMPO */
 #cardbook-00{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-timeline.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-timeline.jpg);
     background-size: 130%;
 
 }
@@ -2675,92 +2675,92 @@ padding: 1rem;
 
 /* A LENDA DE LÁZARO */
 #cardbook-15{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Lazaro.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Lazaro.jpg);
     background-size: 120%;
 }
 
 /* ANAHI */
 #cardbook-14{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Anahi.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Anahi.jpg);
     background-size: 122%;
 }
 
 /* COURO E ESCAMAS */
 #cardbook-13{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Couro%20e%20Escamas.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Couro%20e%20Escamas.jpg);
 }
 
 /* VAGALUMES */
 #cardbook-12{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Vagalumes.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Vagalumes.jpg);
 }
 
 /* BAMBOO */
 #cardbook-11{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Bamboo.jpeg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Bamboo.jpeg);
 }
 
 /* OS PORTÕES DA AREIA */
 #cardbook-10{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Os%20Port%C3%B5es%20da%20Areia.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Os%20Port%C3%B5es%20da%20Areia.jpg);
     background-size: 107%;
 }
 
 /* A ÚLTIMA DA GERAÇÃO */
 #cardbook-09{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-A-%C3%BAltima-da-gera%C3%A7%C3%A3o.jpeg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-A-%C3%BAltima-da-gera%C3%A7%C3%A3o.jpeg);
     background-size: 130%;
 }
 
 /* XIPAIA */
 #cardbook-08{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Xipaia.jpeg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Xipaia.jpeg);
     background-size: 140%;
     filter: grayscale(1);
 }
 
 /* MORRO DO DIABO */
 #cardbook-07{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Morro-do-Diabo.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Morro-do-Diabo.jpg);
     background-size: 105%;
     filter: grayscale(1);
 }
 
 /* BABU */
 #cardbook-06{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Babu.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Babu.jpg);
     filter: grayscale(1);
 }
 
 /* COGAUA */
 #cardbook-05{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Saci.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Saci.jpg);
     filter: grayscale(1);
 }
 
 /* DAMATO */
 #cardbook-04{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook.jpg);
     background-size: 120%;
     filter: grayscale(1);
 }
 
 /* BATALHA DOS ESPÓLIOS */
 #cardbook-03{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Gods%20games.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Gods%20games.jpg);
     background-size: 135%;
     filter: grayscale(1);
 }
 
 /* ANIMAIS ANCESTRAIS */
 #cardbook-02{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Ancestrais.jpg);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Ancestrais.jpg);
     filter: grayscale(1);
 }
 
 /* ANTES DE TUDO */
 #cardbook-01{
-    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/html/images/Catalog-Page/Livros/cardbook-Antes%20de%20Tudo.png);
+    background-image: url(https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/midias/catalog-page/livros/cardbook-Antes%20de%20Tudo.png);
     background-size: 107%;
     filter: grayscale(1);
 }
