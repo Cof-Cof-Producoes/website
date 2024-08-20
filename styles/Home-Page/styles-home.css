@@ -14,9 +14,8 @@ body::-webkit-scrollbar{
 }
 
 :root{
-    font-size: 62.5%; /* 1 rem = 10px*/
+  font-size: 62.5%; /* 1 rem = 10px*/
 }
-
 
 /* SUAVISAR ROLAGEM DO SITE*/
 html{
@@ -120,7 +119,7 @@ html{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.89)70%,rgba(255, 255, 255, 0.685) 150%);
     box-shadow: 0 3px 10px black;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
 }
 
 .nav-bar span{
@@ -138,7 +137,6 @@ html{
 .nav-bar span:hover{
   color: white;
 }
-
 
 .nav-home-item{
     /* border: 2px solid purple; */
@@ -177,7 +175,6 @@ html{
   display: none;
 }
 
-
 .nav-list ul{
   /* border: 2px solid tomato; */
   display: flex;
@@ -200,12 +197,12 @@ html{
 
   
 }
+
 .nav-item a:active{
   color: rgb(36, 36, 36);
   transition: 0.08s;
    
 }
-
 
 .login-button{
   display: flex;
@@ -301,270 +298,8 @@ html{
 
 
 
-/*---------------------------------------ESTILO DO MODAL DE LOGIN-----------------------------------------------------------*/
-
-.login-modal-box{
-  padding: 0;
-  display: none;
-
-}
-
-.login-modal-box.modal-aberto{
-  display: flex;
-
-}
-
-
-#close-login-modal{
-  background-color: rgba(20, 175, 0, 0.24);
-  border: 2px solid black;
-  border-radius: 50%;
-  transition: all 0.2s;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: absolute;
-  right: -25px;
-  top: -25px;
-  
-}
-
-#close-login-modal:hover{
-  scale: 1.5;
-  font-weight: bold;
-  transform: rotate(360deg);
-  background-color: rgba(3, 202, 3, 0.61);
-  color: white;
-  box-shadow: 0 2px 5px black;
-}
-
-#close-login-modal:active{
-  scale: 1.1;
-}
-
-#fade2{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(92, 92, 92, 0.247);
-  z-index: 900;
-  backdrop-filter: blur(3px);
-  transition: all 0.6s ease-in-out;
-}
-
-#login-modal{
-  position: fixed;
-  z-index: 901;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 80%;
-  max-width: 90%;
-  background-color: #000000cb;
-  color: rgb(192, 192, 192);
-  border: 1px solid rgb(59, 59, 59);
-  flex-direction: column;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 5px rgb(17, 17, 17);
-  font-size: 1.3rem;
-  gap: 3px;
-  padding: 2rem;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: all 0.6s ease-in-out;
-}
-
-
-@keyframes abrirmodal2{
-  from{
-    opacity: 0;
-    width: 8rem;
-    height: 4.3rem;
-    
-  }
-
-  to{
-    opacity: 1;
-    width: 90%;
-    height: 80%;
-    
-  }
-}
-
-.modal-aberto #login-modal{
-  animation: abrirmodal2 0.5s;
-
-}
-
-
-/* ---------------------------- ESTILO DOS FORMULÁRIOS DE REGISTRO E LOGIN*/
-
-.login-box{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-
-}
-
-.login-form, .register-form{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  width: 49%;
-  height: 100%;
-  border-radius: 3rem;
-
-}
-
-.login-form:hover, .register-form:hover{
-  background-color: #0c0c0cea;
-  box-shadow: 0 3px 5px black;
-}
-
-.login-form a, .register-form a{
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(0, 132, 255);
-}
-
-.input-email, .input-password, .input-name, .input-tel{
-  height: 2.5rem;
-  width: 60%;
-  background-color: #222222;
-  color: white;
-  border-radius: 5px;
-  padding-left: 1rem;
-  box-shadow: inset 0 2px 3px black;
-}
-
-.input-email:hover, .input-password:hover, .input-name:hover, .input-date:hover, .input-tel:hover{
-  background-color: #363636;
-  border: none;
-
-}
-
-.input-remember-me-box, .input-terms-box{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  color: white;
-  width: 60%;
-  gap: 1rem;
-  padding-left: 2rem;
-
-}
-
-.entrar-btn{
-  height: 3rem;
-  width: 30%;
-  margin-left: 3rem;
-  border-radius: 5px;
-  border: none;
-  font-weight: 700;
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-  border: 1px solid white;
-  box-shadow: inset 0 2px 2px black;
-
-}
-
-.entrar-btn a{
-  color: white;
-  font-weight: 700;
-
-}
-
-.entrar-btn:hover{
-  scale: 1.05;
-  background-color: rgb(0, 0, 151);
-  box-shadow: 0 3px 30px rgba(255, 255, 255, 0.377);
-
-}
-
-.entrar-btn:active{
-  scale: 1;
-  box-shadow: none;
-  transition: 0.1s;
-  font-size: 1.2rem;
-}
-
-.form-line{
-  height: 70%;
-  border-right: 1px solid white;
-  margin-top: 7%;
-}
-
-.born-box{
-  display: flex;
-  align-items: center;
-  width: 60%;
-  justify-content: space-around;
-}
-
-.input-date{
-  height: 2.5rem;
-  width: 50%;
-  background-color: #222222;
-  color: white;
-  border-radius: 5px;
-  padding-left: 1rem;
-  box-shadow: inset 0 2px 3px black;
-  cursor: pointer;
-
-}
-
-.tel-box{
-  display: flex;
-  align-items: center;
-  width: 60%;
-  justify-content: space-around;
-
-}
-
-.registrar-btn{
-  height: 3rem;
-  width: 60%;
-  border-radius: 5px;
-  border: none;
-  font-weight: 700;
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-  border: 1px solid white;
-  box-shadow: inset 0 2px 2px black;
-
-}
-
-.registrar-btn:hover{
-  scale: 1.05;
-  background-color: rgb(0, 0, 151);
-  box-shadow: 0 3px 30px rgba(255, 255, 255, 0.377);
-
-}
-
-.registrar-btn:active{
-  scale: 1;
-  box-shadow: none;
-  transition: 0.1s;
-  font-size: 1.2rem;
-
-}
-
-
-
 /* -------------------------------------------------- ESTILOS DOS CONTEÚDOS ------------------------------------------------*/
+
 
 /* IMAGENS LATERAIS*/
 .imagem-lateral{
@@ -583,6 +318,7 @@ html{
     width: 100%;
 }
 
+
 /* ------ TÍTULOS ------*/
 
 .titulo{
@@ -596,10 +332,6 @@ html{
     margin-top: 5rem;
     margin-bottom: 5rem;
 
-}
-
-#titulo-contents{
-  margin-top: 20rem;
 }
 
 .span-titulo{
@@ -830,7 +562,6 @@ html{
 
 }
 
-
 .chave_aleatoria{
   width: 40%;
   display: flex;
@@ -846,7 +577,6 @@ html{
 .chave_aleatoria h2{
   color: #216869;
 }
-
 
 .chave_qrcode{
   width: 40%;
@@ -865,204 +595,12 @@ html{
 }
 
 
-
-
 /* PÁGINA NOSSOS CONTEÚDOS*/
+/* css a parte */
 
-/*CARD BOX*/
+/* PÁGINA NOSSOS CONTATOS */
 
-.content-box{
-  
-  position: relative;
-  max-width: 90%;
-  max-height: 66%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10rem;
-
-}
-
-.content-wrapper{
-  /*border: 3px solid #c9009d;*/
-  overflow-x: auto;
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  /*box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.493);*/
-
-}
-
-.content-wrapper::-webkit-scrollbar{
-  display: none;
-}
-
-.content-cards{
-  /*border: 2px solid green;*/
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  height: 100%;
-  gap: 5rem;
-  top: 15rem;
-  
-}
-
-.arrow-left{
-  position: absolute;
-  top: 45%;
-  left: -5rem;
-  right: auto;
-  bottom: 0;
-  height: 10rem;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 25rem;
-  width: 4rem;
-  color: white;
-  border: none;
-  background: linear-gradient(to left, transparent 50%, rgb(255, 255, 255) 150%);
-  border-top-left-radius: 4rem;
-  border-bottom-left-radius: 4rem;
-  z-index: 1;
-  opacity: 0.4;
-  transition: 0.2s ease-in-out;
-}
-
-.arrow-right{
-  
-  position: absolute;
-  top: 45%;
-  left: auto;
-  right: -5rem;
-  bottom: 0;
-  height: 10rem;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 25rem;
-  width: 4rem;
-  color: white;
-  border: none;
-  background: linear-gradient(to right, transparent 50%, rgb(255, 255, 255) 150%);
-  border-top-right-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-  z-index: 1;
-  opacity: 0.4;
-  transition: 0.2s ease-in-out;
-}
-
-.arrow-left svg, .arrow-right svg{
-  scale: 2;
-}
-
-.arrow-left:hover, .arrow-right:hover{
-  opacity: 1;
-  scale: 1.5;
-}
-
-.arrow-left:active, .arrow-right:active{
-  scale: 2;
-  opacity: 0;
-  transition: 0.01s;
-}
-
-
-/*CARDS---------------------------------------------------------------------------------*/
-section.card {
-    position: relative;
-    min-width: 30rem;
-    height: 100%;
-    background-color: #1f1f1f00;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    /*perspective: 1000px;*/
-    transition: all 0.8s;
-    cursor: pointer;
-    left: 1rem;
-    opacity: 0.2;
-  }
-
-  .card:hover {
-    transform: scale(1.02);
-
-    opacity: 1;
-    
-  }
-  
-  .card__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #16161638;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .card__description {
-    margin-top: 0px;
-    height: 70%;
-    font-size: 1.4rem;
-    /*border: 2px solid black;*/
-    display: flex;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-    
-    
-  }
-  
-  .card:hover .card__content {
-    transform: rotateX(0deg);
-    
-  }
-  
-  .card__title {
-    margin: 0;
-    padding-left: 5px;
-    font-size: 24px;
-    color: white;
-    font-weight: 800;
-    text-shadow: 0 2px 2px black;
-
-  }
-  
-  .img-card-01, .img-card-02, .img-card-03 {
-    height: 105%;
-  }
-
-  .card.current-item{
-    opacity: .7;
-  }
-
-  .card.current-item:hover{
-    opacity: 1;
-  }
-
-  /* FIM DE CARDS ------------------------------------------------------------------------------------------*/
-
-
-  /* PÁGINA NOSSOS CONTATOS */
-
-  .contact-box{
+.contact-box{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1071,230 +609,8 @@ section.card {
     width: 100%;
     margin-bottom: 10rem;
   
-  }
-
-  /* CAIXA DO FORMULÁRIO*/
-
-  
-  .mail-box{
-    margin-top: 20px;
-    height: 100%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-  .card-base{
-    /* background-color: #1be600; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 8rem;
-    padding: 1rem;
-
-  }
+}
 
 
- /* FORMULÁRIO*/
 
- .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: inherit;
-    gap: 5px;
-    padding-inline: 2em;
-    padding-bottom: 0.4em;
-    background-color: #171717;
-    border-radius: 20px;
-    transition: 1s;
-    width: 100%;
-    height: 70%;
-  }
-
-  .form-heading {
-    text-align: center;
-    margin: 1rem;
-    color: #ffffff;
-    font-size: 1.5em;
-    background-color: transparent;
-    align-self: center;
-
-  }
-  
-  .form-field {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-    border-radius: 10px;
-    padding: 0.6em;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: #171717;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  }
-  
-  .input-field {
-    background: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    color: #ccd6f6;
-    padding-inline: 1em;
-  }
-
-  .input-field:hover {
-    background: rgba(26, 25, 25, 0.582);
-    border-radius: 1rem;
-    height: 100%;
-
-  }
-  
-  .sendMessage-btn {
-    cursor: pointer;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    padding: 1em;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    box-shadow: 0 2px 5px black;
-    background-color: #1f1f1f;
-    color: #dfdfdf;
-    font-weight: bold;
-    transition: all ease-in-out 0.3s;
-    width: 30%;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .sendMessage-btn:hover {
-    background-color: #1be600;
-    color: #000;
-    cursor: pointer;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    scale: 1.02;
-  }
-
-  .sendMessage-btn:active {
-    transition: 0.1s;
-    background-color: #f8f8f8;
-    color: #000;
-    scale: 0.8;
-    box-shadow: 0 2px 5px white;
-
-
-  }
-  
-  .form-card2 {
-    border-radius: 0;
-    transition: all 0.2s;
-    width: 100%;
-  }  
-
-
-/* CAIXA DAS REDES SOCIAIS*/
-  .social-box{
-    /* background-color: tomato; */
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 30%;
-    transition: all 1s;
-    margin-top: 1rem;
-    
-  }
-
-  .card-social {
-    border-radius: 5rem;
-    background-color: #1f1f1f;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 2px 5px black;
-  }
-  
-  .card-social svg {
-    position: absolute;
-    display: flex;
-    width: 60%;
-    height: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    opacity: 1;
-    transition: opacity 0.25s;
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  .card-social .social-link1,.card-social .social-link2,.card-social .social-link3,.card-social .social-link4 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    color: whitesmoke;
-    font-size: 24px;
-    text-decoration: none;
-    transition: 0.25s;
-    border-radius: 50px;
-  }
-  
-  .card-social svg {
-    transform: scale(.7);
-  }
-  
-  .card-social .social-link1:hover {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card-social .social-link2:hover {
-    background-color: #00ccff;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card-social .social-link3:hover {
-    background-color: #5865f2;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card-social .social-link4:hover {
-    background-color: #12a50b;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  @keyframes bounce_613 {
-    40% {
-      transform: scale(1.4);
-    }
-  
-    60% {
-      transform: scale(0.8);
-    }
-  
-    80% {
-      transform: scale(1.2);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  footer{
-    color: white;
-  }
 

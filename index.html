@@ -1,558 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="images/Home-Page/Logo/favicon.ico" type="image/x-icon"> <!--ÍCONE DE ABA DO NAVEGADOR-->
-    <title>CofCof HOME</title>
-    <link rel="stylesheet" href="styles/Home-Page/styles-home.css" media="all"> <!--ESTILO GERAL-->
-    <link rel="stylesheet" href="styles/Home-Page/media-query.css" media="screen and (orientation: portrait)"> <!--MOBILE RETRATO -->
-    <link rel="stylesheet" href="styles/Home-Page/media-query-02.css" media="screen and (orientation: landscape)"> <!--MOBILE PAISAGEM -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--FONTES-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--FONTES-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!--FONTES-->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--API PARA ÍCONES-->
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <!--ÍCONE DE ABA DO NAVEGADOR-->
+  <link rel="shortcut icon" href="midias/home-page/logo/favicon.ico" type="image/x-icon"> 
+  <!-- TÍTULO -->
+  <title>CofCof HOME</title>
+  <!--ESTILO GERAL-->
+  <link rel="stylesheet" href="styles/Home-Page/styles-home.css" media="all">
+  <!--MOBILE RETRATO -->
+  <link rel="stylesheet" href="styles/Home-Page/media-query.css" media="screen and (orientation: portrait)">
+  <!--MOBILE PAISAGEM -->
+  <link rel="stylesheet" href="styles/Home-Page/media-query-02.css" media="screen and (orientation: landscape)">
+  <!-- CSS CONTEÚDOS E SERVIÇOS -->
+  <link rel="stylesheet" href="styles/home-page/style_home_contents.css">
+  <link rel="stylesheet" href="styles/home-page/style_home_mediaquery_contents.css" >
+  <!--FONTES-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!--ÍCONES-->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
 
 </head>
 <body onresize="changeSize()">
 
-    <div class="interface">
-        <!-- NAVEGADOR PÁGINA INICIAL -->
-        <nav class="nav-bar">
+  <!-- PÁGINA -->
+  <div class="interface">
+    <!-- NAVEGADOR PÁGINA INICIAL -->
+    <nav class="nav-bar">
 
-            <div class="nav-home-item">
-                <a href="#home" >HOME</a>
-            </div>
-
-            <div class="nav-list" id="navListBar">
-
-                <ul>
-                    <li class="nav-item"><a href="#about">SOBRE</a></li>
-                    <li class="nav-item"><a href="#contents">CONTEÚDOS E SERVIÇOS</a></li>
-                    <li class="nav-item"><a href="#contacts">CONTATOS</a></li>
-                    <li class="nav-item"><a href="#">DOWNLOADS</a></li>
-                    <li class="nav-item"><a href="html/store.html" target="_blank" rel="noopener noreferrer">LOJA</a></li>
-                </ul>
-            </div>
-
-            <div class="login-button">
-                      <!-- OPÇÃO ABRIR MODAL -->
-                <!-- <button class="login-btn" id="login-btn" onclick="abrirModal2()">Login</button> --> 
-                <button class="login-btn" id="login-btn"><a href="html\readpage.html">Entrar</a></button>
-            </div>
-
-            <!-- MENU MOBILE -->
-            <span class="material-symbols-outlined" onclick="clickMenu()" id="burger-menu">menu</span>
-            
-        </nav>
-        
-        <!-- NAVEGADOR MOBILE -->
-        <div class="nav-list02" id="navListBar02">
-
-          <ul>
-              <li class="nav-item"><a href="#about">SOBRE</a></li>
-              <li class="nav-item"><a href="#contents">CONTEÚDOS</a></li>
-              <li class="nav-item"><a href="#contacts">CONTATOS</a></li>
-              <li class="nav-item"><a href="#">DOWNLOADS</a></li>
-              <li class="nav-item"><a href="html/store.html" target="_blank" rel="noopener noreferrer">LOJA</a></li>
-          </ul>
+      <div class="nav-home-item">
+        <a href="#home" >HOME</a>
       </div>
 
-        <!-- BLOCO DE CONTEÚDO TODAS AS PÁGINAS -->
-        <div class="container">
+      <div class="nav-list" id="navListBar">
 
-            <!--FILTRO DEGRADÊ-->
-            <div id="filtro"></div>
+        <ul>
+          <li class="nav-item"><a href="#about">SOBRE</a></li>
+          <li class="nav-item"><a href="#contents">CONTEÚDOS E SERVIÇOS</a></li>
+          <li class="nav-item"><a href="#contacts">CONTATOS</a></li>
+          <li class="nav-item"><a href="#">DOWNLOADS</a></li>
+          <li class="nav-item"><a href="store.html" target="_blank" rel="noopener noreferrer">LOJA</a></li>
+        </ul>
 
+      </div>
 
-      
-            <!--HOME PAGE------------------------------>
-            <section id="home" class="page">
-              <div class="left-side">
+      <div class="login-button">
+        <!-- OPÇÃO ABRIR MODAL -->
+        <!-- <button class="login-btn" id="login-btn" onclick="abrirModal2()">Login</button> -->
 
-                </div>
+        <button class="login-btn" id="login-btn">
+          <a href="readpage.html" target="_blank">Entrar</a>
+        </button>
 
-                <div class="midle">
+      </div>
 
-                  <div class="img-pg1">
-
-                    <img src="images/Home-Page/Logo/LOGO-HOME-02.png" alt="logo da empresa" class="logo-home-02">
-                    <img src="images/Home-Page/Logo/LOGO-HOME-01.png" alt="Nome da empresa" class="logo-home-01">
-
-                  </div>
-
-                </div>
-                
-                <div class="right-side">
-
-              </div>
-
-            </section>
-
-
-
-            <!-- SOBRE NÓS --------------------------->
-            <section id="about" class="page">
-
-              <div class="left-side">
-
-                <img src="images/Home-Page/Sobre/imagem-lateral-esquerda-01.png" alt="desenho de uma mão" class="imagem-lateral">
-
-              </div>
-
-              <div class="midle">
-
-                <header class="titulo">
-                  <h1>SOBRE <span class="span-titulo">NÓS!</span></h1>
-                </header>
-
-                <button id="open-modal" class="img-about-box-btn" onclick="abrirModal()">
-                  <img src="images/Home-Page/Sobre/imagem-sobre-nos.png" alt="uma máquina de escrever">
-                </button>
-
-              </div>
-
-              <div class="right-side">
-
-                  <img src="images/Home-Page/Sobre/imagem-lateral-direita-01.png" alt="desenho de uma xícara" class="imagem-lateral">
-
-              </div>
-
-            </section>
-
-
-
-            <!-- PÁGINA NOSSOS CONTEÚDOS ------------->
-            <section id="contents" class="page">
-
-              <div class="left-side">
-
-                <img src="images/Home-Page/Conteúdos/imagem-lateral-esquerda-02.png" alt="desenho de uma pilha de livros" class="imagem-lateral">
-
-              </div>
-
-              <div class="midle">
-
-                    <header class="titulo" id="titulo-contents">
-                        <h1>NOSSOS <span class="span-titulo">CONTEÚDOS!</span></h1>
-                    </header>
-
-                    <div class="content-box">
-                      <!---------BOTÕES DE NAVEGAÇÃO DO CARROSSEL-->
-                      <button class="arrow-left control" aria-label="PreviousImage">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                          <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                        </svg>
-                      </button>
-                      
-                      <button class="arrow-right control" aria-label="NextImage">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                          <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                        </svg>
-                        
-                      </button>
-                      <!-------------------------------------FIM DOS BOTÕES DE NAVEGAÇÃO DO CARROSSEL-->
-
-                      <!-- CARROSSEL DE CONTEÚDOS ----------------------------------->
-                      <div class="content-wrapper">
-                        <div class="content-cards">
-                          <section id="card1" class="card current-item">
-                            <img src="images/Home-Page/Conteúdos/img-card-01.jpeg" alt="um homem preto" class="img-card-01">
-                            <div class="card__content">
-                              <p class="card__title">Terras Invisíveis</p>
-                              <p class="card__description">
-                                Um mundo fantástico faz fronteira com a terra, e sem ocupar o mesmo "espaço", estes dois mundos são conectados por uma ameaça de grandeza imensurável.<br>
-                                Para evitar a gerra invisível aos olhos dos seres humanos, um jovem e inesperiente rapaz precisará conhecer a si mesmo.
-                              </p>
-                            </div>
-                          </section>
-
-                          <section id="card2" class="card">
-                            <img src="images/Home-Page/Conteúdos/img-card-02.jpg" alt="um homem com os olhor brilhantes" class="img-card-01">
-                            <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z">
-                            </path>
-                            
-                            <div class="card__content">
-                              <p class="card__title">Contos inacabados das Terras Invisíveis</p>
-                              <p class="card__description">
-                              Conheça um pouco mais sobre o passado do mundo das terras ivisíveis e os personagens que vivem naquele mundo.
-                              </p>
-                            </div>
-                          </section>
-
-                          <section id="card3" class="card">
-                            <img src="images/Home-Page/Conteúdos/img-card-03.jpg" alt="um livro mágico" class="img-card-01">
-                            <path
-                              d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
-                              >
-                            </path>
-                                  
-                            <div class="card__content">
-                              <p class="card__title">A Batalha dos Espólios</p>
-                              <p class="card__description">
-                                (EM PRODUÇÃO) Nosso Game dispoível nas versões on-line e física, levará o púplico para um dos grandes acontecimentos da era dos animais ancestrais.
-                              </p>
-                            </div>
-                          </section>
-
-                          <section id="card4" class="card">
-                            <img src="images/Home-Page/Conteúdos/cardhq-Blue lights.jpg" alt="um livro mágico" class="img-card-01">
-                            <path
-                              d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
-                              >
-                            </path>
-                                  
-                            <div class="card__content">
-                              <p class="card__title">Blue Lights</p>
-                              <p class="card__description">
-                                Em um mundo distópico e pré apocalípctico, uma turma treina para superar seus adversários afim de garantir a salvação prometida por seres de um universo mais evoluído.
-                              </p>
-                            </div>
-                          </section>
-
-                          <section id="card5" class="card">
-                            <img src="images/Home-Page/Conteúdos/cardbook-Anahi.jpg" alt="um livro mágico" class="img-card-01">
-                            <path
-                              d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
-                            >
-                            </path>
-                                
-                            <div class="card__content">
-                              <p class="card__title">TINVS Almanaque</p>
-                              <p class="card__description">
-                                Reunímos todos os itens do universo das Terras invisíveis em um só lugar. Conheça as culturas, fauna, flora, armas, itens místicos e personagens.
-                              </p>
-                            </div>
-                          </section>
-
-                        </div>
-                      </div>
-                                  
-                    </div>
-
-              </div>
-
-              <div class="right-side">
-
-                <img src="images/Home-Page/Conteúdos/imagem-lateral-direita-02.png" alt="desenho de uma coruja sobre uma pilha de livros" class="imagem-lateral">
-
-              </div>
-
-            </section>
-
-
-
-            <!-- PÁGINA NOSSOS CONTATOS ------------->
-            <section id="contacts" class="page">
-
-              <div class="left-side">
-
-                <img src="images/Home-Page/Contatos/imagem-lateral-esquerda-04.png" alt="desenho de um ansião contando histórias a uma garotinha" class="imagem-lateral" id="img-esquerda-04">
-
-              </div>
-
-              <div class="midle">
-
-                <header class="titulo">
-                <h1>NOSSOS <span class="span-titulo">CONTATOS!</span></h1>
-                </header>
-                
-                <div class="contact-box">
-                  <div class="mail-box">
-                            
-                    <div class="form-card2">
-                      <form class="form">
-                        <p class="form-heading">Entre em contato!</p>
-                              
-                        <div class="form-field">
-                          <input required="" placeholder="Name" class="input-field" type="text" />
-                        </div>
-                              
-                        <div class="form-field">
-                          <input
-                            required=""
-                            placeholder="Email"
-                            class="input-field"
-                            type="email"
-                          />
-                        </div>
-                              
-                        <div class="form-field">
-                          <input
-                            required=""
-                            placeholder="Assunto"
-                            class="input-field"
-                            type="text"
-                          />
-                          </div>
-                              
-                          <div class="form-field">
-                            <textarea
-                              required=""
-                              placeholder="Mensagem"
-                              cols="30"
-                              rows="4"
-                              class="input-field"
-                            ></textarea>
-                          </div>
-
-                          <div class="card-base">
-                            <button class="sendMessage-btn">Enviar mensagem</button>
-                              <div class="social-box">
-
-                                <div class="card-social">
-                                  <a class="social-link1" href="https://www.instagram.com/cofcof.prod/" target="_blank" rel="noopener noreferrer">
-                                    <svg viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> <path fill="white" d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
-                                  </a>
-
-                                  <a class="social-link2">
-                                    <svg viewBox="0 0 16 16" class="bi bi-twitter" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> <path fill="white" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> </svg>
-                                  </a>
-
-                                  <a class="social-link3" href="https://www.linkedin.com/in/cof-cof-produ%C3%A7%C3%B5es/" target="_blank" rel="noopener noreferrer" >
-                                    <svg viewBox="0 0 448 512" class="bi bi-linkedin"><path fill="white" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-                                  </a>
-
-                                  <a class="social-link4" href="https://api.whatsapp.com/send?phone=5516991523778&text=Salve!%20%F0%9F%96%96%0A" target="_blank" rel="noopener noreferrer">
-                                    <svg viewBox="0 0 16 16" class="bi bi-whatsapp" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255)"> <path fill="white" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
-                                  </a>
-                                </div>             
+      <!-- MENU MOBILE -->
+      <span class="material-symbols-outlined" onclick="clickMenu()" id="burger-menu">menu</span>
           
-                              </div>
-                            </div>
-                      </form>
+    </nav>
+      
+    <!-- NAVEGADOR MOBILE -->
+    <div class="nav-list02" id="navListBar02">
+
+      <ul>
+
+        <li class="nav-item">
+          <a href="#about">SOBRE</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contents">CONTEÚDOS</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contacts">CONTATOS</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#">DOWNLOADS</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="store.html" target="_blank" rel="noopener noreferrer">LOJA</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- BLOCO DE CONTEÚDO TODAS AS PÁGINAS -->
+    <div class="container">
+
+      <!--FILTRO DEGRADÊ-->
+      <div id="filtro">
+
+      </div>
+
+      <!--HOME PAGE------------------------------>
+      <section id="home" class="page">
+        <div class="left-side">
+
+          </div>
+
+          <div class="midle">
+
+            <div class="img-pg1">
+
+              <img src="midias/home-page/logo/LOGO-HOME-02.png" alt="logo da empresa" class="logo-home-02">
+              <img src="midias/home-page/logo/LOGO-HOME-01.png" alt="Nome da empresa" class="logo-home-01">
+
+            </div>
+
+          </div>
+          
+          <div class="right-side">
+
+        </div>
+
+      </section>
+
+      <!-- SOBRE NÓS --------------------------->
+      <section id="about" class="page">
+
+        <div class="left-side">
+
+          <img src="midias/home-page/sobre/imagem-lateral-esquerda-01.png" alt="desenho de uma mão" class="imagem-lateral">
+
+        </div>
+
+        <div class="midle">
+
+          <header class="titulo">
+            <h1>SOBRE <span class="span-titulo">NÓS!</span></h1>
+          </header>
+
+          <button id="open-modal" class="img-about-box-btn" onclick="abrirModal()">
+            <img src="midias/home-page/sobre/imagem-sobre-nos.png" alt="uma máquina de escrever">
+          </button>
+
+        </div>
+
+        <div class="right-side">
+
+            <img src="midias/home-page/sobre/imagem-lateral-direita-01.png" alt="desenho de uma xícara" class="imagem-lateral">
+
+        </div>
+
+      </section>
+
+      <!-- PÁGINA NOSSOS CONTEÚDOS ------------->
+      <section id="contents" class="page">
+        <ul class="cont-serv-list">
+            <li class="icon_btn selected" id="nosso-app-btn">
+                <img width="48" height="48" src="midias/home-page/logo/Web-Icon-readpage.png" alt="Logo do aplicativo">
+            </li>
+            <li class="icon_btn" id="mkting-btn">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/40C057/commercial.png" alt="commercial"/>
+            </li>
+            <li class="icon_btn" id="dev-web-btn">
+                <img width="40" height="40" src="https://img.icons8.com/glyph-neue/64/40C057/source-code.png" alt="source-code"/>
+            </li>
+            <li class="icon_btn" id="data-anlt-btn">
+                <img width="40" height="40" src="https://img.icons8.com/ios/50/40C057/big-data.png" alt="big-data"/>
+            </li>
+            <li class="icon_btn" id="prod-cont-btn">
+                <img width="40" height="40" src="https://img.icons8.com/glyph-neue/64/40C057/quill-pen.png" alt="quill-pen"/>
+            </li>
+        </ul>
+
+
+        <div class="content_box show_content_box" id="nosso-app">
+
+            <div class="app-descri">
+        
+                <h2 class="descri-title">Cofcof Storytelling</h2>
+                <p>Bem-vindo ao "Cofcof Storytelling", o aplicativo que traz para você uma incrível coleção de histórias de fantasia!</p>
+                <h2>O que é o "Cofcof Storytelling"?</h2>
+                <p>O "Cofcof Storytelling" é um aplicativo de leitura digital criado para levar você a uma jornada mágica através das lendas e mitos que fazem parte da nossa cultura. Aqui, você encontrará contos envolventes, cheios de criaturas míticas, aventuras épicas e heróis inspiradores!</p>
+                <h2>Por que escolher o "Cofcof Storytelling"?</h2>
+                <p><strong>Histórias Únicas</strong>: Cada história no nosso aplicativo é cuidadosamente selecionada para oferecer uma experiência única e inesquecível. Você vai redescobrir personagens em narrativas que misturam o antigo com o novo.</p>
+                <p><strong>Fácil de Usar</strong>: Nossa interface é amigável e intuitiva, permitindo que você encontre rapidamente novas histórias para ler. Com poucos toques, você estará imerso em um novo mundo de fantasia.</p>
+                <p><strong>Leitura em Qualquer Lugar</strong>: Com o "Cofcof Storytelling", você pode levar suas histórias favoritas para qualquer lugar. Leia no ônibus, no parque, antes de dormir, ou sempre que quiser se desconectar e entrar em um mundo de imaginação.</p>
+                <p><strong>Atualizações Frequentes</strong>: Estamos constantemente adicionando novas histórias para que você nunca fique sem algo novo para ler. Nossa equipe de escritores e colaboradores trabalha duro para garantir que sempre haja algo fresco e emocionante esperando por você.</p>
+                <h2>Para Quem é o "Cofcof Storytelling"?</h2>
+                <p>O "Cofcof Storytelling" é perfeito para leitores de todas as idades que amam histórias de fantasia e desejam explorar novos universos de uma maneira divertida e acessível. Seja você um jovem leitor começando a descobrir o prazer da leitura, ou um adulto apaixonado por mitologia e cultura, nosso aplicativo tem algo especial para você.</p>
+                <h2>Como Começar?</h2>
+                <p>Baixar o "Cofcof Storytelling" é simples e rápido. Visite a loja de aplicativos do seu dispositivo, faça o download gratuito e comece a explorar nossa biblioteca de contos incríveis hoje mesmo!</p>
+                <p>Prepare-se para ser transportado para um mundo onde a imaginação não tem limites. Com o "Cofcof Storytelling", cada leitura é uma nova aventura. Venha descobrir histórias incríveis!</p>
+                <p>Baixe agora e embarque nesta jornada mágica!</p>
+            </div>
+
+            <div class="acess_box">
+                <video src="imagens/app-video-model.mp4" autoplay loop muted></video>
+                <div class="content-acess-btns">
+
+                    <a href="readpage.html" target="_blank" class="acess-btn" id="enter_btn">
+                        
+                        Entrar <span>(versão Web)</span>
+                        
+                    </a>
+
+                    <a href="#" class="acess-btn" id="downl-btn">
+                        Download 
+                        <span>Desktop (Versão: 1.0.1)</span>
+                        <span class="span_em_breve" style="Color: rgb(235, 39, 39);">Em breve!</span>
+                    </a>
+
+                    <a href="#" id="playstorebtn">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <linearGradient id="jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1" x1="1688.489" x2="1685.469" y1="-883.003" y2="-881.443" gradientTransform="matrix(11.64 0 0 22.55 -19615.32 19904.924)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#047ed6"></stop><stop offset="1" stop-color="#50e6ff"></stop></linearGradient><path fill="url(#jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1)" fill-rule="evenodd" d="M7.809,4.608c-0.45,0.483-0.708,1.227-0.708,2.194	v34.384c0,0.967,0.258,1.711,0.725,2.177l0.122,0.103L27.214,24.2v-0.433L7.931,4.505L7.809,4.608z" clip-rule="evenodd"></path><linearGradient id="jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2" x1="1645.286" x2="1642.929" y1="-897.055" y2="-897.055" gradientTransform="matrix(9.145 0 0 7.7 -15001.938 6931.316)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffda1c"></stop><stop offset="1" stop-color="#feb705"></stop></linearGradient><path fill="url(#jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2)" fill-rule="evenodd" d="M33.623,30.647l-6.426-6.428v-0.45l6.428-6.428	l0.139,0.086l7.603,4.321c2.177,1.227,2.177,3.249,0,4.493l-7.603,4.321C33.762,30.561,33.623,30.647,33.623,30.647z" clip-rule="evenodd"></path><linearGradient id="jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3" x1="1722.978" x2="1720.622" y1="-889.412" y2="-886.355" gradientTransform="matrix(15.02 0 0 11.5775 -25848.943 10324.73)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d9414f"></stop><stop offset="1" stop-color="#8c193f"></stop></linearGradient><path fill="url(#jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3)" fill-rule="evenodd" d="M33.762,30.561l-6.565-6.567L7.809,43.382	c0.708,0.761,1.9,0.847,3.232,0.103L33.762,30.561" clip-rule="evenodd"></path><linearGradient id="jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4" x1="1721.163" x2="1722.215" y1="-891.39" y2="-890.024" gradientTransform="matrix(15.02 0 0 11.5715 -25848.943 10307.886)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#33c481"></stop><stop offset="1" stop-color="#61e3a7"></stop></linearGradient><path fill="url(#jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4)" fill-rule="evenodd" d="M33.762,17.429L11.041,4.522	c-1.33-0.761-2.524-0.658-3.232,0.103l19.386,19.369L33.762,17.429z" clip-rule="evenodd"></path>
+                        </svg>
+
+                    </a>
+
+                    <a href="#" id="applestorebtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <linearGradient id="OpwYZ9nhL01h2sErtedzua_4PbFeZOKAc61_gr1" x1="24" x2="24" y1="4.617" y2="40.096" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#33bef0"></stop><stop offset="1" stop-color="#0a85d9"></stop></linearGradient><path fill="url(#OpwYZ9nhL01h2sErtedzua_4PbFeZOKAc61_gr1)" d="M33.9,6H14.1C9.626,6,6,9.626,6,14.1v19.8c0,4.473,3.626,8.1,8.1,8.1h19.8	c4.474,0,8.1-3.627,8.1-8.1V14.1C42,9.626,38.374,6,33.9,6z"></path><path d="M12.3,30.977c-1.378,0-2.5-1.114-2.5-2.484c0-1.37,1.122-2.484,2.5-2.484h3.798l4.869-8.309	l-1.423-2.429c-0.338-0.578-0.431-1.251-0.262-1.897c0.169-0.646,0.58-1.188,1.156-1.524c0.384-0.224,0.82-0.342,1.262-0.342	c0.885,0,1.712,0.474,2.158,1.237l0.007,0.012l0.006-0.011c0.445-0.763,1.272-1.237,2.158-1.237c0.443,0,0.879,0.119,1.263,0.343	c1.19,0.698,1.59,2.233,0.892,3.422l-6.291,10.736h3.328l0.293,0.295c0.222,0.223,0.425,0.476,0.623,0.774l0.197,0.33	c0.489,0.911,0.598,1.918,0.319,2.854l-0.211,0.714H12.3z" opacity=".05"></path><path d="M12.3,30.477c-1.103,0-2-0.89-2-1.984c0-1.094,0.897-1.984,2-1.984h4.084l5.162-8.809l-1.572-2.682	c-0.27-0.461-0.345-1-0.209-1.518c0.135-0.517,0.463-0.95,0.924-1.219c0.307-0.179,0.656-0.274,1.01-0.274	c0.708,0,1.37,0.379,1.727,0.989l0.438,0.749l0.438-0.748c0.356-0.61,1.018-0.989,1.726-0.989c0.354,0,0.703,0.095,1.01,0.274	c0.952,0.559,1.271,1.787,0.713,2.738L21.02,26.509h3.992l0.146,0.147c0.198,0.199,0.381,0.427,0.56,0.698l0.185,0.31	c0.418,0.781,0.511,1.646,0.27,2.456l-0.106,0.357H12.3z" opacity=".07"></path><path fill="#fff" d="M25.302,27.63c-0.148-0.224-0.312-0.434-0.498-0.621h-4.656l7.173-12.242	c0.419-0.715,0.179-1.634-0.535-2.053c-0.716-0.419-1.635-0.179-2.052,0.536l-0.87,1.484l-0.87-1.485	c-0.418-0.715-1.337-0.954-2.052-0.536c-0.715,0.418-0.955,1.337-0.536,2.052l1.72,2.935l-5.455,9.309H12.3	c-0.829,0-1.5,0.665-1.5,1.484c0,0.819,0.671,1.484,1.5,1.484h13.394c0.194-0.653,0.141-1.382-0.221-2.058L25.302,27.63z"></path><path d="M14.5,36.179c-0.443,0-0.879-0.119-1.263-0.344c-0.576-0.338-0.986-0.88-1.155-1.526	c-0.168-0.646-0.075-1.32,0.263-1.896l0.713-1.218l0.44-0.088C13.859,31.036,14.196,31,14.528,31l0.118,0.001	c1.081,0.032,2.06,0.494,2.766,1.3l0.476,0.542l-1.229,2.1C16.211,35.706,15.385,36.179,14.5,36.179z" opacity=".05"></path><path d="M14.5,35.679c-0.354,0-0.704-0.095-1.01-0.275c-0.46-0.27-0.789-0.704-0.924-1.221	s-0.061-1.056,0.21-1.517l0.6-1.024l0.22-0.044c0.329-0.066,0.634-0.098,0.932-0.098l0.112,0.001	c0.933,0.028,1.783,0.429,2.396,1.129l0.238,0.271l-1.047,1.789C15.87,35.3,15.208,35.679,14.5,35.679z" opacity=".07"></path><path fill="#fff" d="M14.626,32.002c-0.317-0.009-0.628,0.026-0.932,0.087l-0.487,0.831	c-0.419,0.715-0.179,1.634,0.536,2.053c0.238,0.14,0.5,0.206,0.757,0.206c0.515,0,1.017-0.266,1.295-0.741l0.865-1.477	c-0.487-0.556-1.19-0.934-2.03-0.959H14.626z"></path><path d="M33.229,36.179c-0.885,0-1.712-0.474-2.158-1.236l-6.027-10.285l-0.017-0.052	c-0.417-1.289-0.335-2.618,0.214-3.793l1.669-2.858l4.72,8.055h4.07c1.378,0,2.5,1.114,2.5,2.484c0,1.37-1.122,2.484-2.5,2.484	h-1.159l0.842,1.437c0.338,0.576,0.431,1.249,0.263,1.896s-0.579,1.188-1.155,1.526C34.109,36.06,33.673,36.179,33.229,36.179z" opacity=".05"></path><path d="M33.229,35.679c-0.708,0-1.37-0.378-1.727-0.988l-6-10.238l-0.017-0.052	c-0.361-1.118-0.288-2.317,0.208-3.376l1.216-2.081l4.433,7.565H35.7c1.103,0,2,0.89,2,1.984c0,1.094-0.897,1.984-2,1.984h-2.031	l1.283,2.19c0.271,0.461,0.345,1,0.21,1.517s-0.463,0.951-0.924,1.221C33.933,35.584,33.584,35.679,33.229,35.679z" opacity=".07"></path><path fill="#fff" d="M35.7,27.009h-4.643l-4.147-7.076l-0.763,1.303c-0.444,0.95-0.504,2.024-0.185,3.011l5.972,10.191	c0.279,0.476,0.78,0.741,1.295,0.741c0.257,0,0.519-0.066,0.757-0.206c0.715-0.419,0.954-1.338,0.535-2.053l-1.725-2.943H35.7	c0.829,0,1.5-0.665,1.5-1.484C37.2,27.674,36.529,27.009,35.7,27.009z"></path>
+                        </svg>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content_box" id="mkting">ASSESSORIA DE MARKETING</div>
+
+        <div class="content_box" id="dev-web">
+            <h1 class="hello_title"><span>&#60;/</span> Hello World! <span>&#62;</span></h1>
+
+            <div class="web-dev">
+                <div class="web-itens-menu">
+                    <ul class="web-list">
+                        <li>Landing pages</li>
+                        <li>Sites</li>
+                        <li>Fullstack Freelancer</li>
+                        <li>Hospedagem</li>
+                        <li>Ui Design</li>
+                    </ul>
+
+                </div>
+
+                <div class="web-dev-itens">
+                    <div class="dev-iten show-dev-iten" id="intro">
+                        <article>
+                            <h1>Por que é importante ter um site para o seu negócio?</h1>
+                            <p>Em um mundo cada vez mais digital, a presença online é fundamental para qualquer empresa, independentemente do tamanho. Ter um site bem estruturado e funcional é uma das maneiras mais eficazes de alavancar seus negócios e construir uma imagem profissional para sua marca. Aqui estão alguns dos principais benefícios de ter um site para sua empresa:</p>
+                            
+                            <h2>Acesso 24/7</h2>
+                            <p>Um site oferece aos seus clientes acesso às informações sobre seus produtos e serviços a qualquer hora do dia, sete dias por semana. Isso significa que mesmo fora do horário comercial, seus clientes podem conhecer seu negócio, fazer perguntas e até mesmo realizar compras, dependendo da funcionalidade do site.</p>
+                            
+                            <h2>Credibilidade e Profissionalismo</h2>
+                            <p>Ter um site bem projetado passa uma imagem de profissionalismo e seriedade. Clientes em potencial tendem a confiar mais em empresas que possuem uma presença online bem estabelecida. Um site pode incluir <span>depoimentos de clientes</span>, <span>portfólio de trabalhos realizados</span>, e informações detalhadas sobre seus serviços, aumentando assim a credibilidade do seu negócio.</p>
+                            
+                            <h2>Marketing e Alcance Ampliado</h2>
+                            <p>Com um site, sua empresa pode alcançar um público muito maior do que apenas com métodos tradicionais de marketing. Ferramentas de SEO (Search Engine Optimization) ajudam a melhorar a visibilidade do seu site em mecanismos de busca, como Google, atraindo mais visitantes e potenciais clientes. Além disso, você pode integrar seu site com redes sociais, campanhas de e-mail marketing, e anúncios online, criando uma estratégia de marketing digital robusta e eficaz.</p>
+                            
+                            <h2>Concorrência</h2>
+                            <p>Muitas empresas já perceberam a importância de estar online e têm investido em sites profissionais. Para não ficar atrás da concorrência, é crucial que sua empresa também esteja presente no ambiente digital. Um site bem feito pode diferenciar sua marca no mercado, destacando seus pontos fortes e únicos.</p>
+                            
+                            <h2>Comunicação com o Cliente</h2>
+                            <p>Um site permite uma comunicação direta e eficiente com seus clientes. Você pode oferecer formulários de contato, chat ao vivo, e até mesmo blog com conteúdos relevantes, respondendo dúvidas comuns e mantendo seu público informado sobre novidades e promoções. Essa interação aumenta a satisfação do cliente e fortalece o relacionamento com a marca.</p>
+                            
+                            <h2>Custo-Benefício</h2>
+                            <p>Investir em um site é uma opção mais acessível do que muitos outros métodos de publicidade e marketing. Os custos de manutenção são relativamente baixos comparados aos benefícios de longo prazo, como o aumento de visibilidade, engajamento e vendas.</p>
+                            
+                            <h2>Análise e Otimização</h2>
+                            <p>Com um site, você pode utilizar ferramentas de análise para monitorar o comportamento dos visitantes, como Google Analytics. Isso permite entender melhor o que funciona e o que precisa ser ajustado, otimizando continuamente sua presença online para melhorar os resultados.</p>
+                            
+                            <h2>Conclusão</h2>
+                            <p>Em suma, ter um site não é apenas uma vantagem, mas uma necessidade no cenário empresarial atual. Ele oferece uma plataforma para sua empresa crescer, alcançar novos clientes, e consolidar sua marca no mercado. Ao investir em um site profissional, você está investindo no futuro do seu negócio, garantindo uma presença forte e competitiva no mundo digital.</p>
+                        </article>
                     </div>
-                            
-                  </div>
-                        
-                  <footer>
-                    Todos os direitos reservados
-                  </footer>
+                    <div class="dev-iten" id="landing_pages"></div>
+                    <div class="dev-iten" class="sites"></div>
+                    <div class="dev-iten" id="fullstack"></div>
+                    <div class="dev-iten" id="hospedagem"></div>
+                    <div class="dev-iten" id="ui_design"></div>
+
                 </div>
 
-              </div>
-
-              <div class="right-side">
-
-                <img src="images/Home-Page/Contatos/imagem-lateral-direita-04.jpg" alt="desenho de um telefone antigo" class="imagem-lateral" id="img-direira-04">
-
-              </div>
-
-            </section>
-
-
-
-
-
-
-
-
-
-
-            
- <!--MODAL - SOBRE NÓS-->
-            <div class="about-text-modal-box"> 
-              <div id="fade" class="hide"> </div>
-                            
-                  <div id="modal" class="hide">
-                    <button id="close-modal">
-                            X
-                      </button> 
-
-
-                      <!-- TEXTO SOBRE NÓS -->
-                    <header>
-                      <h2>Sobre</h2>
-                    </header>
-
-                    <p>Somos dois amigos contadores de histórias e decidimos transformar nosso sonho em algo concreto. Assim nasceu a Cof Cof Produções, um projeto que reúne nossos talentos e nossa criatividade para criar novos mundos e histórias inesquecíveis.</p>
-                      
-                    <p>Nós acreditamos no poder das narrativas para conectar pessoas e despertar emoções. Nossa missão é escrever livros, criar revistas em quadrinhos, desenvolver jogos e muito mais. Queremos que cada pessoa que se junte a nós nessa jornada encontre um espaço para se expressar e sentir-se parte de uma comunidade.</p>
-                      
-                    <p>Cada projeto é uma nova aventura. Queremos desafiar os limites da imaginação e convidamos você a embarcar conosco nessa viagem épica. Venha descobrir universos fantásticos e compartilhar suas próprias histórias!</p>
-                      
-                    <p>Juntos, vamos criar algo incrível!</p>
-
-
-                    <!-- TEXTO SOBRE O PROJETO -->
-                      
-                    <header>
-                      O PROJETO:
-                    </header>
-                      
-                    <p>Este projeto visa viabilizar a realização do sonho em comum dos criadores das histórias encontradas aqui. Sabendo das dificuldades, grande concorrência, e até mesmo falta de respostas de editoras padrão, decidimos criar nosso próprio meio de divulgação para nossos conteúdos, desta forma conseguiremos nos expressar e publicar nossos textos de forma independente, enquanto for viável.</p>
-                      
-                    <p>Como todos já devem imaginar, para fazer tudo isso com as nossas próprias mãos levamos tempo, e as evoluções nem sempre conseguem atingir a velocidade que gostaríamos.</p>
-                      
-                      
-
-                    <header>
-                      A PRIMEIRA HISTÓRIA: 
-                    </header>
-                      
-                    <p>Em 2014, nasceu uma ideia para uma história fantástica, e agora, dez anos depois, acreditamos que esta fantasia tenha tomado corpo suficiente para ser contada utilizando várias mídias.<br> 
-                    Dedicamos bastante tempo pensando em tudo para tornar a experiência do público o mais imersiva possível.
-                    </p>
-                      
-
-                      
-                    <header>
-                      O SITE: 
-                    </header>
-                      
-                    <p>Aprendemos o básico do básico sobre tecnologias HTML, CSS, e JS etc... para criar um portal online de leitura, e SIM contém “bugs”, e falaremos como podem nos ajudar com isso mais adiante!</p>
-                      
-                      
-
-                    <header>
-                      PLANOS PARA O FUTURO:
-                    </header>
-                      
-                    <p>Desenvolver a comunidade interativa, para que nossos leitores/usuários possam discutir sobre as histórias, criar seus tópicos com suas teorias etc...<br>
-                    Implementar uma sessão para que outros contadores de histórias possam publicá-las de forma justa e acessível.<br>
-                    Já pensamos em quase tudo, inclusive em como relacionar suas conexões com outros usuários dentro do site.<br>
-                    Talvez um joguinho? Quem sabe... (DEVS preciso de vocês!).<br>
-                    </p>
-                      
-                      
-                      
-                    <header>
-                      COMO VOCÊ PODE AJUDAR?
-                    </header>
-                      
-                    <P>Como disse anteriormente, este é um projeto que já levou quase 10 anos para ser idealizado, e agora estamos botando a mão na massa de forma independente.<br>
-                    Nossa realidade atual não permite a disponibilidade para nos dedicarmos ao projeto em tempo integral (temos nosso trabalho em outras empresas, das 7h as 17h  como a maioria dos brasileiros), por isso precisamos de ajuda em alguns pontos:<br>
-                    </p>
-                    
-                    <p>DESENVOLVIMENTO:<br>
-                      Se você é um Dev, pode entrar em contato via 
-                      e-mail (cofcof.prod@gmail.com), 
-                      <a href="https://www.linkedin.com/in/cof-cof-produ%C3%A7%C3%B5es/">Linked-In</a>,  
-                      <a href="https://www.instagram.com/cofcof.prod/">Instagam</a>,
-                      ou 
-                      <a href="https://api.whatsapp.com/send?phone=5516991523778&text=Salve!%20%F0%9F%96%96%0A">Whatsapp</a>,
-                      para colaborar com alguns ajustes da interface (front-end) e/ou tratamento de dados (Back-end).<br> 
-                    </p>
-                    
-                    <p>TEXTOS:<br>
-                      Se você é uma pessoa que gosta de revisar textos, pode nos ajudar com a revisão e diagramação das histórias que publicaremos aqui.<br> 
-                    </p>
-                    
-                    <p>IMAGENS:<br>
-                      Usamos algumas IAs para criar imagens próximas ao que imaginamos, e experimentar a atmosfera do nosso universo, entretando adoraríamos ter ILUSTRADORES feitos em carne e osso para nos agraciar com sua arte!
-                    </P>
-                    
-                    <header>
-                      DOAÇÕES:
-                    </header>
-                      
-                      <p>Caso você tenha gostado da ideia, não tem experiência para ajudar nos tópicos citados acima, mas gostaria de colaborar de alguma forma, você pode nos fazer uma doação de qualquer valor!<br> 
-                      Nós destinaremos todos os recursos para o desenvolvimento do App e da História!</p>
-                       
-                      <p>Sua colaboração será vista como um incentivo para continuarmos, e o combustível que precisamos para acelerar a realização desse sonho!<br>
-                      </p>
-
-                      <header> DECIDIU FAZER UMA DOAÇÃO?</header>
-                      
-                      <div class="chave_pix_box">
-
-
-                        <div class="chave_aleatoria">
-
-                          <h2>Chave Pix:</h2>
-                          <p>b512370d-71b9-4de8-987f-0eac41f99d93</p> 
-
-                        </div>
-
-                        <div class="chave_qrcode">
-                          <h2>QR CODE:</h2>
-                          <img src="https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/images/Home-Page/Sobre/Chave-pix.jpeg" alt="QR code">
-                        </div>
-                        
-
-                      </div>
-                      
-                      
-                      
-                  </div>
-                </div>
-              </div>
             </div>
 
 
+        </div>
 
-  <!--MODAL TELA DE LOGIN-->
-            <div class="login-modal-box">
-              <div id="fade2">
+        <div class="content_box" id="data-anlt">ANÁLISE DE DADOS</div>
 
-              </div>
-              <div id="login-modal">
-                <button id="close-login-modal">
-                  x
-                </button>
+        <div class="content_box" id="prod-cont">PRODUÇÃO DE CONTEÚDO ARTÍSTICO</div>
 
-                <div class="login-box">
+      </section>
 
-                  <div class="register-form">
-                    <h1 class="register-tilte">Crie uma conta grátis!</h1>
-                    <input type="text" class="input-name" id="register-name" placeholder="Nome completo">
-                    <div class="born-box">
-                      <p>Data de Nascimento:</p>
-                      <input type="date" name="input-date" id="register-date" class="input-date" placeholder="Data de nascimento">
-                    </div>
-                    <div class="tel-box">
-                      <p>Telefone:</p>
-                    <input type="tel" name="input-tel" id="register" class="input-tel" required placeholder="(xx) xxxxx-xxxx">
-                    </div>
-                    <input type="email" name="Email" id="register-email" class="input-email" placeholder="Endereço de Email">
-                    <input type="password" name="senha" id="register-password" class="input-password" placeholder="Escolha uma senha">
-                    <input type="password" name="confirmar senha" id="confirm-password" class="input-password" placeholder="Confirmar senha">
-                    <a href="">ler os termos de uso</a>
-                    <div class="input-terms-box">
-                      <input type="checkbox" name="termos" id="terms-checkbox" class="termos-aceitos">
-                      <p>Li e concordo com os termos de uso</p>
-                      
-                    </div>
-                    <button id="register-btn" class="registrar-btn">CRIAR CONTA</button>
-                    <h2 class="register-title2"> Ou registre-se com:</h2>
-                    
-                  </div>
+      <!-- PÁGINA NOSSOS CONTATOS ------------->
+      <section id="contacts" class="page">
 
-                  <div class="form-line"></div>
+        <div class="left-side">
 
-                  <div class="login-form">
-                    <h1 class="login-title">Já possui uma conta?</h1>
-                    <h2 class="login-tilte">fazer login</h2>
-                    <input type="email" name="E" id="login-email" class="input-email" placeholder="Email">
-                    <input type="password" name="senha" id="login-password" class="input-password" placeholder="Senha" >
-                    <div class="input-remember-me-box">
-                      <input type="checkbox" name="" id="remember-me" class="input-remember-me"><p>Manter conectado</p>
-                      <button type="submit" id="enter-btn" class="entrar-btn"><a href="/html/readpage.html">ENTRAR</a></button>
-                    </div>
-                    
-                    <a class="forgot"href="">Esqueci minha senha!</a>
-                    <h2 class="login-title2">Ou entre com:</h2>
-                      
-                  </div>
+          <img src="midias/home-page/contatos/imagem-lateral-esquerda-04.png" alt="desenho de um ansião contando histórias a uma garotinha" class="imagem-lateral" id="img-esquerda-04">
+
+        </div>
+
+        <div class="midle">
 
 
 
-                </div>
+        </div>
 
-              </div>
-              
-            </div>
+        <div class="right-side">
+
+          <img src="midias/home-page/contatos/imagem-lateral-direita-04.jpg" alt="desenho de um telefone antigo" class="imagem-lateral" id="img-direira-04">
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+   
+  <!--MODAL - SOBRE NÓS-->
+  <div class="about-text-modal-box"> 
+
+    <div id="fade" class="hide">
+
+    </div>
+                  
+    <div id="modal" class="hide">
+
+      <button id="close-modal">
+        X
+      </button> 
+
+      <!-- TEXTO SOBRE NÓS -->
+
+      <header>
+        <h2>Sobre</h2>
+      </header>
+
+      <p>Somos dois amigos contadores de histórias e decidimos transformar nosso sonho em algo concreto. Assim nasceu a Cof Cof Produções, um projeto que reúne nossos talentos e nossa criatividade para criar novos mundos e histórias inesquecíveis.</p>
+          
+      <p>Nós acreditamos no poder das narrativas para conectar pessoas e despertar emoções. Nossa missão é escrever livros, criar revistas em quadrinhos, desenvolver jogos e muito mais. Queremos que cada pessoa que se junte a nós nessa jornada encontre um espaço para se expressar e sentir-se parte de uma comunidade.</p>
+          
+      <p>Cada projeto é uma nova aventura. Queremos desafiar os limites da imaginação e convidamos você a embarcar conosco nessa viagem épica. Venha descobrir universos fantásticos e compartilhar suas próprias histórias!</p>
+          
+      <p>Juntos, vamos criar algo incrível!</p>
+
+
+      <!-- TEXTO SOBRE O PROJETO -->
+          
+      <header>
+        O PROJETO:
+      </header>
+          
+      <p>Este projeto visa viabilizar a realização do sonho em comum dos criadores das histórias encontradas aqui. Sabendo das dificuldades, grande concorrência, e até mesmo falta de respostas de editoras padrão, decidimos criar nosso próprio meio de divulgação para nossos conteúdos, desta forma conseguiremos nos expressar e publicar nossos textos de forma independente, enquanto for viável.</p>
+          
+      <p>Como todos já devem imaginar, para fazer tudo isso com as nossas próprias mãos levamos tempo, e as evoluções nem sempre conseguem atingir a velocidade que gostaríamos.</p>
+          
+          
+
+      <header>
+        A PRIMEIRA HISTÓRIA: 
+      </header>
+          
+      <p>Em 2014, nasceu uma ideia para uma história fantástica, e agora, dez anos depois, acreditamos que esta fantasia tenha tomado corpo suficiente para ser contada utilizando várias mídias.<br> 
+      Dedicamos bastante tempo pensando em tudo para tornar a experiência do público o mais imersiva possível.
+      </p>
+          
+
+          
+      <header>
+        O SITE: 
+      </header>
+          
+      <p>Aprendemos o básico do básico sobre tecnologias HTML, CSS, e JS etc... para criar um portal online de leitura, e SIM contém “bugs”, e falaremos como podem nos ajudar com isso mais adiante!</p>
+          
+          
+
+      <header>
+        PLANOS PARA O FUTURO:
+      </header>
+          
+      <p>Desenvolver a comunidade interativa, para que nossos leitores/usuários possam discutir sobre as histórias, criar seus tópicos com suas teorias etc...<br>
+      Implementar uma sessão para que outros contadores de histórias possam publicá-las de forma justa e acessível.<br>
+      Já pensamos em quase tudo, inclusive em como relacionar suas conexões com outros usuários dentro do site.<br>
+      Talvez um joguinho? Quem sabe... (DEVS preciso de vocês!).<br>
+      </p>
+          
+          
+          
+      <header>
+        COMO VOCÊ PODE AJUDAR?
+      </header>
+          
+      <P>Como disse anteriormente, este é um projeto que já levou quase 10 anos para ser idealizado, e agora estamos botando a mão na massa de forma independente.<br>
+      Nossa realidade atual não permite a disponibilidade para nos dedicarmos ao projeto em tempo integral (temos nosso trabalho em outras empresas, das 7h as 17h  como a maioria dos brasileiros), por isso precisamos de ajuda em alguns pontos:<br>
+      </p>
+        
+      <p>DESENVOLVIMENTO:<br>
+        Se você é um Dev, pode entrar em contato via 
+        e-mail (cofcof.prod@gmail.com), 
+        <a href="https://www.linkedin.com/in/cof-cof-produ%C3%A7%C3%B5es/">Linked-In</a>,  
+        <a href="https://www.instagram.com/cofcof.prod/">Instagam</a>,
+        ou 
+        <a href="https://api.whatsapp.com/send?phone=5516991523778&text=Salve!%20%F0%9F%96%96%0A">Whatsapp</a>,
+        para colaborar com alguns ajustes da interface (front-end) e/ou tratamento de dados (Back-end).<br> 
+      </p>
+        
+      <p>TEXTOS:<br>
+        Se você é uma pessoa que gosta de revisar textos, pode nos ajudar com a revisão e diagramação das histórias que publicaremos aqui.<br> 
+      </p>
+        
+      <p>IMAGENS:<br>
+        Usamos algumas IAs para criar imagens próximas ao que imaginamos, e experimentar a atmosfera do nosso universo, entretando adoraríamos ter ILUSTRADORES feitos em carne e osso para nos agraciar com sua arte!
+      </P>
+        
+      <header>
+        DOAÇÕES:
+      </header>
+          
+      <p>Caso você tenha gostado da ideia, não tem experiência para ajudar nos tópicos citados acima, mas gostaria de colaborar de alguma forma, você pode nos fazer uma doação de qualquer valor!<br> 
+      Nós destinaremos todos os recursos para o desenvolvimento do App e da História!</p>
+        
+      <p>Sua colaboração será vista como um incentivo para continuarmos, e o combustível que precisamos para acelerar a realização desse sonho!<br>
+      </p>
+
+      <header>
+        DECIDIU FAZER UMA DOAÇÃO?
+      </header>
+          
+      <div class="chave_pix_box">
+
+
+        <div class="chave_aleatoria">
+
+          <h2>Chave Pix:</h2>
+
+          <p>b512370d-71b9-4de8-987f-0eac41f99d93</p> 
+
+        </div>
+
+        <div class="chave_qrcode">
+
+          <h2>QR CODE:</h2>
+
+          <img src="https://raw.githubusercontent.com/Cof-Cof-Producoes/website/main/images/Home-Page/Sobre/Chave-pix.jpeg" alt="QR code">
+
+        </div>
+        
+
+      </div>
+          
+          
+          
+    </div>
+  </div>
 
 
 
+  <!-- SCRIPT GERAL -->
+  <script src="scripts/home-page/main.js"></script>
 
-            <!-- SCRIPT GERAL -->
-    <script src="Script/Home-Page/main.js"></script>
-            <!-- API SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-            <!-- SCRIPT SCROLL REVEAL -->
-    <script src="Script/Home-Page/reveal.js" defer></script>
+  <!-- SCRIPT CONTEÚDOS -->
+   <script src="scripts/home-page/home_contents.js"></script>
+
+  <!-- API SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- SCRIPT SCROLL REVEAL -->
+  <script src="scripts/home-page/reveal.js" defer></script>
+
 </body>
 </html>
