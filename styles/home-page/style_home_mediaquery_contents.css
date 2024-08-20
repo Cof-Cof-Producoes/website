@@ -8,12 +8,13 @@
         width: 100%;
     }
 
+
     /* nosso app */
     #nosso-app{
         display: block;
         gap: 2rem;
         align-items: start;
-        margin-top: 32rem;
+        margin-top: 40rem;
     }
 
     .app-descri{
